@@ -1,0 +1,2855 @@
+{
+ "CP1": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+  "titulo": "Registro de usuario - Registro exitoso con datos válidos",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 11.83,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 3.809,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso1_OK_20261119_212402_109.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+    "estado": "failed",
+    "duracion_s": 8.018,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso2_FALLA_20261119_212410_211.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"verificación\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP2": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"maderas\" y repite la contraseña \"maderas\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"maderas\" y repite la contraseña \"maderas\"",
+  "titulo": "Registro de usuario - Registro fallido por contraseña que no cumple el formato",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 9.3,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.294,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso1_OK_20261119_212412_066.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"maderas\" y repite la contraseña \"maderas\"",
+    "estado": "failed",
+    "duracion_s": 8.007,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso2_FALLA_20261119_212420_140.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"mínimo 8 caracteres\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP3": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2025$\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2025$\"",
+  "titulo": "Registro de usuario - Registro fallido por contraseñas no coincidentes",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 9.97,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.912,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso1_OK_20261119_212422_593.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2025$\"",
+    "estado": "failed",
+    "duracion_s": 8.057,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso2_FALLA_20261119_212430_728.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no coincide\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP4": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\", correo \"contacto@maderasmym.cl\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\", correo \"contacto@maderasmym.cl\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+  "titulo": "Registro de usuario - Registro fallido por correo ya registrado",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 9.51,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.452,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso1_OK_20261119_212432_645.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"contacto@maderasmym.cl\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+    "estado": "failed",
+    "duracion_s": 8.053,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso2_FALLA_20261119_212440_766.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"ya está registrado\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP5": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\" y contraseña \"Maderas2026$\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\" y contraseña \"Maderas2026$\"",
+  "titulo": "Inicio de sesión - Inicio de sesión exitoso",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 12.99,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 4.933,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261119_212231_934.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\" y contraseña \"Maderas2026$\"",
+    "estado": "failed",
+    "duracion_s": 8.055,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_FALLA_20261119_212240_065.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"Bienvenido\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP6": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"jmorales89\" y contraseña \"ClaveMala123\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"jmorales89\" y contraseña \"ClaveMala123\"",
+  "titulo": "Inicio de sesión - Inicio de sesión fallido por contraseña incorrecta",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 9.61,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 1.559,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261119_212242_208.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\" y contraseña \"ClaveMala123\"",
+    "estado": "failed",
+    "duracion_s": 8.055,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_FALLA_20261119_212250_344.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"contraseña incorrecta\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP7": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa usuario \"usuarioXYZ\" y contraseña \"Maderas2026$\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa usuario \"usuarioXYZ\" y contraseña \"Maderas2026$\"",
+  "titulo": "Inicio de sesión - Inicio de sesión fallido por usuario inexistente",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 11.42,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 3.368,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261119_212254_146.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"usuarioXYZ\" y contraseña \"Maderas2026$\"",
+    "estado": "failed",
+    "duracion_s": 8.053,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_FALLA_20261119_212302_279.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no existe\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP8": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando intenta iniciar sesión y presiona \"Reenviar verificación\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando intenta iniciar sesión y presiona \"Reenviar verificación\"",
+  "titulo": "Reenvío de verificación de cuenta",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 2,
+  "duracion_s": 12.83,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 4.345,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261119_212307_090.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario se registró pero no ha verificado su cuenta",
+    "estado": "passed",
+    "duracion_s": 0.466,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso2_OK_20261119_212307_621.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "intenta iniciar sesión y presiona \"Reenviar verificación\"",
+    "estado": "failed",
+    "duracion_s": 8.02,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso3_FALLA_20261119_212315_708.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema envía un nuevo correo de verificación y muestra un mensaje que contiene \"correo de verificación\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP9": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa el correo \"contacto@maderasmym.cl\" y confirma la solicitud»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='email']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa el correo \"contacto@maderasmym.cl\" y confirma la solicitud",
+  "titulo": "Recuperación de contraseña - Solicitud exitosa de recuperación con correo registrado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 11.45,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 3.391,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso1_OK_20261119_212032_001.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"contacto@maderasmym.cl\" y confirma la solicitud",
+    "estado": "failed",
+    "duracion_s": 8.057,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso2_FALLA_20261119_212040_831.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='email']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"enlace\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP10": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando ingresa el correo \"noexiste@correo.cl\" y confirma la solicitud»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='email']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando ingresa el correo \"noexiste@correo.cl\" y confirma la solicitud",
+  "titulo": "Recuperación de contraseña - Solicitud fallida con correo no registrado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.1,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 2.058,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso1_OK_20261119_212043_636.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"noexiste@correo.cl\" y confirma la solicitud",
+    "estado": "failed",
+    "duracion_s": 8.043,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso2_FALLA_20261119_212051_766.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='email']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no está registrado\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP11": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"obligatorio\"»: java.lang.AssertionError: NO PASA - Recuperación de contraseña: se esperaba un mensaje con \"obligatorio\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"obligatorio\"",
+  "titulo": "Recuperación de contraseña - Solicitud con campo de correo vacío",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 10.27,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 1.897,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso1_OK_20261119_212054_198.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"\" y confirma la solicitud",
+    "estado": "passed",
+    "duracion_s": 0.328,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso2_OK_20261119_212054_599.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"obligatorio\"",
+    "estado": "failed",
+    "duracion_s": 8.044,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso3_FALLA_20261119_212102_781.png",
+    "error": "java.lang.AssertionError: NO PASA - Recuperación de contraseña: se esperaba un mensaje con \"obligatorio\""
+   }
+  ]
+ },
+ "CP12": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema informa que el enlace expiró y ofrece solicitar uno nuevo»: java.lang.AssertionError: NO PASA - Recuperación de contraseña: se esperaba un mensaje con \"expirado\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema informa que el enlace expiró y ofrece solicitar uno nuevo",
+  "titulo": "Restablecimiento con enlace expirado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 10.26,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 1.952,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso1_OK_20261119_212105_205.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario recibió un correo de recuperación",
+    "estado": "passed",
+    "duracion_s": 0.26,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso2_OK_20261119_212105_545.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "utiliza el enlace después de su periodo de validez",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso3_OK_20261119_212105_621.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema informa que el enlace expiró y ofrece solicitar uno nuevo",
+    "estado": "failed",
+    "duracion_s": 8.048,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso4_FALLA_20261119_212113_751.png",
+    "error": "java.lang.AssertionError: NO PASA - Recuperación de contraseña: se esperaba un mensaje con \"expirado\""
+   }
+  ]
+ },
+ "CP13": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema lo redirige a la página de \"Iniciar sesión\"»: java.lang.AssertionError: NO PASA - Control de acceso: no se redirigió a /login, URL actual = https://www.maderasmym.cl/mi-cuenta",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema lo redirige a la página de \"Iniciar sesión\"",
+  "titulo": "Bloqueo de acceso a datos de cuenta sin sesión iniciada",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 2.57,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario no ha iniciado sesión",
+    "estado": "passed",
+    "duracion_s": 1.709,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261119_212705_961.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "intenta acceder directamente a la sección \"Mi cuenta\"",
+    "estado": "passed",
+    "duracion_s": 0.858,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261119_212706_963.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a la página de \"Iniciar sesión\"",
+    "estado": "failed",
+    "duracion_s": 0.002,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_FALLA_20261119_212706_997.png",
+    "error": "java.lang.AssertionError: NO PASA - Control de acceso: no se redirigió a /login, URL actual = https://www.maderasmym.cl/mi-cuenta"
+   }
+  ]
+ },
+ "CP14": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario tiene una sesión iniciada»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario tiene una sesión iniciada",
+  "titulo": "Cierre de sesión exitoso",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 12.41,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario tiene una sesión iniciada",
+    "estado": "failed",
+    "duracion_s": 12.412,
+    "evidencia": "evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261119_212719_835.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona la opción \"Cerrar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema finaliza la sesión y lo redirige a la página de inicio como visitante",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP15": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario tiene una sesión iniciada»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario tiene una sesión iniciada",
+  "titulo": "Expiración de sesión por inactividad",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 10.17,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario tiene una sesión iniciada",
+    "estado": "failed",
+    "duracion_s": 10.172,
+    "evidencia": "evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261119_212730_527.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='username']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "permanece inactivo durante un periodo prolongado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema cierra la sesión automáticamente y solicita autenticarse nuevamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP16": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta»: java.lang.AssertionError: NO PASA - Acceso directo a ruta protegida NO fue denegado, URL actual = https://www.maderasmym.cl/mi-cuenta",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta",
+  "titulo": "Intento de acceso directo a una ruta protegida",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 2.72,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario no autenticado conoce la URL de una ruta protegida",
+    "estado": "passed",
+    "duracion_s": 2.246,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261119_212733_235.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "la ingresa directamente en el navegador",
+    "estado": "passed",
+    "duracion_s": 0.475,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261119_212733_859.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta",
+    "estado": "failed",
+    "duracion_s": 0.002,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_FALLA_20261119_212733_895.png",
+    "error": "java.lang.AssertionError: NO PASA - Acceso directo a ruta protegida NO fue denegado, URL actual = https://www.maderasmym.cl/mi-cuenta"
+   }
+  ]
+ },
+ "CP17": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda de productos - Búsqueda exitosa de un producto existente",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 3.36,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 3.204,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261119_213043_463.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"Pino Oregón\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.11,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261119_213043_720.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 0.04,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261119_213043_858.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"listado de resultados\"",
+    "estado": "passed",
+    "duracion_s": 0.007,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261119_213043_957.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP18": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema responde de forma \"sin resultados\"»: java.lang.AssertionError: NO PASA - Búsqueda sin resultados: mensaje de vacío ausente",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema responde de forma \"sin resultados\"",
+  "titulo": "Búsqueda de productos - Búsqueda sin resultados",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 9.74,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.576,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261119_213045_966.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"asdfgh123\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.11,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261119_213046_220.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 0.033,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261119_213046_350.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"sin resultados\"",
+    "estado": "failed",
+    "duracion_s": 8.025,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_FALLA_20261119_213054_479.png",
+    "error": "java.lang.AssertionError: NO PASA - Búsqueda sin resultados: mensaje de vacío ausente"
+   }
+  ]
+ },
+ "CP20": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda de productos - Búsqueda con caracteres especiales o código",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 2.23,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 2.074,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261119_213057_111.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"<script>alert(1)</script>\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.118,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261119_213057_379.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 0.034,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261119_213057_517.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"sanitizada sin ejecutar codigo\"",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261119_213057_625.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP19": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda con campo vacío",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.1,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 3.061,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso1_OK_20261119_213101_135.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona buscar sin ingresar texto",
+    "estado": "passed",
+    "duracion_s": 0.041,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso2_OK_20261119_213101_319.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema no ejecuta la búsqueda o solicita ingresar un término",
+    "estado": "passed",
+    "duracion_s": 0.003,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso3_OK_20261119_213101_458.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP21": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando selecciona \"Pino Oregón Bruto\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando selecciona \"Pino Oregón Bruto\"",
+  "titulo": "Navegación exitosa a categoría \"Pino Oregón Bruto\"",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.13,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 2.089,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso1_OK_20261119_212618_339.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Pino Oregón Bruto\"",
+    "estado": "failed",
+    "duracion_s": 8.041,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso2_FALLA_20261119_212626_533.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega el listado de productos de esa categoría",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP22": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando despliega la categoría \"Pino Oregón Cepillado\" y selecciona la medida \"4.00 mts\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando despliega la categoría \"Pino Oregón Cepillado\" y selecciona la medida \"4.00 mts\"",
+  "titulo": "Navegación a subcategoría por medida",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.16,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 2.117,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso1_OK_20261119_212629_342.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "despliega la categoría \"Pino Oregón Cepillado\" y selecciona la medida \"4.00 mts\"",
+    "estado": "failed",
+    "duracion_s": 8.04,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso2_FALLA_20261119_212637_547.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra solo los productos de esa medida específica",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP23": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando navega a la categoría \"Pino Oregón Bruto\" y revisa el listado de productos desplegado»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando navega a la categoría \"Pino Oregón Bruto\" y revisa el listado de productos desplegado",
+  "titulo": "Verificación de listado filtrado correctamente",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 11.79,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 3.735,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso1_OK_20261119_212641_981.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "navega a la categoría \"Pino Oregón Bruto\" y revisa el listado de productos desplegado",
+    "estado": "failed",
+    "duracion_s": 8.054,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso2_FALLA_20261119_212650_175.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "todos los productos mostrados pertenecen exclusivamente a la categoría seleccionada",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP24": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje indicando que no hay productos disponibles»: java.lang.AssertionError: NO PASA - Categoría sin stock: mensaje de 'sin productos' ausente",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje indicando que no hay productos disponibles",
+  "titulo": "Navegación a categoría sin stock disponible",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 12.8,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 4.288,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso1_OK_20261119_212655_134.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "accede a una categoría sin productos disponibles",
+    "estado": "passed",
+    "duracion_s": 0.464,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso2_OK_20261119_212655_732.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje indicando que no hay productos disponibles",
+    "estado": "failed",
+    "duracion_s": 8.049,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso3_FALLA_20261119_212703_810.png",
+    "error": "java.lang.AssertionError: NO PASA - Categoría sin stock: mensaje de 'sin productos' ausente"
+   }
+  ]
+ },
+ "CP25": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización exitosa del detalle de producto",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.45,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario selecciona un producto desde el listado",
+    "estado": "passed",
+    "duracion_s": 3.415,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso1_OK_20261119_213015_338.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "accede a su ficha",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso2_OK_20261119_213015_484.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra tipo, medidas, dimensiones y disponibilidad del producto",
+    "estado": "passed",
+    "duracion_s": 0.031,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso3_OK_20261119_213015_652.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP26": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema indica claramente que el producto no tiene stock»: java.lang.AssertionError: NO PASA - Ficha de producto sin stock: indicador de disponibilidad ausente",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema indica claramente que el producto no tiene stock",
+  "titulo": "Visualización de producto sin stock",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 8.56,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a la ficha de un producto sin existencias",
+    "estado": "passed",
+    "duracion_s": 0.515,
+    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso1_OK_20261119_213016_637.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa el campo \"Disponibilidad\"",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso2_OK_20261119_213016_670.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema indica claramente que el producto no tiene stock",
+    "estado": "failed",
+    "duracion_s": 8.041,
+    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso3_FALLA_20261119_213024_743.png",
+    "error": "java.lang.AssertionError: NO PASA - Ficha de producto sin stock: indicador de disponibilidad ausente"
+   }
+  ]
+ },
+ "CP27": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema lo redirige correctamente a la ficha del producto seleccionado»: java.lang.AssertionError: NO PASA - Redirección a ficha desde búsqueda: URL = https://www.maderasmym.cl/",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema lo redirige correctamente a la ficha del producto seleccionado",
+  "titulo": "Acceso a la ficha desde un resultado de búsqueda",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 2.66,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario realizó una búsqueda exitosa de \"Pino Oregón\"",
+    "estado": "passed",
+    "duracion_s": 2.241,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso1_OK_20261119_213027_428.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona un producto del listado de resultados",
+    "estado": "passed",
+    "duracion_s": 0.409,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso2_OK_20261119_213027_945.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige correctamente a la ficha del producto seleccionado",
+    "estado": "failed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso3_FALLA_20261119_213028_097.png",
+    "error": "java.lang.AssertionError: NO PASA - Redirección a ficha desde búsqueda: URL = https://www.maderasmym.cl/"
+   }
+  ]
+ },
+ "CP28": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema despliega correctamente las imágenes del producto sin errores de carga»: java.lang.AssertionError: NO PASA - Galería de imágenes: elementos encontrados = 0",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema despliega correctamente las imágenes del producto sin errores de carga",
+  "titulo": "Visualización de imágenes del producto",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 10.8,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha de un producto",
+    "estado": "passed",
+    "duracion_s": 2.749,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso1_OK_20261119_213031_409.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa la sección de imágenes",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso2_OK_20261119_213031_525.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega correctamente las imágenes del producto sin errores de carga",
+    "estado": "failed",
+    "duracion_s": 8.052,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso3_FALLA_20261119_213039_713.png",
+    "error": "java.lang.AssertionError: NO PASA - Galería de imágenes: elementos encontrados = 0"
+   }
+  ]
+ },
+ "CP29": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando indica la cantidad \"2\" y presiona \"Agregar\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando indica la cantidad \"2\" y presiona \"Agregar\"",
+  "titulo": "Carrito - agregar producto - Agregar producto exitosamente al carrito",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 11.49,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 3.436,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso1_OK_20261119_212823_990.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "indica la cantidad \"2\" y presiona \"Agregar\"",
+    "estado": "failed",
+    "duracion_s": 8.05,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso2_FALLA_20261119_212832_095.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"agregado y contador actualizado\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP30": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando indica la cantidad \"999999\" y presiona \"Agregar\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando indica la cantidad \"999999\" y presiona \"Agregar\"",
+  "titulo": "Carrito - agregar producto - Agregar producto con cantidad superior al stock",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.72,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 2.66,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso1_OK_20261119_212835_158.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "indica la cantidad \"999999\" y presiona \"Agregar\"",
+    "estado": "failed",
+    "duracion_s": 8.057,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso2_FALLA_20261119_212843_358.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"error de stock insuficiente\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP31": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario agrega un producto con cantidad \"1\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario agrega un producto con cantidad \"1\"",
+  "titulo": "Actualización del contador del carrito",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 4,
+  "pasos_ok": 2,
+  "duracion_s": 11.9,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 3.211,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso1_OK_20261119_212847_193.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el carrito se encuentra vacío",
+    "estado": "passed",
+    "duracion_s": 0.629,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso2_OK_20261119_212847_961.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario agrega un producto con cantidad \"1\"",
+    "estado": "failed",
+    "duracion_s": 8.056,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso3_FALLA_20261119_212856_134.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el contador del carrito se actualiza a la cantidad de ítems agregados",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP32": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un producto ya se encuentra en el carrito»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un producto ya se encuentra en el carrito",
+  "titulo": "Agregar el mismo producto más de una vez",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 14.89,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 4.684,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso1_OK_20261119_212901_463.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un producto ya se encuentra en el carrito",
+    "estado": "failed",
+    "duracion_s": 10.203,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso2_FALLA_20261119_212911_802.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@type='number']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario lo agrega nuevamente con cantidad \"1\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP33": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario presiona \"Vaciar Carrito\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Vaciar Carrito')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario presiona \"Vaciar Carrito\"",
+  "titulo": "Vaciar carrito exitosamente",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.55,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "passed",
+    "duracion_s": 1.493,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso1_OK_20261119_212317_750.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Vaciar Carrito\"",
+    "estado": "failed",
+    "duracion_s": 8.057,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso2_FALLA_20261119_212325_956.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Vaciar Carrito')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema elimina todos los productos y el total vuelve a $0",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP34": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario modifica la cantidad de dicho producto a \"5\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario modifica la cantidad de dicho producto a \"5\"",
+  "titulo": "Editar cantidad de un producto en el carrito",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.67,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "passed",
+    "duracion_s": 1.628,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso1_OK_20261119_212328_256.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario modifica la cantidad de dicho producto a \"5\"",
+    "estado": "failed",
+    "duracion_s": 8.043,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso2_FALLA_20261119_212336_439.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//input[@type='number']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema actualiza la cantidad y recalcula el total",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP35": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario elimina uno de los productos del carrito»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//button[contains(@class,'remove')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario elimina uno de los productos del carrito",
+  "titulo": "Eliminar un producto específico del carrito",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.12,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "passed",
+    "duracion_s": 2.082,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso1_OK_20261119_212339_152.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario elimina uno de los productos del carrito",
+    "estado": "failed",
+    "duracion_s": 8.037,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso2_FALLA_20261119_212347_331.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//button[contains(@class,'remove')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema retira solo ese producto y conserva el resto en el carrito",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP36": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario modifica la cantidad de un producto en el carrito a \"3\" y confirma el cambio»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//input[@type='number']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario modifica la cantidad de un producto en el carrito a \"3\" y confirma el cambio",
+  "titulo": "Recalcular el total al modificar cantidades",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.47,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "passed",
+    "duracion_s": 1.437,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso1_OK_20261119_212349_410.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario modifica la cantidad de un producto en el carrito a \"3\" y confirma el cambio",
+    "estado": "failed",
+    "duracion_s": 8.034,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso2_FALLA_20261119_212357_599.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,'cart-item')]//input[@type='number']\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema recalcula automáticamente el \"Total\" mostrado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP37": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando selecciona la opción \"Retiro en tienda (Sin costo)\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando selecciona la opción \"Retiro en tienda (Sin costo)\"",
+  "titulo": "Selección de \"Retiro en tienda\"",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.64,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "passed",
+    "duracion_s": 2.617,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso1_OK_20261119_212736_954.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona la opción \"Retiro en tienda (Sin costo)\"",
+    "estado": "failed",
+    "duracion_s": 8.026,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso2_FALLA_20261119_212745_126.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema registra el método de entrega sin agregar costo de flete",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP38": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando selecciona \"Flete externo\" e indica la dirección \"Av. Siempre Viva 123, Santiago\" en el campo \"Comentarios\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando selecciona \"Flete externo\" e indica la dirección \"Av. Siempre Viva 123, Santiago\" en el campo \"Comentarios\"",
+  "titulo": "Selección de \"Flete externo\" con dirección indicada",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.97,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "passed",
+    "duracion_s": 2.943,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso1_OK_20261119_212748_710.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Flete externo\" e indica la dirección \"Av. Siempre Viva 123, Santiago\" en el campo \"Comentarios\"",
+    "estado": "failed",
+    "duracion_s": 8.024,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso2_FALLA_20261119_212756_891.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema registra el método de entrega junto con la dirección proporcionada",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP39": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar",
+  "titulo": "Selección de \"Flete externo\" sin indicar dirección",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.96,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "passed",
+    "duracion_s": 2.927,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso1_OK_20261119_212800_474.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar",
+    "estado": "failed",
+    "duracion_s": 8.034,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso2_FALLA_20261119_212808_650.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema solicita completar la dirección antes de generar el pedido",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP40": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Dado que el usuario ya seleccionó el método \"Retiro en tienda (Sin costo)\"»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Dado que el usuario ya seleccionó el método \"Retiro en tienda (Sin costo)\"",
+  "titulo": "Cambio de método de entrega antes de confirmar",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 10.44,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "passed",
+    "duracion_s": 1.677,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso1_OK_20261119_212810_960.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el usuario ya seleccionó el método \"Retiro en tienda (Sin costo)\"",
+    "estado": "failed",
+    "duracion_s": 8.767,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso2_FALLA_20261119_212819_869.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "lo cambia a \"Flete externo\" antes de generar el pedido",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema actualiza correctamente el método seleccionado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP41": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario presiona \"Generar Pedido\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario presiona \"Generar Pedido\"",
+  "titulo": "Generar pedido exitosamente",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 11.2,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene productos y se seleccionó un método de entrega válido",
+    "estado": "passed",
+    "duracion_s": 3.191,
+    "evidencia": "evidencias/Generar_pedido_exitosamente/paso1_OK_20261119_212117_555.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "failed",
+    "duracion_s": 8.008,
+    "evidencia": "evidencias/Generar_pedido_exitosamente/paso2_FALLA_20261119_212125_708.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema procesa el pedido y muestra una confirmación al usuario",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP42": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario presiona \"Generar Pedido\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario presiona \"Generar Pedido\"",
+  "titulo": "Intento de generar pedido con el carrito vacío",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.57,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito de compras está vacío",
+    "estado": "passed",
+    "duracion_s": 1.558,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso1_OK_20261119_212127_956.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "failed",
+    "duracion_s": 8.016,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso2_FALLA_20261119_212136_134.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema impide la acción y muestra un mensaje indicando que el carrito está vacío",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP43": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando el usuario presiona \"Generar Pedido\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando el usuario presiona \"Generar Pedido\"",
+  "titulo": "Generar pedido sin seleccionar método de entrega",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.36,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene productos pero no se ha seleccionado método de entrega",
+    "estado": "passed",
+    "duracion_s": 1.303,
+    "evidencia": "evidencias/Generar_pedido_sin_seleccionar_metodo_de_entrega/paso1_OK_20261119_212138_084.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "failed",
+    "duracion_s": 8.056,
+    "evidencia": "evidencias/Generar_pedido_sin_seleccionar_metodo_de_entrega/paso2_FALLA_20261119_212146_289.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema solicita seleccionar un método de entrega antes de continuar",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP44": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un pedido fue generado exitosamente»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un pedido fue generado exitosamente",
+  "titulo": "Confirmación tras generar el pedido",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 10.16,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un pedido fue generado exitosamente",
+    "estado": "failed",
+    "duracion_s": 10.16,
+    "evidencia": "evidencias/Confirmacion_tras_generar_el_pedido/paso1_FALLA_20261119_212157_119.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[contains(text(),'Generar Pedido')]\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el sistema procesa la solicitud",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se muestra un mensaje de confirmación y el carrito queda vacío",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP45": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema descarga o abre el PDF correctamente»: java.lang.AssertionError: NO PASA - Resultado global: todos los documentos responden HTTP 200",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema descarga o abre el PDF correctamente",
+  "titulo": "Descarga de documentos - Descarga exitosa de \"Lista de Precios 2026\"",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 1.56,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.293,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso1_OK_20261119_212159_225.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Lista de Precios 2026 (PDF)\"",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso2_OK_20261119_212159_375.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "failed",
+    "duracion_s": 0.262,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso3_FALLA_20261119_212159_781.png",
+    "error": "java.lang.AssertionError: NO PASA - Resultado global: todos los documentos responden HTTP 200"
+   }
+  ]
+ },
+ "CP46": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando presiona el enlace \"Informativo Maderas (PDF)\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),'Informativo Maderas (PDF)')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando presiona el enlace \"Informativo Maderas (PDF)\"",
+  "titulo": "Descarga de documentos - Descarga exitosa del \"Informativo Maderas\"",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.03,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 2.023,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso1_OK_20261119_212202_467.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Informativo Maderas (PDF)\"",
+    "estado": "failed",
+    "duracion_s": 8.007,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso2_FALLA_20261119_212210_622.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),'Informativo Maderas (PDF)')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP47": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Cuando presiona el enlace \"Pino Insigne Seco Cepillado Tabla\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),'Pino Insigne Seco Cepillado Tabla')]\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Cuando presiona el enlace \"Pino Insigne Seco Cepillado Tabla\"",
+  "titulo": "Descarga de documentos - Apertura del PDF sin errores de formato",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 10.38,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 2.373,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso1_OK_20261119_212213_635.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Pino Insigne Seco Cepillado Tabla\"",
+    "estado": "failed",
+    "duracion_s": 8.009,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso2_FALLA_20261119_212221_794.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),'Pino Insigne Seco Cepillado Tabla')]\"}"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP48": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces ninguno retorna un error 404 o enlace roto»: java.lang.AssertionError: NO PASA - Resultado global: todos los enlaces PDF responden 200",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces ninguno retorna un error 404 o enlace roto",
+  "titulo": "Verificación de enlaces no rotos",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 3.4,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 2.538,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso1_OK_20261119_212224_962.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que existen múltiples enlaces a documentos PDF en el sitio",
+    "estado": "passed",
+    "duracion_s": 0.715,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso2_OK_20261119_212225_831.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario verifica cada uno de ellos",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso3_OK_20261119_212225_949.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "ninguno retorna un error 404 o enlace roto",
+    "estado": "failed",
+    "duracion_s": 0.151,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso4_FALLA_20261119_212226_215.png",
+    "error": "java.lang.AssertionError: NO PASA - Resultado global: todos los enlaces PDF responden 200"
+   }
+  ]
+ },
+ "CP49": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Redirección exitosa a WhatsApp con mensaje predefinido y número correcto",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.09,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 3.41,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261119_212915_862.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.066,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261119_212916_065.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
+    "estado": "passed",
+    "duracion_s": 0.615,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261119_212916_829.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP50": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Redirección exitosa a WhatsApp con mensaje predefinido y número correcto",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.09,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 3.41,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261119_212915_862.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.066,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261119_212916_065.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
+    "estado": "passed",
+    "duracion_s": 0.615,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261119_212916_829.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP51": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Apertura del enlace en una nueva pestaña",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.65,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 1.576,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso1_OK_20261119_212918_797.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.072,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso2_OK_20261119_212919_017.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se abre en una nueva pestaña o aplicación, sin cerrar la sesión de compra del usuario",
+    "estado": "passed",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso3_OK_20261119_212919_174.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP52": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Funcionamiento del botón en dispositivo móvil",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 3.8,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 3.015,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso1_OK_20261119_212922_650.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil",
+    "estado": "passed",
+    "duracion_s": 0.724,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso2_OK_20261119_212923_522.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.064,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso3_OK_20261119_212923_659.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema abre correctamente la aplicación de WhatsApp instalada",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso4_OK_20261119_212923_781.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP53": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario accede al menú \"Sobre Nosotros\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario accede al menú \"Sobre Nosotros\"",
+  "titulo": "Visualización exitosa de la información institucional",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 13.15,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "failed",
+    "duracion_s": 13.148,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso1_FALLA_20261119_212937_379.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "la página carga completamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se despliega correctamente la historia, misión, visión y equipo de Maderas MyM",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP54": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario accede al menú \"Sobre Nosotros\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario accede al menú \"Sobre Nosotros\"",
+  "titulo": "Visualización del mapa de ubicación",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 10.48,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "failed",
+    "duracion_s": 10.478,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso1_FALLA_20261119_212948_504.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa la sección de ubicación",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el mapa de Google Maps embebido se carga correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP55": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario accede al menú \"Sobre Nosotros\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario accede al menú \"Sobre Nosotros\"",
+  "titulo": "Enlace a WhatsApp desde \"Sobre Nosotros\"",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 11.2,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "failed",
+    "duracion_s": 11.2,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso1_FALLA_20261119_213000_323.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona \"Contactar por WhatsApp\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige correctamente a WhatsApp",
+    "estado": "skipped",
+    "duracion_s": 0.001,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP56": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no encontrado (localizador)] Falla en el paso «Dado que un usuario accede al menú \"Sobre Nosotros\"»: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}",
+  "categoria": "Elemento no encontrado (localizador)",
+  "origen": "Script (localizador referencial) o cambio en el sitio",
+  "paso_fallido": "Dado que un usuario accede al menú \"Sobre Nosotros\"",
+  "titulo": "Visualización correcta en dispositivo móvil",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 4,
+  "pasos_ok": 0,
+  "duracion_s": 10.23,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "failed",
+    "duracion_s": 10.235,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso1_FALLA_20261119_213011_244.png",
+    "error": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@href='https://www.maderasmym.cl/aboutus']\"}"
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Sobre Nosotros\" desde un dispositivo móvil",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "la página se despliega",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el contenido se adapta correctamente al tamaño de pantalla, sin elementos superpuestos",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP57": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Cuando presiona el ícono de menú hamburguesa»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Cuando presiona el ícono de menú hamburguesa",
+  "titulo": "Apertura y cierre correcto del menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 9.5,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.47,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso1_OK_20261119_212442_702.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el ícono de menú hamburguesa",
+    "estado": "failed",
+    "duracion_s": 8.025,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso2_FALLA_20261119_212450_832.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega el menú de navegación y permite cerrarlo correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP58": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Dado que el menú móvil está desplegado»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Dado que el menú móvil está desplegado",
+  "titulo": "Navegación a \"Productos\" desde el menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 12.49,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 3.718,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso1_OK_20261119_212455_105.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.774,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso2_FALLA_20261119_212503_980.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario selecciona \"Productos\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra las categorías de productos disponibles",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP59": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento no interactuable] Falla en el paso «Dado que el menú móvil está desplegado»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Dado que el menú móvil está desplegado",
+  "titulo": "Visibilidad de carrito y login en el menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 10.32,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.631,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso1_OK_20261119_212506_163.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.689,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso2_FALLA_20261119_212514_964.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario revisa las opciones disponibles",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "se muestran correctamente los accesos a \"Carrito\" e \"Iniciar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP60": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[5 filas de Ejemplos] [Elemento no interactuable] Falla en el paso «Dado que el menú móvil está desplegado»: org.openqa.selenium.ElementNotInteractableException: element not interactable",
+  "categoria": "Elemento no interactuable",
+  "origen": "Sitio (elemento oculto) o script",
+  "paso_fallido": "Dado que el menú móvil está desplegado",
+  "titulo": "Accesibilidad de la opción Inicio del menú",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 20,
+  "pasos_ok": 5,
+  "duracion_s": 57.02,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 2.681,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso1_OK_20261119_212518_190.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 9.22,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso2_FALLA_20261119_212527_525.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Inicio\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Inicio\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 2.045,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso1_OK_20261119_212530_123.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.651,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso2_FALLA_20261119_212538_890.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Productos\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Productos\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 4.143,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso1_OK_20261119_212543_580.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.575,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso2_FALLA_20261119_212552_265.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Sobre Nosotros\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Sobre Nosotros\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 2.008,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso1_OK_20261119_212554_882.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.534,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso2_FALLA_20261119_212603_522.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Carrito\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Carrito\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 2.502,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso1_OK_20261119_212606_785.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "failed",
+    "duracion_s": 8.663,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso2_FALLA_20261119_212615_550.png",
+    "error": "org.openqa.selenium.ElementNotInteractableException: element not interactable"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Iniciar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Iniciar sesión\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ }
+}
