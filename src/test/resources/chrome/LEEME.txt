@@ -1,0 +1,3 @@
+Deje aqui el archivo chromedriver.exe (Windows) que coincida con la version de su Google Chrome.
+Descarga: https://googlechromelabs.github.io/chrome-for-testing/  (columna chromedriver, plataforma win64)
+Version de Chrome: menu de tres puntos > Ayuda > Informacion de Google Chrome.
