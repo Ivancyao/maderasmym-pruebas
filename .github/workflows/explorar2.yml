@@ -1,0 +1,337 @@
+name: Explorar sitio 2 (comportamiento)
+
+# Acciones inocuas sobre www.maderasmym.cl: busca, navega, agrega al carrito y lo vacía.
+# No registra cuentas ni genera pedidos. Deja el resultado en la carpeta "explorar2/".
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar Selenium
+        run: |
+          pip install selenium
+          echo "CHROMEDRIVER_PATH=$CHROMEWEBDRIVER/chromedriver" >> "$GITHUB_ENV"
+
+      - name: Explorar el comportamiento del sitio
+        run: |
+          cat > explorar_sitio2.py <<'PY'
+          # Exploración 2: comportamiento del sitio (solo lectura + acciones inocuas: no se envían
+          # formularios de registro, no se genera ningún pedido). Guarda HTML, textos y scripts del sitio.
+          import json, os, re, time
+          from urllib.parse import urljoin
+          from selenium import webdriver
+          from selenium.webdriver.chrome.options import Options
+          from selenium.webdriver.chrome.service import Service
+          from selenium.webdriver.common.by import By
+
+          BASE = "https://www.maderasmym.cl"
+          OUT = "explorar2"
+          os.makedirs(OUT + "/js", exist_ok=True)
+          DRIVER = os.environ.get("CHROMEDRIVER_PATH")
+
+          def nuevo(ancho, alto):
+              o = Options()
+              for a in ("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu",
+                        "--remote-allow-origins=*", f"--window-size={ancho},{alto}"):
+                  o.add_argument(a)
+              d = webdriver.Chrome(service=Service(DRIVER) if DRIVER else Service(), options=o)
+              d.set_page_load_timeout(60)
+              return d
+
+          notas = {}
+          def nota(k, v):
+              notas[k] = v
+              print(k, "=>", str(v)[:200])
+
+          def html_de(d, css):
+              try:
+                  return d.execute_script("var e=document.querySelector(arguments[0]);return e?e.outerHTML:null", css)
+              except Exception as e:
+                  return "ERROR " + str(e)
+
+          def guardar(d, nombre, selectores=()):
+              time.sleep(2.5)
+              try:
+                  d.save_screenshot(f"{OUT}/{nombre}.png")
+              except Exception as e:
+                  print("shot", e)
+              partes = {"url": d.current_url, "titulo": d.title}
+              for s in selectores:
+                  partes[s] = html_de(d, s)
+              try:
+                  partes["texto_visible"] = d.execute_script("return document.body.innerText").strip()[:3000]
+              except Exception as e:
+                  partes["texto_visible"] = "ERROR " + str(e)
+              json.dump(partes, open(f"{OUT}/{nombre}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+          def clic(d, el, nombre):
+              try:
+                  el.click()
+                  nota(nombre + ".clic_normal", "OK")
+              except Exception as e:
+                  nota(nombre + ".clic_normal", "FALLA: " + type(e).__name__)
+                  d.execute_script("arguments[0].click()", el)
+
+          def hacer(nombre, fn):
+              try:
+                  fn()
+              except Exception as e:
+                  nota(nombre + ".ERROR", type(e).__name__ + ": " + str(e)[:300])
+
+          d = nuevo(1920, 1080)
+          d.get(BASE + "/"); time.sleep(5)
+
+          # --- scripts del sitio -------------------------------------------------------------
+          def bajar_js():
+              srcs = d.execute_script("return [...document.scripts].map(s=>s.src).filter(Boolean)")
+              inline = d.execute_script("return [...document.scripts].filter(s=>!s.src).map(s=>s.textContent)")
+              nota("scripts_src", srcs)
+              for i, t in enumerate(inline):
+                  open(f"{OUT}/js/inline_{i}.js", "w", encoding="utf-8").write(t)
+              for u in srcs:
+                  if "maderasmym.cl" not in u:
+                      continue
+                  t = d.execute_async_script(
+                      "var cb=arguments[arguments.length-1];fetch(arguments[0]).then(r=>r.text()).then(cb).catch(e=>cb('ERROR '+e))", u)
+                  open(OUT + "/js/" + re.sub(r"[^A-Za-z0-9_.-]+", "_", u.split("/")[-1].split("?")[0] or "x.js"), "w", encoding="utf-8").write(t)
+          hacer("js", bajar_js)
+
+          # --- PDF: códigos de respuesta -----------------------------------------------------
+          def pdfs():
+              res = {}
+              for r in ("/assets/lista-de-precios-2026.pdf", "/assets/informativo mym.pdf",
+                        "/assets/pino-insigne-seco-cepillado-tabla.pdf"):
+                  res[r] = d.execute_async_script(
+                      "var cb=arguments[arguments.length-1];fetch(arguments[0],{method:'GET'}).then(r=>cb(r.status+' '+r.headers.get('content-type'))).catch(e=>cb('ERROR '+e))", BASE + r)
+              nota("pdf_status", res)
+          hacer("pdfs", pdfs)
+
+          # --- estado inicial: ¿aviso emergente visible? ------------------------------------------
+          def estado_inicial():
+              nota("holiday_visible", d.execute_script(
+                  "var e=document.getElementById('holiday-pop');var s=e?getComputedStyle(e):null;return s?[s.display,s.visibility,s.opacity,e.className]:'no existe'"))
+              nota("num_tarjetas", len(d.find_elements(By.CSS_SELECTOR, ".product-card")))
+              nota("hamburguesa_visible", d.execute_script("var e=document.querySelector('.menu__hamburguer');return e?e.offsetWidth+'x'+e.offsetHeight:'no existe'"))
+              guardar(d, "01_home_estado_inicial", ["#holiday-pop", "#resultq", ".products-area"])
+          hacer("estado_inicial", estado_inicial)
+
+          # --- buscador -----------------------------------------------------------------------
+          def buscar(texto, nombre):
+              d.get(BASE + "/"); time.sleep(4)
+              c = d.find_element(By.ID, "search-input")
+              c.clear(); c.send_keys(texto)
+              d.find_element(By.CSS_SELECTOR, ".search-btn").click()
+              time.sleep(3)
+              nota(nombre + ".tarjetas", len(d.find_elements(By.CSS_SELECTOR, ".product-card")))
+              guardar(d, nombre, ["#resultq", "#catalog-grid"])
+          hacer("busq_pino", lambda: buscar("Pino Oregón", "02_busqueda_pino"))
+          hacer("busq_nada", lambda: buscar("asdfgh123", "03_busqueda_sin_resultados"))
+          hacer("busq_xss", lambda: buscar("<script>alert(1)</script>", "04_busqueda_xss"))
+          def buscar_vacio():
+              d.get(BASE + "/"); time.sleep(4)
+              d.find_element(By.CSS_SELECTOR, ".search-btn").click(); time.sleep(2)
+              nota("busq_vacia.validacion_html5", d.execute_script("return document.getElementById('search-input').validationMessage"))
+              guardar(d, "05_busqueda_vacia", ["#resultq"])
+          hacer("busq_vacia", buscar_vacio)
+
+          # --- categorías ---------------------------------------------------------------------
+          def categorias():
+              d.get(BASE + "/"); time.sleep(4)
+              tog = d.find_element(By.CSS_SELECTOR, ".sidebar a.category-link[data-category='Bruto']")
+              clic(d, tog, "cat_bruto"); time.sleep(2)
+              guardar(d, "06_categoria_bruto", [".sidebar-categories", "#catalog-grid"])
+              nota("cat_bruto.tarjetas", len(d.find_elements(By.CSS_SELECTOR, ".product-card")))
+              nota("cat_bruto.tipos", d.execute_script("return [...document.querySelectorAll('.product-card .meta div:first-child')].map(e=>e.innerText)"))
+              d.get(BASE + "/"); time.sleep(4)
+              clic(d, d.find_element(By.CSS_SELECTOR, ".sidebar a.category-link[data-category='Cepillado']"), "cat_cep"); time.sleep(1.5)
+              med = d.find_element(By.CSS_SELECTOR, ".submenu[data-parent-type='Cepillado'] a.medida-link[data-medida='4.00']")
+              clic(d, med, "cat_cep_4m"); time.sleep(2)
+              guardar(d, "07_categoria_cepillado_4m", ["#catalog-grid"])
+              nota("cat_cep_4m.tarjetas", len(d.find_elements(By.CSS_SELECTOR, ".product-card")))
+              nota("cat_cep_4m.largos", d.execute_script("return [...document.querySelectorAll('.product-card .meta div:nth-child(2)')].map(e=>e.innerText)"))
+              d.get(BASE + "/"); time.sleep(4)
+              for nombre in ("Placas metalicas", "Polines", "Treillage"):
+                  try:
+                      clic(d, d.find_element(By.XPATH, f"//div[contains(@class,'sidebar')]//a[normalize-space()='{nombre}']"), "cat_" + nombre)
+                      time.sleep(2)
+                      nota("cat_" + nombre + ".tarjetas", len(d.find_elements(By.CSS_SELECTOR, ".product-card")))
+                      guardar(d, "08_cat_" + nombre.replace(" ", "_"), ["#catalog-grid", "#resultq"])
+                  except Exception as e:
+                      nota("cat_" + nombre + ".ERROR", type(e).__name__)
+          hacer("categorias", categorias)
+
+          # --- ficha (modal) -----------------------------------------------------------------
+          def ficha():
+              d.get(BASE + "/"); time.sleep(4)
+              tarjeta = d.find_element(By.CSS_SELECTOR, ".product-card .title")
+              clic(d, tarjeta, "ficha"); time.sleep(2)
+              guardar(d, "09_ficha_modal", [".product-modal", "#product-modal", "[id*=modal]"])
+              nota("ficha.modales", d.execute_script("return [...document.querySelectorAll('[class*=modal],[id*=modal]')].map(e=>e.tagName+'#'+e.id+'.'+e.className+' vis='+(e.offsetWidth>0))"))
+          hacer("ficha", ficha)
+
+          # --- carrito -------------------------------------------------------------------------
+          def carrito():
+              d.get(BASE + "/"); time.sleep(4)
+              nota("carrito.contador_inicial", d.execute_script("return document.querySelector('.cart-count').innerText"))
+              b = d.find_elements(By.CSS_SELECTOR, ".product-card .add-btn")[0]
+              nota("carrito.producto", b.get_attribute("data-name"))
+              clic(d, b, "agregar1"); time.sleep(2)
+              nota("carrito.contador_tras_1", d.execute_script("return document.querySelector('.cart-count').innerText"))
+              guardar(d, "10_tras_agregar_1", ["#cartModal"])
+              clic(d, d.find_element(By.ID, "cart-link"), "abrir_carrito"); time.sleep(2)
+              guardar(d, "11_carrito_abierto_1_item", ["#cartModal"])
+              d.execute_script("document.querySelector('#cartModal .close').click()"); time.sleep(1)
+              clic(d, d.find_elements(By.CSS_SELECTOR, ".product-card .add-btn")[0], "agregar_mismo"); time.sleep(2)
+              nota("carrito.contador_tras_mismo", d.execute_script("return document.querySelector('.cart-count').innerText"))
+              clic(d, d.find_elements(By.CSS_SELECTOR, ".product-card .add-btn")[1], "agregar_otro"); time.sleep(2)
+              nota("carrito.contador_tras_otro", d.execute_script("return document.querySelector('.cart-count').innerText"))
+              clic(d, d.find_element(By.ID, "cart-link"), "abrir_carrito2"); time.sleep(2)
+              guardar(d, "12_carrito_abierto_2_items", ["#cartModal"])
+              nota("carrito.inventario_modal", d.execute_script(
+                  "return [...document.querySelectorAll('#cartModal input,#cartModal button,#cartModal select')].map(e=>[e.tagName,e.type,e.id,e.className,e.name,(e.innerText||e.value||'').slice(0,30),e.offsetWidth>0].join('|'))"))
+              nota("carrito.total", d.execute_script("return document.getElementById('cart-total').innerText"))
+              # selección de entrega y comentarios
+              clic(d, d.find_element(By.CSS_SELECTOR, "label[for='delivery-pickup']"), "retiro"); time.sleep(1)
+              nota("carrito.retiro_marcado", d.execute_script("return document.getElementById('delivery-pickup').checked"))
+              nota("carrito.total_tras_retiro", d.execute_script("return document.getElementById('cart-total').innerText"))
+              clic(d, d.find_element(By.CSS_SELECTOR, "label[for='delivery-shipping']"), "flete"); time.sleep(1)
+              nota("carrito.flete_marcado", d.execute_script("return document.getElementById('delivery-shipping').checked"))
+              guardar(d, "13_carrito_flete", ["#cartModal"])
+              # vaciar
+              clic(d, d.find_element(By.ID, "clear-cart-btn"), "vaciar"); time.sleep(2)
+              try:
+                  al = d.switch_to.alert; nota("carrito.alerta_vaciar", al.text); al.accept(); time.sleep(1)
+              except Exception:
+                  nota("carrito.alerta_vaciar", "sin alerta")
+              nota("carrito.contador_tras_vaciar", d.execute_script("return document.querySelector('.cart-count').innerText"))
+              nota("carrito.total_tras_vaciar", d.execute_script("return document.getElementById('cart-total').innerText"))
+              guardar(d, "14_carrito_vaciado", ["#cartModal"])
+          hacer("carrito", carrito)
+
+          # Generar pedido con el carrito VACÍO (no genera pedido real)
+          def pedido_vacio():
+              d.get(BASE + "/"); time.sleep(4)
+              d.execute_script("document.getElementById('cart-link').click()"); time.sleep(2)
+              d.execute_script("document.getElementById('generateOrder').click()"); time.sleep(2)
+              try:
+                  al = d.switch_to.alert; nota("pedido_vacio.alerta", al.text); al.accept()
+              except Exception:
+                  nota("pedido_vacio.alerta", "sin alerta")
+              guardar(d, "15_pedido_carrito_vacio", ["#cartModal"])
+          hacer("pedido_vacio", pedido_vacio)
+
+          # --- login: intentos con credenciales falsas (no crean nada) ----------------------------
+          def login(u, p, nombre):
+              d.get(BASE + "/login"); time.sleep(3)
+              d.find_element(By.ID, "user").send_keys(u)
+              d.find_element(By.ID, "password").send_keys(p)
+              d.find_element(By.CSS_SELECTOR, "button[type=submit]").click(); time.sleep(4)
+              guardar(d, nombre, ["form", "body"])
+          hacer("login1", lambda: login("usuarioXYZ", "Maderas2026$", "16_login_usuario_inexistente"))
+          hacer("login2", lambda: login("jmorales89", "ClaveMala123", "17_login_clave_mala"))
+          def login_vacio():
+              d.get(BASE + "/login"); time.sleep(3)
+              d.find_element(By.CSS_SELECTOR, "button[type=submit]").click(); time.sleep(2)
+              nota("login_vacio.validacion", d.execute_script("return document.getElementById('user').validationMessage"))
+              guardar(d, "18_login_vacio", ["form"])
+          hacer("login_vacio", login_vacio)
+
+          # --- recuperación ---------------------------------------------------------------------
+          def olvido(correo, nombre):
+              d.get(BASE + "/forgot-password"); time.sleep(3)
+              d.find_element(By.ID, "identificador").send_keys(correo)
+              d.find_element(By.CSS_SELECTOR, "button[type=submit],form button").click(); time.sleep(4)
+              nota(nombre + ".validacion", d.execute_script("return document.getElementById('identificador').validationMessage"))
+              guardar(d, nombre, ["form", "body"])
+          hacer("olvido1", lambda: olvido("noexiste@correo.cl", "19_forgot_correo_inexistente"))
+          hacer("olvido2", lambda: olvido("", "20_forgot_vacio"))
+          def reset_expirado():
+              d.get(BASE + "/reset-password?token=EXPIRADO123"); time.sleep(4)
+              guardar(d, "21_reset_expirado", ["body"])
+          hacer("reset", reset_expirado)
+
+          # --- registro (SIN enviar): ¿qué validaciones muestra al enviar vacío? ---------------------
+          def registro():
+              d.get(BASE + "/register"); time.sleep(4)
+              nota("registro.iframes", d.execute_script("return [...document.querySelectorAll('iframe')].map(e=>e.src)"))
+              nota("registro.turnstile", d.execute_script("return !!document.querySelector('.cf-turnstile,[data-sitekey]')"))
+              guardar(d, "22_registro", ["form"])
+          hacer("registro", registro)
+
+          # --- rutas posibles de cuenta ---------------------------------------------------------
+          def rutas():
+              res = {}
+              for r in ("/account", "/mi-cuenta", "/profile", "/perfil", "/orders", "/pedidos", "/mis-pedidos", "/dashboard", "/admin", "/logout"):
+                  d.get(BASE + r); time.sleep(2)
+                  res[r] = [d.current_url, d.title, d.execute_script("return document.body.innerText").strip()[:80]]
+              nota("rutas", res)
+          hacer("rutas", rutas)
+
+          # --- Sobre Nosotros --------------------------------------------------------------------
+          def acerca():
+              d.get(BASE + "/aboutus"); time.sleep(5)
+              nota("aboutus.iframes", d.execute_script("return [...document.querySelectorAll('iframe')].map(e=>[e.src.slice(0,120),e.offsetWidth,e.offsetHeight])"))
+              nota("aboutus.secciones", d.execute_script("return [...document.querySelectorAll('h2,h3')].map(e=>e.innerText)"))
+              guardar(d, "23_aboutus", [])
+              d.set_window_size(375, 667); time.sleep(2)
+              nota("aboutus.ancho_scroll_movil", d.execute_script("return [document.documentElement.scrollWidth, window.innerWidth]"))
+              guardar(d, "24_aboutus_movil", [])
+          hacer("aboutus", acerca)
+
+          # --- WhatsApp ---------------------------------------------------------------------------
+          def wa():
+              d.set_window_size(1920, 1080); d.get(BASE + "/"); time.sleep(4)
+              a = d.find_element(By.CSS_SELECTOR, "a.whatsapp-float")
+              nota("wa.href", a.get_attribute("href")); nota("wa.target", a.get_attribute("target")); nota("wa.rel", a.get_attribute("rel"))
+          hacer("wa", wa)
+          d.quit()
+
+          # --- móvil 375x667: menú hamburguesa -------------------------------------------------------
+          m = nuevo(375, 667)
+          def movil():
+              m.get(BASE + "/"); time.sleep(5)
+              nota("movil.hamburguesa", m.execute_script("var e=document.querySelector('.menu__hamburguer');return e?[e.offsetWidth,e.offsetHeight,getComputedStyle(e).display]:'no existe'"))
+              nota("movil.menu_links_visibles_antes", m.execute_script("var e=document.querySelector('.menu__links');var s=getComputedStyle(e);return [s.display,s.visibility,s.opacity,s.left,s.right,s.transform,e.offsetWidth,e.getBoundingClientRect().left]"))
+              guardar(m, "25_movil_antes", [".menu"])
+              h = m.find_element(By.CSS_SELECTOR, ".menu__hamburguer")
+              clic(m, h, "hamburguesa"); time.sleep(1.5)
+              nota("movil.menu_links_despues", m.execute_script("var e=document.querySelector('.menu__links');var s=getComputedStyle(e);return [s.display,s.visibility,s.opacity,s.left,s.right,s.transform,e.offsetWidth,e.getBoundingClientRect().left]"))
+              nota("movil.clase_menu", m.execute_script("return [document.querySelector('.menu').className, document.querySelector('.menu__links').className, document.body.className]"))
+              guardar(m, "26_movil_menu_abierto", [".menu"])
+              for op in ("Inicio", "Productos", "Sobre Nosotros", "Carrito", "Iniciar"):
+                  nota("movil.opcion_" + op, m.execute_script(
+                      "var op=arguments[0];var e=[...document.querySelectorAll('.menu__links a')].find(a=>(a.innerText||a.id||'').includes(op)||(op=='Iniciar'&&a.id=='login-button'));return e?[e.innerText.trim(),e.id,e.getAttribute('href'),e.offsetWidth+'x'+e.offsetHeight]:'no existe'", op))
+              prod = m.find_element(By.XPATH, "//ul[contains(@class,'menu__links')]//a[contains(.,'Productos')]")
+              clic(m, prod, "movil_productos"); time.sleep(1.5)
+              nota("movil.cat_visibles", m.execute_script("return [...document.querySelectorAll('.menu__nesting a')].map(e=>[e.innerText.trim(),e.offsetWidth>0])"))
+              guardar(m, "27_movil_productos", [".menu"])
+              m.get(BASE + "/"); time.sleep(4)
+              nota("movil.whatsapp", m.execute_script("var e=document.querySelector('a.whatsapp-float');return e?[e.offsetWidth,e.offsetHeight]:'no existe'"))
+              nota("movil.scroll_horizontal", m.execute_script("return [document.documentElement.scrollWidth, window.innerWidth]"))
+          hacer("movil", movil)
+          m.quit()
+
+          json.dump(notas, open(OUT + "/_notas.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print("FIN")
+          PY
+          python explorar_sitio2.py
+        continue-on-error: true
+
+      - name: Guardar resultado en el repositorio
+        if: always()
+        run: |
+          rm -f explorar_sitio2.py
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add explorar2
+          git commit -m "Resultado de la exploración 2" || echo "nada que guardar"
+          git pull --rebase || true
+          git push
