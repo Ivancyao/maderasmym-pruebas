@@ -1,0 +1,305 @@
+{
+ "scripts_src": [
+  "https://www.googletagmanager.com/gtag/js?id=G-X63BMSG51V&cx=c&gtm=4e6bh1",
+  "https://kit.fontawesome.com/43804ad595.js",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1020758030/?random=1795186039925&cv=11&fst=1795186039925&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9180484055za208zd9180484055xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~118131810~120213116~120385422~120469145~120469153~121246026~121246034&u_w=800&u_h=600&url=https%3A%2F%2Fwww.maderasmym.cl%2F&rcb=5&frm=0&tiba=Maderas%20MyM&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=400428602.1795186040&uaa=x86&uab=64&uafvl=Not-A.Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B157.0.8103.78%7CChromium%3B157.0.8103.78&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+  "https://www.maderasmym.cl/main.js",
+  "https://www.googletagmanager.com/gtag/js?id=AW-1020758030",
+  "https://www.googletagmanager.com/gtag/js?id=G-X63BMSG51V",
+  "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+ ],
+ "pdf_status": {
+  "/assets/lista-de-precios-2026.pdf": "200 application/pdf",
+  "/assets/informativo mym.pdf": "200 application/pdf",
+  "/assets/pino-insigne-seco-cepillado-tabla.pdf": "200 application/pdf"
+ },
+ "holiday_visible": [
+  "none",
+  "visible",
+  "1",
+  "holiday-backdrop"
+ ],
+ "num_tarjetas": 15,
+ "hamburguesa_visible": "0x0",
+ "02_busqueda_pino.tarjetas": 15,
+ "03_busqueda_sin_resultados.tarjetas": 0,
+ "04_busqueda_xss.tarjetas": 0,
+ "busq_vacia.validacion_html5": "Please fill out this field.",
+ "cat_bruto.clic_normal": "OK",
+ "cat_bruto.tarjetas": 15,
+ "cat_bruto.tipos": [
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto",
+  "Tipo: Bruto"
+ ],
+ "cat_cep.clic_normal": "OK",
+ "cat_cep_4m.clic_normal": "OK",
+ "cat_cep_4m.tarjetas": 16,
+ "cat_cep_4m.largos": [
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts.",
+  "Largo: 4.00 mts"
+ ],
+ "cat_Placas metalicas.ERROR": "NoSuchElementException",
+ "cat_Polines.clic_normal": "OK",
+ "cat_Polines.tarjetas": 0,
+ "cat_Treillage.clic_normal": "OK",
+ "cat_Treillage.tarjetas": 0,
+ "ficha.clic_normal": "OK",
+ "ficha.modales": [
+  "DIV#.holiday-modal vis=false",
+  "DIV#cartModal.modal vis=false",
+  "DIV#.modal-content vis=false",
+  "DIV#product-detail-modal.product-modal-backdrop is-open vis=true",
+  "DIV#.product-modal-content vis=true",
+  "BUTTON#.product-modal-close vis=true",
+  "DIV#.product-modal-grid vis=true",
+  "DIV#.product-modal-left vis=true",
+  "BUTTON#modal-product-zoom.product-modal-zoom vis=true",
+  "IMG#modal-product-img.product-modal-image vis=true",
+  "SPAN#.product-modal-zoom-hint vis=true",
+  "DIV#.product-modal-info vis=true",
+  "H2#modal-product-title. vis=true",
+  "DIV#modal-product-price.product-modal-price vis=true",
+  "DIV#.product-modal-specs vis=true",
+  "DIV#modal-product-type.spec-value vis=true",
+  "DIV#modal-product-measures.spec-value vis=true",
+  "DIV#modal-product-dims.spec-value vis=true",
+  "DIV#modal-product-stock.spec-value vis=true",
+  "DIV#.product-modal-desc vis=true",
+  "P#modal-product-description. vis=true",
+  "DIV#modal-product-actions.product-modal-actions vis=true"
+ ],
+ "carrito.contador_inicial": "0",
+ "carrito.producto": "Pino Oregón 3x6x3.20 mts.",
+ "agregar1.clic_normal": "OK",
+ "carrito.contador_tras_1": "1",
+ "abrir_carrito.clic_normal": "OK",
+ "agregar_mismo.clic_normal": "OK",
+ "carrito.contador_tras_mismo": "2",
+ "agregar_otro.clic_normal": "OK",
+ "carrito.contador_tras_otro": "3",
+ "abrir_carrito2.clic_normal": "OK",
+ "carrito.inventario_modal": [
+  "BUTTON|submit||||-|true",
+  "BUTTON|submit||||+|true",
+  "BUTTON|submit||remove-btn||Eliminar|true",
+  "BUTTON|submit||||-|true",
+  "BUTTON|submit||||+|true",
+  "BUTTON|submit||remove-btn||Eliminar|true",
+  "BUTTON|submit||||-|true",
+  "BUTTON|submit||||+|true",
+  "BUTTON|submit||remove-btn||Eliminar|true",
+  "INPUT|radio|delivery-shipping||delivery|envio|true",
+  "INPUT|radio|delivery-pickup||delivery|retiro|true",
+  "BUTTON|submit|generateOrder|cart-action-btn||GENERAR PEDIDO|true",
+  "BUTTON|submit|clear-cart-btn|cart-action-btn||VACIAR CARRITO|true"
+ ],
+ "carrito.total": "180.291",
+ "retiro.clic_normal": "OK",
+ "carrito.retiro_marcado": true,
+ "carrito.total_tras_retiro": "180.291",
+ "flete.clic_normal": "OK",
+ "carrito.flete_marcado": true,
+ "vaciar.clic_normal": "OK",
+ "carrito.alerta_vaciar": "sin alerta",
+ "carrito.contador_tras_vaciar": "0",
+ "carrito.total_tras_vaciar": "0",
+ "pedido_vacio.alerta": "Tu carrito está vacío.",
+ "login_vacio.validacion": "Please fill out this field.",
+ "19_forgot_correo_inexistente.validacion": "Please fill out this field.",
+ "20_forgot_vacio.validacion": "Please fill out this field.",
+ "registro.iframes": [],
+ "registro.turnstile": true,
+ "rutas": {
+  "/account": [
+   "https://www.maderasmym.cl/account",
+   "",
+   "Página no encontrada"
+  ],
+  "/mi-cuenta": [
+   "https://www.maderasmym.cl/mi-cuenta",
+   "",
+   "Página no encontrada"
+  ],
+  "/profile": [
+   "https://www.maderasmym.cl/login",
+   "Maderas M&M - Login",
+   "Iniciar sesión\n\n¡Ingresa a tu cuenta!\n\nUsuario o correo\nContraseña\n\n¿Olvidaste t"
+  ],
+  "/perfil": [
+   "https://www.maderasmym.cl/perfil",
+   "",
+   "Página no encontrada"
+  ],
+  "/orders": [
+   "https://www.maderasmym.cl/orders",
+   "",
+   "Página no encontrada"
+  ],
+  "/pedidos": [
+   "https://www.maderasmym.cl/pedidos",
+   "",
+   "Página no encontrada"
+  ],
+  "/mis-pedidos": [
+   "https://www.maderasmym.cl/mis-pedidos",
+   "",
+   "Página no encontrada"
+  ],
+  "/dashboard": [
+   "https://www.maderasmym.cl/dashboard",
+   "",
+   "Página no encontrada"
+  ],
+  "/admin": [
+   "https://www.maderasmym.cl/login",
+   "Maderas M&M - Login",
+   "Iniciar sesión\n\n¡Ingresa a tu cuenta!\n\nUsuario o correo\nContraseña\n\n¿Olvidaste t"
+  ],
+  "/logout": [
+   "https://www.maderasmym.cl/",
+   "Maderas MyM",
+   "¡Contáctanos!\nInicio\nProductos\nSobre Nosotros\nCarrito (\n0\n)\nCATEGORIAS\nPino Oreg"
+  ]
+ },
+ "aboutus.iframes": [
+  [
+   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6852179575494!2d-70.7193986234621!3d-33.43145019654093!2m3!1f",
+   367,
+   300
+  ]
+ ],
+ "aboutus.secciones": [
+  "Carrito de Compras",
+  "Una empresa familiar con tradición maderera",
+  "Nuestras Instalaciones",
+  "Productos para tu proyecto",
+  "Misión",
+  "Visión",
+  "Nuestro Equipo",
+  "Nuestros Valores",
+  "Pónganos a prueba",
+  "Sigamos en contacto!"
+ ],
+ "aboutus.ancho_scroll_movil": [
+  360,
+  375
+ ],
+ "wa.href": "https://wa.me/56976200646?text=Hola!%20Me%20gustar%C3%ADa%20consultar%20sobre%20sus%20productos",
+ "wa.target": "_blank",
+ "wa.rel": "noopener noreferrer",
+ "movil.hamburguesa": [
+  0,
+  0,
+  "flex"
+ ],
+ "movil.menu_links_visibles_antes": [
+  "flex",
+  "visible",
+  "1",
+  "auto",
+  "0px",
+  "none",
+  0,
+  0
+ ],
+ "hamburguesa.clic_normal": "FALLA: ElementNotInteractableException",
+ "movil.menu_links_despues": [
+  "flex",
+  "visible",
+  "1",
+  "auto",
+  "0px",
+  "none",
+  0,
+  0
+ ],
+ "movil.clase_menu": [
+  "menu",
+  "menu__links menu__links--show",
+  ""
+ ],
+ "movil.opcion_Inicio": [
+  "Inicio",
+  "",
+  "/",
+  "0x0"
+ ],
+ "movil.opcion_Productos": [
+  "Productos",
+  "",
+  "#",
+  "0x0"
+ ],
+ "movil.opcion_Sobre Nosotros": [
+  "Sobre Nosotros",
+  "",
+  "/aboutus",
+  "0x0"
+ ],
+ "movil.opcion_Carrito": [
+  "Carrito (0)",
+  "cart-link",
+  "#",
+  "0x0"
+ ],
+ "movil.opcion_Iniciar": [
+  "",
+  "login-button",
+  "/login",
+  "0x0"
+ ],
+ "movil_productos.clic_normal": "FALLA: ElementNotInteractableException",
+ "movil.cat_visibles": [
+  [
+   "Pino Oregón Bruto",
+   false
+  ],
+  [
+   "Pino Oregón Cepillado",
+   false
+  ],
+  [
+   "Placas metalicas",
+   false
+  ],
+  [
+   "Base",
+   false
+  ]
+ ],
+ "movil.whatsapp": [
+  229,
+  65
+ ],
+ "movil.scroll_horizontal": [
+  485,
+  500
+ ]
+}
