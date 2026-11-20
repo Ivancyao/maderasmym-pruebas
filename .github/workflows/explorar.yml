@@ -1,0 +1,173 @@
+name: Explorar sitio (HTML real)
+
+# Solo LEE www.maderasmym.cl: guarda el HTML y un inventario de campos/botones/enlaces.
+# Deja el resultado en la carpeta "explorar/" de este repositorio.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar Selenium
+        run: |
+          pip install selenium
+          google-chrome --version
+          echo "CHROMEDRIVER_PATH=$CHROMEWEBDRIVER/chromedriver" >> "$GITHUB_ENV"
+
+      - name: Explorar el sitio
+        run: |
+          cat > explorar_sitio.py <<'PY'
+          # Explorador del sitio: guarda el HTML renderizado, una captura y un inventario de
+          # campos/botones/enlaces de cada página. Solo LEE el sitio (no envía formularios).
+          import json, os, re, sys, time
+          from urllib.parse import urljoin, urlparse
+          from selenium import webdriver
+          from selenium.webdriver.chrome.options import Options
+          from selenium.webdriver.chrome.service import Service
+          from selenium.webdriver.common.by import By
+
+          BASE = os.environ.get("BASE_URL", "https://www.maderasmym.cl")
+          OUT = os.environ.get("OUT_DIR", "explorar")
+          DRIVER = os.environ.get("CHROMEDRIVER_PATH")
+          os.makedirs(OUT, exist_ok=True)
+
+          def nuevo_driver(ancho, alto):
+              o = Options()
+              for a in ("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu",
+                        "--remote-allow-origins=*", f"--window-size={ancho},{alto}"):
+                  o.add_argument(a)
+              return webdriver.Chrome(service=Service(DRIVER) if DRIVER else Service(), options=o)
+
+          INVENTARIO_JS = """
+          const t = s => (s||'').replace(/\\s+/g,' ').trim().slice(0,80);
+          const vis = e => !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+          const atr = (e, ks) => { const o = {}; ks.forEach(k => { const v = e.getAttribute(k); if (v) o[k] = v.slice(0,120); }); return o; };
+          return {
+            titulo: document.title, url: location.href,
+            inputs: [...document.querySelectorAll('input,textarea,select')].map(e => Object.assign({tag:e.tagName.toLowerCase(), visible:vis(e)}, atr(e,['type','name','id','placeholder','class','aria-label']))),
+            botones: [...document.querySelectorAll('button,input[type=submit],[role=button]')].map(e => Object.assign({texto:t(e.innerText||e.value), visible:vis(e)}, atr(e,['type','id','class','aria-label','data-bs-toggle','data-toggle']))),
+            enlaces: [...document.querySelectorAll('a[href]')].map(e => ({texto:t(e.innerText||e.getAttribute('aria-label')), href:e.getAttribute('href'), visible:vis(e), id:e.id||undefined, class:(e.className||'').toString().slice(0,80)})),
+            encabezados: [...document.querySelectorAll('h1,h2,h3')].map(e => t(e.innerText)).filter(Boolean).slice(0,30)
+          };
+          """
+
+          def slug(url):
+              p = urlparse(url)
+              s = (p.path.strip("/") + ("_" + p.query if p.query else "")) or "home"
+              return re.sub(r"[^A-Za-z0-9_-]+", "_", s)[:80]
+
+          def volcar(d, nombre):
+              time.sleep(4)
+              d.execute_script("window.scrollTo(0, 0)")
+              base = os.path.join(OUT, nombre)
+              open(base + ".html", "w", encoding="utf-8").write(d.page_source)
+              d.save_screenshot(base + ".png")
+              try:
+                  inv = d.execute_script(INVENTARIO_JS)
+              except Exception as e:
+                  inv = {"error": str(e)}
+              json.dump(inv, open(base + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+              return inv
+
+          def visitar(d, url, nombre=None):
+              try:
+                  d.get(url)
+                  return volcar(d, nombre or slug(url))
+              except Exception as e:
+                  print("ERROR", url, e)
+                  return {}
+
+          log = []
+          d = nuevo_driver(1920, 1080)
+          d.set_page_load_timeout(60)
+          home = visitar(d, BASE + "/", "home")
+          # enlaces internos descubiertos en la portada (máx. 45)
+          internos = []
+          for a in home.get("enlaces", []):
+              h = a.get("href") or ""
+              u = urljoin(BASE + "/", h)
+              if urlparse(u).netloc.endswith("maderasmym.cl") and not u.lower().endswith((".pdf", ".jpg", ".png", ".webp")) \
+                      and "#" not in h and u.rstrip("/") != BASE and u not in internos:
+                  internos.append(u)
+          fijas = [BASE + p for p in ("/login", "/register", "/forgot-password", "/aboutus",
+                                      "/reset-password?token=EXPIRADO123", "/cart", "/carrito", "/checkout",
+                                      "/producto/sin-stock-demo", "/categoria/sin-stock", "/account", "/perfil")]
+          visitadas = set()
+          for u in fijas + internos[:45]:
+              if u in visitadas:
+                  continue
+              visitadas.add(u)
+              inv = visitar(d, u)
+              log.append({"pedida": u, "final": inv.get("url"), "titulo": inv.get("titulo")})
+          # Segundo nivel: primer enlace de producto/categoría encontrado en cada página de categoría
+          productos = []
+          for u in internos[:45]:
+              if re.search(r"categor|producto|product|tienda|shop", u, re.I):
+                  try:
+                      d.get(u); time.sleep(3)
+                      for a in d.execute_script(INVENTARIO_JS).get("enlaces", []):
+                          hu = urljoin(BASE + "/", a.get("href") or "")
+                          if re.search(r"/producto|/product", hu, re.I) and hu not in productos:
+                              productos.append(hu)
+                  except Exception as e:
+                      print("ERROR sub", u, e)
+                  if len(productos) >= 4:
+                      break
+          for u in productos[:3]:
+              inv = visitar(d, u, "ficha_" + slug(u))
+              log.append({"pedida": u, "final": inv.get("url"), "titulo": inv.get("titulo")})
+          # Intento de agregar al carrito (solo clic en 'Agregar'; no se genera ningún pedido)
+          if productos:
+              try:
+                  d.get(productos[0]); time.sleep(4)
+                  for e in d.find_elements(By.XPATH, "//button[contains(translate(.,'AGREGAR','agregar'),'agregar')]"):
+                      if e.is_displayed():
+                          e.click(); time.sleep(4); break
+                  volcar(d, "tras_agregar_al_carrito")
+                  for ruta in ("/cart", "/carrito", "/checkout"):
+                      visitar(d, BASE + ruta, "post_agregar_" + slug(ruta))
+              except Exception as e:
+                  print("ERROR carrito", e)
+          # Búsqueda: se busca un texto en la portada
+          try:
+              d.get(BASE + "/"); time.sleep(4)
+              campos = [i for i in d.find_elements(By.XPATH, "//input[@type='search' or contains(@placeholder,'uscar') or contains(@name,'search') or contains(@name,'q')]") if i.is_displayed()]
+              if campos:
+                  campos[0].send_keys("pino\n"); time.sleep(5)
+                  volcar(d, "busqueda_pino")
+          except Exception as e:
+              print("ERROR busqueda", e)
+          d.quit()
+          # Vista móvil (menú hamburguesa)
+          m = nuevo_driver(390, 844)
+          m.set_page_load_timeout(60)
+          visitar(m, BASE + "/", "movil_home")
+          try:
+              for e in m.find_elements(By.XPATH, "//button[contains(@class,'toggler') or contains(@aria-label,'enu') or contains(@class,'hamburg') or contains(@class,'menu')]"):
+                  if e.is_displayed():
+                      e.click(); time.sleep(2); volcar(m, "movil_menu_abierto"); break
+          except Exception as e:
+              print("ERROR movil", e)
+          m.quit()
+          json.dump(log, open(os.path.join(OUT, "_indice.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print("Páginas volcadas:", len(os.listdir(OUT)) // 3)
+          PY
+          python explorar_sitio.py
+        continue-on-error: true
+
+      - name: Guardar resultado en el repositorio
+        if: always()
+        run: |
+          rm -f explorar_sitio.py
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add explorar
+          git commit -m "Resultado de la exploración del sitio" || echo "nada que guardar"
+          git push
