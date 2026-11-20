@@ -1,0 +1,161 @@
+{
+ "botones": [],
+ "encabezados": [
+  "Carrito de Compras",
+  "Maderas MyM",
+  "Una empresa familiar con tradición maderera",
+  "Nuestras Instalaciones",
+  "Productos para tu proyecto",
+  "Misión",
+  "Visión",
+  "Nuestro Equipo",
+  "Nuestros Valores",
+  "Pónganos a prueba",
+  "Sigamos en contacto!"
+ ],
+ "enlaces": [
+  {
+   "class": "menu__link",
+   "href": "/",
+   "id": null,
+   "texto": "Inicio",
+   "visible": true
+  },
+  {
+   "class": "menu__link ",
+   "href": "#",
+   "id": null,
+   "texto": "Productos",
+   "visible": true
+  },
+  {
+   "class": "menu__link menu__link--inside category-link",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Bruto",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link ",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Cepillado",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link ",
+   "href": "#",
+   "id": null,
+   "texto": "Placas metalicas",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link",
+   "href": "#",
+   "id": null,
+   "texto": "Base",
+   "visible": false
+  },
+  {
+   "class": "menu__link",
+   "href": "/aboutus",
+   "id": null,
+   "texto": "Sobre Nosotros",
+   "visible": true
+  },
+  {
+   "class": "menu__link",
+   "href": "/login",
+   "id": "login-button",
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "menu__link",
+   "href": "#",
+   "id": "cart-link",
+   "texto": "Carrito ( 0 )",
+   "visible": true
+  },
+  {
+   "class": "btn btn--primary",
+   "href": "https://wa.me/56976200646",
+   "id": null,
+   "texto": "Contactar por WhatsApp",
+   "visible": true
+  },
+  {
+   "class": "btn btn--secondary",
+   "href": "/",
+   "id": null,
+   "texto": "Ver Productos",
+   "visible": true
+  },
+  {
+   "class": "whatsapp-button",
+   "href": "https://wa.me/56976200646",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Inicio",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Productos",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Ofertas",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Sobre Nosotros",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.instagram.com/maderas.mym/",
+   "id": null,
+   "texto": "Instagram",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.facebook.com/p/Maderasmym-100078728776091/",
+   "id": null,
+   "texto": "Facebook",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.tiktok.com/@maderas.m.y.m",
+   "id": null,
+   "texto": "TikTok",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://wa.me/56976200646",
+   "id": null,
+   "texto": "WhatsApp",
+   "visible": true
+  }
+ ],
+ "inputs": [],
+ "titulo": "Sobre Nosotros | Maderas M&M",
+ "url": "https://www.maderasmym.cl/aboutus"
+}

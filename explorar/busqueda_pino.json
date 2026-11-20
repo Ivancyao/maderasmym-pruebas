@@ -1,0 +1,719 @@
+{
+ "botones": [
+  {
+   "class": "cart-back-btn",
+   "id": "cart-back-btn",
+   "texto": "",
+   "visible": false
+  },
+  {
+   "class": "btn-generate-order",
+   "id": "fs-generate-order",
+   "texto": "Generar Pedido",
+   "visible": false
+  },
+  {
+   "class": "btn-clear-cart",
+   "id": "fs-clear-cart",
+   "texto": "Vaciar Carrito",
+   "visible": false
+  },
+  {
+   "aria-label": "Cerrar aviso",
+   "class": "holiday-close",
+   "id": "holiday-x",
+   "texto": "×",
+   "visible": false
+  },
+  {
+   "class": "holiday-btn ghost",
+   "id": "holiday-more",
+   "texto": "Más tarde",
+   "visible": false
+  },
+  {
+   "class": "holiday-btn primary",
+   "id": "holiday-ok",
+   "texto": "Entendido",
+   "visible": false
+  },
+  {
+   "class": "cart-action-btn",
+   "id": "generateOrder",
+   "texto": "Generar pedido",
+   "visible": false
+  },
+  {
+   "class": "cart-action-btn",
+   "id": "clear-cart-btn",
+   "texto": "Vaciar carrito",
+   "visible": false
+  },
+  {
+   "class": "search-btn",
+   "texto": "",
+   "type": "submit",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "texto": "« Anterior",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "class": "active",
+   "texto": "1",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "texto": "2",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "texto": "3",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "texto": "12",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "texto": "Siguiente »",
+   "type": "button",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "class": "add-btn",
+   "texto": "AGREGAR AL CARRITO",
+   "visible": true
+  },
+  {
+   "aria-label": "Cerrar",
+   "class": "product-modal-close",
+   "texto": "×",
+   "visible": false
+  },
+  {
+   "aria-label": "Ampliar foto",
+   "class": "product-modal-zoom",
+   "id": "modal-product-zoom",
+   "texto": "Ampliar",
+   "type": "button",
+   "visible": false
+  },
+  {
+   "aria-label": "Cerrar foto",
+   "class": "product-lightbox-close",
+   "texto": "×",
+   "type": "button",
+   "visible": false
+  }
+ ],
+ "encabezados": [
+  "Carrito de Compras",
+  "Tu carrito está vacío",
+  "Método de entrega",
+  "Comentarios",
+  "¡Felices Fiestas Patrias!",
+  "Carrito de Compras",
+  "Método de entrega",
+  "Comentarios",
+  "Total: $0",
+  "CATEGORIAS",
+  "Productos Destacados",
+  "Sigamos en contacto!"
+ ],
+ "enlaces": [
+  {
+   "class": "",
+   "href": "/",
+   "id": null,
+   "texto": "",
+   "visible": false
+  },
+  {
+   "class": "mobile-header-login",
+   "href": "/login",
+   "id": "mobile-login-link",
+   "texto": "",
+   "visible": false
+  },
+  {
+   "class": "mobile-header-cart",
+   "href": "#",
+   "id": "mobile-cart-link",
+   "texto": "Carrito 0",
+   "visible": false
+  },
+  {
+   "class": "whatsapp-float",
+   "href": "https://wa.me/56976200646?text=Hola!%20Me%20gustaría%20consultar%20sobre%20sus%20productos",
+   "id": null,
+   "texto": "¡Contáctanos!",
+   "visible": true
+  },
+  {
+   "class": "menu__link",
+   "href": "/",
+   "id": null,
+   "texto": "Inicio",
+   "visible": true
+  },
+  {
+   "class": "menu__link ",
+   "href": "#",
+   "id": null,
+   "texto": "Productos",
+   "visible": true
+  },
+  {
+   "class": "menu__link menu__link--inside category-link",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Bruto",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link ",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Cepillado",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link ",
+   "href": "#",
+   "id": null,
+   "texto": "Placas metalicas",
+   "visible": false
+  },
+  {
+   "class": "menu__link menu__link--inside category-link",
+   "href": "#",
+   "id": null,
+   "texto": "Base",
+   "visible": false
+  },
+  {
+   "class": "menu__link",
+   "href": "/aboutus",
+   "id": null,
+   "texto": "Sobre Nosotros",
+   "visible": true
+  },
+  {
+   "class": "menu__link",
+   "href": "/login",
+   "id": "login-button",
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "menu__link",
+   "href": "#",
+   "id": "cart-link",
+   "texto": "Carrito ( 0 )",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc3",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc2",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc1",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc3",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc2",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "#itemc1",
+   "id": null,
+   "texto": "",
+   "visible": true
+  },
+  {
+   "class": "mobile-action-btn btn-precios",
+   "href": "assets/lista-de-precios-2026.pdf",
+   "id": null,
+   "texto": "Lista de Precios",
+   "visible": false
+  },
+  {
+   "class": "mobile-action-btn btn-catalogo",
+   "href": "assets/informativo mym.pdf",
+   "id": null,
+   "texto": "Informativo Maderas (PDF)",
+   "visible": false
+  },
+  {
+   "class": "mobile-action-btn btn-insigne",
+   "href": "assets/pino-insigne-seco-cepillado-tabla.pdf",
+   "id": null,
+   "texto": "Pino Insigne Seco Cepillado Tabla",
+   "visible": false
+  },
+  {
+   "class": "category-link toggle-submenu",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Bruto",
+   "visible": true
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "2.50 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "3.20 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "4.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "5.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "6.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "7.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "8.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "9.00 mts",
+   "visible": false
+  },
+  {
+   "class": "category-link toggle-submenu",
+   "href": "#",
+   "id": null,
+   "texto": "Pino Oregón Cepillado",
+   "visible": true
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "2.50 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "3.20 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "4.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "5.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "6.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "7.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "8.00 mts",
+   "visible": false
+  },
+  {
+   "class": "submenu-link medida-link",
+   "href": "#",
+   "id": null,
+   "texto": "9.00 mts",
+   "visible": false
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Base metalica",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Base de piedra",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Cielo Elaborado",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Planchas Osb",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Polines",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Protectores y barníz",
+   "visible": true
+  },
+  {
+   "class": "category-link toggle-submenu",
+   "href": "#",
+   "id": null,
+   "texto": "Terciados",
+   "visible": true
+  },
+  {
+   "class": "submenu-link simple-subcategory",
+   "href": "#",
+   "id": null,
+   "texto": "Terciado estructural",
+   "visible": false
+  },
+  {
+   "class": "submenu-link simple-subcategory",
+   "href": "#",
+   "id": null,
+   "texto": "Terciado ranurado",
+   "visible": false
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Treillage",
+   "visible": true
+  },
+  {
+   "class": "category-link simple-category",
+   "href": "#",
+   "id": null,
+   "texto": "Vitrificante de pisos",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/assets/lista-de-precios-2026.pdf",
+   "id": null,
+   "texto": "Lista de Precios 2026 (PDF)",
+   "visible": true
+  },
+  {
+   "class": "catalog-link",
+   "href": "assets/informativo mym.pdf",
+   "id": null,
+   "texto": "Informativo Maderas (PDF)",
+   "visible": true
+  },
+  {
+   "class": "catalog-link catalog-link--insigne",
+   "href": "assets/pino-insigne-seco-cepillado-tabla.pdf",
+   "id": null,
+   "texto": "Pino Insigne Seco Cepillado Tabla",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Inicio",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Productos",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Ofertas",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/#",
+   "id": null,
+   "texto": "Sobre Nosotros",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.instagram.com/maderas.mym/",
+   "id": null,
+   "texto": "Instagram",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.facebook.com/p/Maderasmym-100078728776091/",
+   "id": null,
+   "texto": "Facebook",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://www.tiktok.com/@maderas.m.y.m",
+   "id": null,
+   "texto": "TikTok",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "https://wa.me/56976200646",
+   "id": null,
+   "texto": "WhatsApp",
+   "visible": true
+  }
+ ],
+ "inputs": [
+  {
+   "id": "fs-delivery-shipping",
+   "name": "fs-delivery",
+   "tag": "input",
+   "type": "radio",
+   "visible": false
+  },
+  {
+   "id": "fs-delivery-pickup",
+   "name": "fs-delivery",
+   "tag": "input",
+   "type": "radio",
+   "visible": false
+  },
+  {
+   "id": "fs-order-comments",
+   "placeholder": "¿Algún detalle importante para tu pedido? (Opcional)",
+   "tag": "textarea",
+   "visible": false
+  },
+  {
+   "id": "holiday-dontshow",
+   "tag": "input",
+   "type": "checkbox",
+   "visible": false
+  },
+  {
+   "id": "delivery-shipping",
+   "name": "delivery",
+   "tag": "input",
+   "type": "radio",
+   "visible": false
+  },
+  {
+   "id": "delivery-pickup",
+   "name": "delivery",
+   "tag": "input",
+   "type": "radio",
+   "visible": false
+  },
+  {
+   "id": "order-comments",
+   "placeholder": "¿Algún detalle importante para tu pedido? (Opcional)",
+   "tag": "textarea",
+   "visible": false
+  },
+  {
+   "id": "search-input",
+   "name": "search",
+   "placeholder": "Buscar productos, medidas, categorías…",
+   "tag": "input",
+   "type": "search",
+   "visible": true
+  }
+ ],
+ "titulo": "Maderas MyM",
+ "url": "https://www.maderasmym.cl/"
+}

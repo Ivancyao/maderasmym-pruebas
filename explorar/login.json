@@ -1,0 +1,76 @@
+{
+ "botones": [
+  {
+   "texto": "Iniciar sesión",
+   "type": "submit",
+   "visible": true
+  },
+  {
+   "class": "linklike",
+   "id": "btn-resend",
+   "texto": "Reenviar verificación",
+   "type": "button",
+   "visible": false
+  }
+ ],
+ "encabezados": [
+  "Iniciar sesión"
+ ],
+ "enlaces": [
+  {
+   "class": "auth-logo-link",
+   "href": "/",
+   "id": null,
+   "texto": "Volver al inicio",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/forgot-password",
+   "id": "forgot-link",
+   "texto": "¿Olvidaste tu contraseña?",
+   "visible": true
+  },
+  {
+   "class": "btn-google",
+   "href": "/auth/google",
+   "id": null,
+   "texto": "Continuar con Google",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/register",
+   "id": null,
+   "texto": "Regístrate",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/",
+   "id": null,
+   "texto": "← Volver a la tienda",
+   "visible": true
+  }
+ ],
+ "inputs": [
+  {
+   "id": "user",
+   "name": "user",
+   "placeholder": "Tu nombre de usuario o correo",
+   "tag": "input",
+   "type": "text",
+   "visible": true
+  },
+  {
+   "id": "password",
+   "name": "password",
+   "placeholder": "Tu contraseña",
+   "tag": "input",
+   "type": "password",
+   "visible": true
+  }
+ ],
+ "titulo": "Maderas M&M - Login",
+ "url": "https://www.maderasmym.cl/login"
+}

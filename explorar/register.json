@@ -1,0 +1,86 @@
+{
+ "botones": [
+  {
+   "texto": "Crear cuenta",
+   "type": "submit",
+   "visible": true
+  }
+ ],
+ "encabezados": [
+  "Crear cuenta"
+ ],
+ "enlaces": [
+  {
+   "class": "auth-logo-link",
+   "href": "/",
+   "id": null,
+   "texto": "Volver al inicio",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/login",
+   "id": null,
+   "texto": "Inicia sesión",
+   "visible": true
+  },
+  {
+   "class": "",
+   "href": "/",
+   "id": null,
+   "texto": "← Volver a la tienda",
+   "visible": true
+  }
+ ],
+ "inputs": [
+  {
+   "id": "user",
+   "name": "user",
+   "placeholder": "Nombre de usuario",
+   "tag": "input",
+   "type": "text",
+   "visible": true
+  },
+  {
+   "id": "email",
+   "name": "email",
+   "placeholder": "tu@correo.com",
+   "tag": "input",
+   "type": "email",
+   "visible": true
+  },
+  {
+   "id": "password",
+   "name": "password",
+   "placeholder": "Contraseña",
+   "tag": "input",
+   "type": "password",
+   "visible": true
+  },
+  {
+   "id": "password2",
+   "name": "password2",
+   "placeholder": "Repite la contraseña",
+   "tag": "input",
+   "type": "password",
+   "visible": true
+  },
+  {
+   "id": "number",
+   "name": "number",
+   "placeholder": "+56 9 12345678",
+   "tag": "input",
+   "type": "tel",
+   "visible": true
+  },
+  {
+   "id": "cf-chl-widget-qb6xf_response",
+   "name": "cf-turnstile-response",
+   "tag": "input",
+   "type": "hidden",
+   "visible": false
+  }
+ ],
+ "titulo": "Maderas MyM - Registro",
+ "url": "https://www.maderasmym.cl/register"
+}

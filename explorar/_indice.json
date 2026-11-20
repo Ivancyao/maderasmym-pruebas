@@ -1,0 +1,62 @@
+[
+ {
+  "pedida": "https://www.maderasmym.cl/login",
+  "final": "https://www.maderasmym.cl/login",
+  "titulo": "Maderas M&M - Login"
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/register",
+  "final": "https://www.maderasmym.cl/register",
+  "titulo": "Maderas MyM - Registro"
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/forgot-password",
+  "final": "https://www.maderasmym.cl/forgot-password",
+  "titulo": "Maderas M&M - Recuperar contraseña"
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/aboutus",
+  "final": "https://www.maderasmym.cl/aboutus",
+  "titulo": "Sobre Nosotros | Maderas M&M"
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/reset-password?token=EXPIRADO123",
+  "final": "https://www.maderasmym.cl/reset-password?token=EXPIRADO123",
+  "titulo": "Maderas M&M - Nueva contraseña"
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/cart",
+  "final": "https://www.maderasmym.cl/cart",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/carrito",
+  "final": "https://www.maderasmym.cl/carrito",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/checkout",
+  "final": "https://www.maderasmym.cl/checkout",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/producto/sin-stock-demo",
+  "final": "https://www.maderasmym.cl/producto/sin-stock-demo",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/categoria/sin-stock",
+  "final": "https://www.maderasmym.cl/categoria/sin-stock",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/account",
+  "final": "https://www.maderasmym.cl/account",
+  "titulo": ""
+ },
+ {
+  "pedida": "https://www.maderasmym.cl/perfil",
+  "final": "https://www.maderasmym.cl/perfil",
+  "titulo": ""
+ }
+]
