@@ -74,6 +74,9 @@ public class Utility {
 			String ruta = CARPETA_EVIDENCIAS + "/" + sanear(escenario.getName()) + "/paso"
 					+ numeroPaso + "_" + estado + "_" + GetTimeStampValue() + ".png";
 			captureScreenShot(driver, ruta);
+			if (escenario.isFailed()) {
+				diagnostico("[captura FALLA] " + sanear(escenario.getName()) + " paso" + numeroPaso + ": " + describirVentana(driver));
+			}
 			// Deja la ruta de la evidencia dentro del reporte de Cucumber (JSON / HTML)
 			escenario.log("Evidencia: " + ruta);
 			if (escenario.isFailed()) {
@@ -109,6 +112,29 @@ public class Utility {
 		resultado("NO EJECUTADO - " + motivo);
 	}
 
+	/** Agrega una linea de diagnostico al archivo entorno.txt (se sube junto con los resultados). */
+	public static void diagnostico(String linea) {
+		System.out.println(linea);
+		try {
+			java.io.FileWriter fw = new java.io.FileWriter("entorno.txt", true);
+			fw.write(linea + System.lineSeparator());
+			fw.close();
+		} catch (Exception e) {
+			// el diagnostico es opcional
+		}
+	}
+
+	/** Describe el tamano de ventana y de viewport que ve el navegador (para diagnostico). */
+	public static String describirVentana(WebDriver driver) {
+		try {
+			Object r = ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+					"return 'inner=' + window.innerWidth + 'x' + window.innerHeight + ' outer=' + window.outerWidth + 'x' + window.outerHeight + ' dpr=' + window.devicePixelRatio + ' screen=' + screen.width + 'x' + screen.height;");
+			return String.valueOf(r) + " ventana=" + driver.manage().window().getSize();
+		} catch (Exception e) {
+			return "no disponible (" + e.getMessage() + ")";
+		}
+	}
+
 	/** Ancho real del viewport (window.innerWidth) o -1 si no se puede leer. */
 	public static long anchoViewport(WebDriver driver) {
 		try {
@@ -131,7 +157,7 @@ public class Utility {
 			java.net.URL url = new java.net.URL(base.toString().replaceAll("/+$", "") + "/session/"
 					+ rwd.getSessionId() + "/goog/cdp/execute");
 			String cuerpo = "{\"cmd\":\"Emulation.setDeviceMetricsOverride\",\"params\":{\"width\":" + ancho
-					+ ",\"height\":" + alto + ",\"deviceScaleFactor\":1,\"mobile\":false}}";
+					+ ",\"height\":" + alto + ",\"deviceScaleFactor\":1,\"mobile\":false,\"screenWidth\":" + ancho + ",\"screenHeight\":" + alto + "}}";
 			java.net.HttpURLConnection con = (java.net.HttpURLConnection) url.openConnection();
 			con.setRequestMethod("POST");
 			con.setDoOutput(true);
@@ -157,18 +183,20 @@ public class Utility {
 			driver.manage().window().maximize();
 			return;
 		}
-		if (anchoViewport(driver) >= 1200) {
-			return;
-		}
-		try {
-			driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
-		} catch (Exception e) {
-			System.out.println("setSize no disponible: " + e.getMessage());
+		String log = "[viewport] inicial: " + describirVentana(driver);
+		if (anchoViewport(driver) < 1200) {
+			try {
+				driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+			} catch (Exception e) {
+				log += " | setSize error: " + e.getMessage();
+			}
+			log += " | tras setSize: " + describirVentana(driver);
 		}
 		if (anchoViewport(driver) < 1200) {
-			fijarViewportCdp(driver, 1366, 768);
+			boolean ok = fijarViewportCdp(driver, 1366, 768);
+			log += " | tras CDP (" + ok + "): " + describirVentana(driver);
 		}
-		System.out.println("Viewport de escritorio efectivo: " + anchoViewport(driver) + " px de ancho");
+		diagnostico(log);
 	}
 
 	private static ChromeOptions opcionesBase() {
