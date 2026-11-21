@@ -1,0 +1,4 @@
+Google Chrome 157.0.8103.78 
+chromedriver: ChromeDriver 157.0.8103.78 (4b3d0dabb8250b6f152d2d85d79e7706e309d087-refs/branch-heads/8103@{#1573})
+Fecha: 2026-11-21T23:00:55Z
+Respuesta HTTP de www.maderasmym.cl: 200

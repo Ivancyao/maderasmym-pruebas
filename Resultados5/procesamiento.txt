@@ -1,0 +1,51 @@
+
+=== RESUMEN DE EJECUCIÓN ===
+Escenarios (CP) con resultados : 60 de 60
+PASA                           : 22
+NO PASA                        : 29
+NO EJECUTADOS (bloqueados)     : 9
+Sin resultados (pendientes)    : 0
+Pasos exitosos / totales       : 127 / 217 (58.5 %)
+
+CP que NO pasan (revisar la captura del paso en la carpeta 'evidencias'):
+  CP1   [No ejecutado] el envio de datos validos crearia una cuenta real en el sitio de la empresa y el formulario exige ademas resolver un CAPTCHA (Cloudflare Turnstile), que no se puede automatizar
+  CP2   [Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene "mínimo 8 caracteres"»: java.lang.AssertionError: NO PASA - Registro de usuario: se esperaba un mensaje con "mínimo 8 caracteres" y el sitio mostro "La contraseña debe incluir mayúscula, minúscula, número y símbolo (mín. 8)."
+  CP4   [No ejecutado] el formulario exige resolver el CAPTCHA (Cloudflare Turnstile) antes de enviar; mensaje del sitio: "Completa la verificación "No soy un robot" antes de continuar."
+  CP5   [No ejecutado] no se dispone de una cuenta verificada para iniciar sesion (el registro exige CAPTCHA y no se crean cuentas reales); el sitio respondio "Credenciales inválidas"
+  CP6   [Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene "contraseña incorrecta"»: java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con "contraseña incorrecta" y el sitio mostro "Credenciales inválidas"
+  CP7   [Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene "no existe"»: java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con "no existe" y el sitio mostro "Credenciales inválidas"
+  CP8   [No ejecutado] el boton "Reenviar verificacion" solo aparece tras iniciar sesion con una cuenta registrada y sin verificar (error EMAIL_NOT_VERIFIED); no se puede crear esa cuenta porque el registro exige CAPTCHA y generaria datos re…
+  CP10  [Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene "no está registrado"»: java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con "no está registrado" y el sitio mostro "Si la cuenta existe, te enviamos un enlace. Revisa tu correo (también spam/promociones)."
+  CP11  [Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene "obligatorio"»: java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con "obligatorio" y el sitio mostro "Ingresa tu correo o nombre de usuario."
+  CP14  [No ejecutado] requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)
+  CP15  [No ejecutado] requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)
+  CP21  [Elemento no interactuable] Falla en el paso «Cuando selecciona "Pino Oregón Bruto"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP22  [Elemento no interactuable] Falla en el paso «Cuando despliega la categoría "Pino Oregón Cepillado" y selecciona la medida "4.00 mts"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP23  [Elemento no interactuable] Falla en el paso «Cuando navega a la categoría "Pino Oregón Bruto" y revisa el listado de productos desplegado»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP24  [Elemento no interactuable] Falla en el paso «Cuando accede a una categoría sin productos disponibles»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP26  [No ejecutado] el catalogo publicado no tiene en este momento ningun producto con disponibilidad 0 ()
+  CP30  [Resultado distinto del esperado] Falla en el paso «Entonces el sistema responde de forma "error de stock insuficiente"»: java.lang.AssertionError: NO PASA - El sitio permitio llevar 79 unidades de un producto con stock 78 (no limita la cantidad al stock)
+  CP32  [Elemento no interactuable] Falla en el paso «Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP33  [Elemento no interactuable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP34  [Elemento no interactuable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP35  [Elemento no interactuable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP36  [Elemento no interactuable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP37  [Elemento no interactuable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP38  [Elemento no interactuable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP39  [Elemento no interactuable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP40  [Elemento no interactuable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP41  [No ejecutado] generar un pedido exitoso exige sesion iniciada (el sitio responde 401 y pide ir al login) y crearia un pedido real en el sitio de la empresa
+  CP42  [Elemento no interactuable] Falla en el paso «Cuando el usuario presiona "Generar Pedido"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP43  [Elemento no interactuable] Falla en el paso «Dado que el carrito contiene productos pero no se ha seleccionado método de entrega»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP44  [No ejecutado] requiere generar un pedido real con una sesion iniciada, lo que no se hace en el sitio de la empresa
+  CP45  [Resultado distinto del esperado] Falla en el paso «Cuando presiona el enlace "Lista de Precios 2026 (PDF)"»: java.lang.AssertionError: NO PASA - No hay un enlace visible con el texto "Lista de Precios 2026 (PDF)"
+  CP53  [Elemento no interactuable] Falla en el paso «Dado que un usuario accede al menú "Sobre Nosotros"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP54  [Elemento no interactuable] Falla en el paso «Dado que un usuario accede al menú "Sobre Nosotros"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP55  [Elemento no interactuable] Falla en el paso «Dado que un usuario accede al menú "Sobre Nosotros"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP56  [Elemento no interactuable] Falla en el paso «Dado que un usuario accede al menú "Sobre Nosotros"»: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  CP57  [Resultado distinto del esperado] Falla en el paso «Cuando presiona el ícono de menú hamburguesa»: java.lang.AssertionError: NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)
+  CP58  [Resultado distinto del esperado] Falla en el paso «Cuando el usuario selecciona "Productos"»: java.lang.AssertionError: NO PASA - La opcion "Productos" no esta visible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)
+  CP60  [5 filas de Ejemplos] [Resultado distinto del esperado] Falla en el paso «Cuando el usuario presiona la opción "Productos"»: java.lang.AssertionError: NO PASA - La opcion "Productos" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)
+
+Planilla actualizada: planilla/Planilla_Escenarios_Resultados_MaderasMyM.xlsx
+Resumen JSON         : resumen_resultados.json
