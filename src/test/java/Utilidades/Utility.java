@@ -109,16 +109,66 @@ public class Utility {
 		resultado("NO EJECUTADO - " + motivo);
 	}
 
+	/** Ancho real del viewport (window.innerWidth) o -1 si no se puede leer. */
+	public static long anchoViewport(WebDriver driver) {
+		try {
+			Object r = ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return window.innerWidth;");
+			return ((Number) r).longValue();
+		} catch (Exception e) {
+			return -1;
+		}
+	}
+
 	/**
-	 * Deja la ventana en tamano de escritorio. Con ventana visible (ejecucion local) se maximiza. En
-	 * Chrome sin pantalla (headless) el tamano de escritorio (1366x768) ya se fija al crear el navegador
-	 * mediante emulacion de dispositivo (ver opcionesBase), porque maximize()/--window-size no son
-	 * confiables en headless (la ventana quedaba en ~800x457 y el sitio mostraba su diseno de tablet).
+	 * Fija el viewport de escritorio con el protocolo de depuracion de Chrome (CDP), a traves del
+	 * endpoint /goog/cdp/execute de chromedriver. Es la via mas confiable en Chrome sin pantalla.
+	 */
+	public static boolean fijarViewportCdp(WebDriver driver, int ancho, int alto) {
+		try {
+			org.openqa.selenium.remote.RemoteWebDriver rwd = (org.openqa.selenium.remote.RemoteWebDriver) driver;
+			java.net.URL base = ((org.openqa.selenium.remote.HttpCommandExecutor) rwd.getCommandExecutor())
+					.getAddressOfRemoteServer();
+			java.net.URL url = new java.net.URL(base.toString().replaceAll("/+$", "") + "/session/"
+					+ rwd.getSessionId() + "/goog/cdp/execute");
+			String cuerpo = "{\"cmd\":\"Emulation.setDeviceMetricsOverride\",\"params\":{\"width\":" + ancho
+					+ ",\"height\":" + alto + ",\"deviceScaleFactor\":1,\"mobile\":false}}";
+			java.net.HttpURLConnection con = (java.net.HttpURLConnection) url.openConnection();
+			con.setRequestMethod("POST");
+			con.setDoOutput(true);
+			con.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+			con.getOutputStream().write(cuerpo.getBytes("UTF-8"));
+			int codigo = con.getResponseCode();
+			con.disconnect();
+			return codigo == 200;
+		} catch (Exception e) {
+			System.out.println("No se pudo fijar el viewport por CDP: " + e.getMessage());
+			return false;
+		}
+	}
+
+	/**
+	 * Deja el navegador con viewport de escritorio. Con ventana visible (ejecucion local) se maximiza.
+	 * En Chrome sin pantalla (headless) maximize()/--window-size no son confiables (la ventana queda en
+	 * ~800x457 y el sitio muestra su diseno de tablet), por eso se verifica el ancho real y, si es
+	 * menor a 1200 px, se prueba setSize y luego el viewport por CDP.
 	 */
 	public static void ajustarVentana(WebDriver driver) {
 		if (!"true".equalsIgnoreCase(System.getenv("HEADLESS"))) {
 			driver.manage().window().maximize();
+			return;
 		}
+		if (anchoViewport(driver) >= 1200) {
+			return;
+		}
+		try {
+			driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+		} catch (Exception e) {
+			System.out.println("setSize no disponible: " + e.getMessage());
+		}
+		if (anchoViewport(driver) < 1200) {
+			fijarViewportCdp(driver, 1366, 768);
+		}
+		System.out.println("Viewport de escritorio efectivo: " + anchoViewport(driver) + " px de ancho");
 	}
 
 	private static ChromeOptions opcionesBase() {
