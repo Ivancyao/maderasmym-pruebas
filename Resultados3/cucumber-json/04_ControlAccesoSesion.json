@@ -1,0 +1,516 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2026-11-21T22:15:21.630Z",
+        "before": [
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Bloqueo de acceso a datos de cuenta sin sesión iniciada",
+        "description": "",
+        "id": "control-de-acceso-y-seguridad-de-sesión;bloqueo-de-acceso-a-datos-de-cuenta-sin-sesión-iniciada",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1491000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "que un usuario no ha iniciado sesión",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_no_ha_iniciado_sesion()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261121_221523_496.png"
+                ],
+                "result": {
+                  "duration": 160000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 936000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "intenta acceder directamente a la sección \"Mi cuenta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mi cuenta\"",
+                  "offset": 42
+                }
+              ],
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.intenta_acceder_directamente_a_la_seccion(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261121_221524_592.png"
+                ],
+                "result": {
+                  "duration": 88000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "el sistema lo redirige a la página de \"Iniciar sesión\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Iniciar sesión\"",
+                  "offset": 38
+                }
+              ],
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.el_sistema_lo_redirige_a_la_pagina_de(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261121_221524_685.png"
+                ],
+                "result": {
+                  "duration": 74000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP13"
+          },
+          {
+            "name": "@RQ-01"
+          },
+          {
+            "name": "@seguridad"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T22:15:24.844Z",
+        "before": [
+          {
+            "result": {
+              "duration": 351000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Cierre de sesión exitoso",
+        "description": "",
+        "id": "control-de-acceso-y-seguridad-de-sesión;cierre-de-sesión-exitoso",
+        "after": [
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)\n\tat Utilidades.Utility.resultado(Utility.java:98)\n\tat Utilidades.Utility.noEjecutado(Utility.java:109)\n\tat DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada(PasosControlAccesoSesion.java:91)\n\tat ✽.que un usuario tiene una sesión iniciada(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/04_ControlAccesoSesion.feature:20)\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "que un usuario tiene una sesión iniciada",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261121_221525_197.png"
+                ],
+                "embeddings": [
+                  {
+                    "data": "iVBORw0KGgoAAAANSUhEUgAAAyAAAAHJCAIAAADyxspcAAAH60lEQVR4nOzWQQ0AMAgAMbLMv2Uwcc9WRf/uDgAAnTcAAKQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABA0BLsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiB0AAAD//wFk22cAAAAGSURBVAMAXV0GkqM6VBwAAAAASUVORK5CYII\u003d",
+                    "mime_type": "image/png",
+                    "name": "Paso 1 - FALLA"
+                  }
+                ],
+                "result": {
+                  "duration": 76000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "selecciona la opción \"Cerrar sesión\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cerrar sesión\"",
+                  "offset": 21
+                }
+              ],
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.selecciona_la_opcion(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "el sistema finaliza la sesión y lo redirige a la página de inicio como visitante",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.el_sistema_finaliza_la_sesion()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP14"
+          },
+          {
+            "name": "@RQ-01"
+          },
+          {
+            "name": "@seguridad"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T22:15:25.352Z",
+        "before": [
+          {
+            "result": {
+              "duration": 384000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Expiración de sesión por inactividad",
+        "description": "",
+        "id": "control-de-acceso-y-seguridad-de-sesión;expiración-de-sesión-por-inactividad",
+        "after": [
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)\n\tat Utilidades.Utility.resultado(Utility.java:98)\n\tat Utilidades.Utility.noEjecutado(Utility.java:109)\n\tat DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada(PasosControlAccesoSesion.java:91)\n\tat ✽.que un usuario tiene una sesión iniciada(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/04_ControlAccesoSesion.feature:26)\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "que un usuario tiene una sesión iniciada",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261121_221525_738.png"
+                ],
+                "embeddings": [
+                  {
+                    "data": "iVBORw0KGgoAAAANSUhEUgAAAyAAAAHJCAIAAADyxspcAAAH60lEQVR4nOzWQQ0AMAgAMbLMv2Uwcc9WRf/uDgAAnTcAAKQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABA0BLsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiAkWAEBMsAAAYoIFABATLACAmGABAMQECwAgJlgAADHBAgCICRYAQEywAABiggUAEBMsAICYYAEAxAQLACAmWAAAMcECAIgJFgBATLAAAGKCBQAQEywAgJhgAQDEBAsAICZYAAAxwQIAiB0AAAD//wFk22cAAAAGSURBVAMAXV0GkqM6VBwAAAAASUVORK5CYII\u003d",
+                    "mime_type": "image/png",
+                    "name": "Paso 1 - FALLA"
+                  }
+                ],
+                "result": {
+                  "duration": 102000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "permanece inactivo durante un periodo prolongado",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.permanece_inactivo_durante_un_periodo_prolongado()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "el sistema cierra la sesión automáticamente y solicita autenticarse nuevamente",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.el_sistema_cierra_la_sesion_automaticamente()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP15"
+          },
+          {
+            "name": "@RQ-01"
+          },
+          {
+            "name": "@seguridad"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T22:15:25.921Z",
+        "before": [
+          {
+            "result": {
+              "duration": 338000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Intento de acceso directo a una ruta protegida",
+        "description": "",
+        "id": "control-de-acceso-y-seguridad-de-sesión;intento-de-acceso-directo-a-una-ruta-protegida",
+        "after": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1063000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "que un usuario no autenticado conoce la URL de una ruta protegida",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_no_autenticado_conoce_la_url()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261121_221527_325.png"
+                ],
+                "result": {
+                  "duration": 149000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 922000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "la ingresa directamente en el navegador",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.la_ingresa_directamente_en_el_navegador()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261121_221528_396.png"
+                ],
+                "result": {
+                  "duration": 82000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta",
+            "match": {
+              "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.el_sistema_deniega_el_acceso()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261121_221528_489.png"
+                ],
+                "result": {
+                  "duration": 75000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.controlacceso.PasosControlAccesoSesion.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP16"
+          },
+          {
+            "name": "@RQ-01"
+          },
+          {
+            "name": "@seguridad"
+          }
+        ]
+      }
+    ],
+    "name": "Control de acceso y seguridad de sesión",
+    "description": "  Como responsable de la seguridad del sitio\n  Quiero que las rutas de cuenta estén protegidas y que la sesión se gestione correctamente\n  Para evitar accesos no autorizados a la información del cliente",
+    "id": "control-de-acceso-y-seguridad-de-sesión",
+    "keyword": "Característica",
+    "uri": "file:src/test/resources/Features/04_ControlAccesoSesion.feature",
+    "tags": []
+  }
+]
