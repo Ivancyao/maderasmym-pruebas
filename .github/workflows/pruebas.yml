@@ -68,16 +68,27 @@ jobs:
 
       - name: Guardar los resultados en el repositorio (carpeta resultados-ejecucion)
         if: always()
+        continue-on-error: true
         run: |
           rm -rf resultados-ejecucion
-          mkdir -p resultados-ejecucion
-          cp -r evidencias resultados-ejecucion/ 2>/dev/null || true
-          mkdir -p resultados-ejecucion/cucumber-json
+          mkdir -p resultados-ejecucion/evidencias resultados-ejecucion/cucumber-json
+          # Evidencias: todas las capturas de pasos que fallan + la ultima captura de cada escenario
+          if [ -d evidencias ]; then
+            for d in evidencias/*/; do
+              n=$(basename "$d")
+              mkdir -p "resultados-ejecucion/evidencias/$n"
+              cp "$d"*FALLA* "resultados-ejecucion/evidencias/$n/" 2>/dev/null || true
+              ultima=$(ls -v "$d"paso*_OK_* 2>/dev/null | tail -n 1)
+              if [ -n "$ultima" ]; then cp "$ultima" "resultados-ejecucion/evidencias/$n/"; fi
+            done
+          fi
           cp target/cucumber-json/*.json resultados-ejecucion/cucumber-json/ 2>/dev/null || true
           cp resumen_resultados.json entorno.txt procesamiento.txt resultados-ejecucion/ 2>/dev/null || true
           cp planilla/Planilla_Escenarios_Resultados_MaderasMyM.xlsx resultados-ejecucion/ 2>/dev/null || true
+          du -sh resultados-ejecucion
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
+          git config http.postBuffer 524288000
           git add -f resultados-ejecucion
           git commit -m "Resultados de la ejecución" || echo "nada que guardar"
           git pull --rebase || true
