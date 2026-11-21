@@ -1,0 +1,459 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Acceso al sitio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1285000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario está en cualquier página del sitio",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.que_un_usuario_esta_en_cualquier_pagina_del_sitio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261121_165717_942.png"
+                ],
+                "result": {
+                  "duration": 135000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T16:57:16.420Z",
+        "before": [
+          {
+            "result": {
+              "duration": 234000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Redirección exitosa a WhatsApp con mensaje predefinido y número correcto",
+        "description": "",
+        "id": "contacto-vía-whatsapp;redirección-exitosa-a-whatsapp-con-mensaje-predefinido-y-número-correcto",
+        "after": [
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 585000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "presiona el botón \"¡Contáctanos!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"¡Contáctanos!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.presiona_el_boton(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261121_165718_661.png"
+                ],
+                "result": {
+                  "duration": 104000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 470000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"56976200646\"",
+                  "offset": 48
+                }
+              ],
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.el_sistema_lo_redirige_a_whatsapp(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261121_165719_236.png"
+                ],
+                "result": {
+                  "duration": 34000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP49"
+          },
+          {
+            "name": "@CP50"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@whatsapp"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso al sitio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1282000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario está en cualquier página del sitio",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.que_un_usuario_esta_en_cualquier_pagina_del_sitio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso1_OK_20261121_165720_875.png"
+                ],
+                "result": {
+                  "duration": 135000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T16:57:19.339Z",
+        "before": [
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Apertura del enlace en una nueva pestaña",
+        "description": "",
+        "id": "contacto-vía-whatsapp;apertura-del-enlace-en-una-nueva-pestaña",
+        "after": [
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 541000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "presiona el botón \"¡Contáctanos!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"¡Contáctanos!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.presiona_el_boton(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso2_OK_20261121_165721_551.png"
+                ],
+                "result": {
+                  "duration": 90000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "se abre en una nueva pestaña o aplicación, sin cerrar la sesión de compra del usuario",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.se_abre_en_una_nueva_pestana()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso3_OK_20261121_165721_712.png"
+                ],
+                "result": {
+                  "duration": 83000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP51"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@whatsapp"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso al sitio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1270000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario está en cualquier página del sitio",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.que_un_usuario_esta_en_cualquier_pagina_del_sitio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso1_OK_20261121_165723_369.png"
+                ],
+                "result": {
+                  "duration": 124000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T16:57:21.862Z",
+        "before": [
+          {
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Funcionamiento del botón en dispositivo móvil",
+        "description": "",
+        "id": "contacto-vía-whatsapp;funcionamiento-del-botón-en-dispositivo-móvil",
+        "after": [
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1559000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "que un usuario navega desde un dispositivo móvil",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.que_un_usuario_navega_desde_un_dispositivo_movil()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso2_OK_20261121_165725_053.png"
+                ],
+                "result": {
+                  "duration": 253000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 724000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "presiona el botón \"¡Contáctanos!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"¡Contáctanos!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.presiona_el_boton(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso3_OK_20261121_165726_030.png"
+                ],
+                "result": {
+                  "duration": 158000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 368000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "el sistema abre correctamente la aplicación de WhatsApp instalada",
+            "match": {
+              "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.el_sistema_abre_la_aplicacion_de_whatsapp()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso4_OK_20261121_165726_558.png"
+                ],
+                "result": {
+                  "duration": 114000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.whatsapp.PasosContactoWhatsApp.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP52"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@whatsapp"
+          }
+        ]
+      }
+    ],
+    "name": "Contacto vía WhatsApp",
+    "description": "  Como un visitante o cliente del sitio\n  Quiero contactar a Maderas MyM directamente por WhatsApp\n  Para consultar por productos sin necesidad de un checkout transaccional",
+    "id": "contacto-vía-whatsapp",
+    "keyword": "Característica",
+    "uri": "file:src/test/resources/Features/13_ContactoWhatsApp.feature",
+    "tags": []
+  }
+]
