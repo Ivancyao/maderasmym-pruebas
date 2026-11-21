@@ -109,6 +109,18 @@ public class Utility {
 		resultado("NO EJECUTADO - " + motivo);
 	}
 
+	/**
+	 * Deja la ventana en escritorio (1920x1080). En Chrome sin pantalla (headless) maximize() deja la
+	 * ventana en ~800x600 y el sitio mostraria su diseno de tablet/celular; por eso se fija el tamano.
+	 */
+	public static void ajustarVentana(WebDriver driver) {
+		if ("true".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+			driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
+		} else {
+			driver.manage().window().maximize();
+		}
+	}
+
 	private static ChromeOptions opcionesBase() {
 		ChromeOptions opciones = new ChromeOptions();
 		String binario = System.getenv("CHROME_BIN");

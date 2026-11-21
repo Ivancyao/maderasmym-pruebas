@@ -36,7 +36,7 @@ public class PasosInicioSesion {
 	@Before
 	public void setUp() {
 		driver = Utility.crearDriver(CHROMEDRIVER_PATH);
-		driver.manage().window().maximize();
+		Utility.ajustarVentana(driver);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
