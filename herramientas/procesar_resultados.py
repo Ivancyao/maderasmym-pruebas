@@ -183,6 +183,7 @@ def leer_ejecuciones(carpeta_json, mapa_features):
 
 # (texto que aparece en el error, categoria, origen probable a confirmar con la captura del paso)
 CLASIFICACION = [
+    ("NO EJECUTADO", "No ejecutado (bloqueado)", "Restricción del entorno o del sitio: no es un defecto"),
     ("NoSuchElementException", "Elemento no encontrado (localizador)", "Script (localizador referencial) o cambio en el sitio"),
     ("TimeoutException", "Tiempo de espera / sincronización", "Script (esperas) o lentitud del sitio"),
     ("ElementClickInterceptedException", "Elemento cubierto o no clicable", "Sitio (elemento superpuesto) o script"),
@@ -227,6 +228,16 @@ def consolidar_por_cp(ejecuciones):
         sin_implementar = [p for p in pasos if p["estado"] in ("undefined", "pending", "ambiguous")]
         prep = next((ej["fallo_preparacion"] for ej in lista if ej["fallo_preparacion"]), "")
 
+        # Los pasos que fallan con "NO EJECUTADO" no son defectos: el escenario no se pudo ejecutar
+        # de forma responsable (CAPTCHA, cuenta real, pedido real...). Si hay fallos "reales", mandan ellos.
+        reales = [f for f in fallos if "NO EJECUTADO" not in (f[1]["error"] or "")]
+        bloqueados = [f for f in fallos if "NO EJECUTADO" in (f[1]["error"] or "")]
+        if bloqueados and not reales:
+            fallos_ordenados = bloqueados
+        else:
+            fallos_ordenados = reales
+        fallos = fallos_ordenados
+
         categoria, origen, paso_fallido = "", "", ""
         if fallos:
             categoria, origen = clasificar_error(fallos[0][1]["error"])
@@ -238,6 +249,10 @@ def consolidar_por_cp(ejecuciones):
         elif prep:
             resultado, estado = "NO PASA", "Bloqueado"
             obs = "Falló la preparación (@Before), ningún paso se ejecutó: " + _primera_linea(prep)
+        elif fallos and categoria.startswith("No ejecutado"):
+            ej, paso = fallos[0]
+            resultado, estado = "Pendiente de ejecución", "Bloqueado"
+            obs = "[No ejecutado] " + _primera_linea(paso["error"]).split("NO EJECUTADO - ")[-1]
         elif fallos:
             ej, paso = fallos[0]
             resultado, estado = "NO PASA", "En construcción"
@@ -329,12 +344,15 @@ def imprimir_resumen(resumen):
     total = TOTAL_CP
     ejecutados = len(resumen)
     pasan = sum(1 for d in resumen.values() if d["resultado"] == "PASA")
+    no_ejec = sum(1 for d in resumen.values() if d["resultado"] == "Pendiente de ejecución")
+    fallan = sum(1 for d in resumen.values() if d["resultado"] == "NO PASA")
     pasos_total = sum(d["pasos_total"] for d in resumen.values())
     pasos_ok = sum(d["pasos_ok"] for d in resumen.values())
     print("\n=== RESUMEN DE EJECUCIÓN ===")
     print("Escenarios (CP) con resultados : %d de %d" % (ejecutados, total))
     print("PASA                           : %d" % pasan)
-    print("NO PASA                        : %d" % (ejecutados - pasan))
+    print("NO PASA                        : %d" % fallan)
+    print("NO EJECUTADOS (bloqueados)     : %d" % no_ejec)
     print("Sin resultados (pendientes)    : %d" % (total - ejecutados))
     if pasos_total:
         print("Pasos exitosos / totales       : %d / %d (%.1f %%)" % (pasos_ok, pasos_total, 100.0 * pasos_ok / pasos_total))

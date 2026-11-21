@@ -1,12 +1,13 @@
 package DefinicionPasos.menumovil;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 
+import Utilidades.Sitio;
 import Utilidades.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -20,18 +21,24 @@ import io.cucumber.java.en.When;
  * Definicion de pasos - Funcionalidad: Menu de navegacion responsivo (movil)
  * Requerimiento: RQ-03 Navegabilidad e interaccion
  * Escenarios cubiertos (Matriz de Trazabilidad): CP57, CP58, CP59, CP60
+ *
+ * Los localizadores y los mensajes esperados fueron verificados contra el HTML y el comportamiento
+ * REAL de www.maderasmym.cl (carpetas "explorar" y "explorar2" del repositorio). Los resultados
+ * se registran con Utility.resultado(...) (PASA / NO PASA) o Utility.noEjecutado(...) cuando el
+ * escenario no se puede ejecutar de forma responsable (ver el motivo en cada caso).
  */
 public class PasosMenuResponsivo {
 
 	private static final String CHROMEDRIVER_PATH = "./src/test/resources/chrome/chromedriver.exe";
-	private static final String ICONO_MENU = "//img[contains(@src,'menu.svg')]";
 	WebDriver driver;
 	private int numeroPaso = 0;
 
 	@Before
 	public void setUp() {
 		driver = Utility.crearDriver(CHROMEDRIVER_PATH);
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
 	/**
@@ -51,75 +58,156 @@ public class PasosMenuResponsivo {
 		}
 	}
 
-	@Given("que un usuario navega desde un dispositivo móvil con viewport 375x667")
-	public void que_un_usuario_navega_desde_un_dispositivo_movil() {
-		driver.manage().window().setSize(new Dimension(375, 667));
-		driver.get("https://www.maderasmym.cl/");
-	}
-
-	@Given("que el menú móvil está desplegado")
-	public void que_el_menu_movil_esta_desplegado() {
-		driver.manage().window().setSize(new Dimension(375, 667));
-		driver.get("https://www.maderasmym.cl/");
-		driver.findElement(By.xpath(ICONO_MENU)).click();
-	}
-
-	@When("presiona el ícono de menú hamburguesa")
-	public void presiona_el_icono_de_menu() {
-		driver.findElement(By.xpath(ICONO_MENU)).click();
-	}
-
-	/**
-	 * Localiza la opcion del menu. En el sitio el acceso a login no tiene el texto "Iniciar sesión"
-	 * en el menu (el enlace se muestra como "/login"), por eso se ubica por su href.
-	 */
-	private By localizarOpcion(String opcion) {
-		if (opcion.equals("Iniciar sesión")) {
-			return By.xpath("//a[contains(@href,'/login')]");
+	/** Reemplaza el navegador por uno con emulacion de movil (375x667, como un telefono). */
+	private void abrirComoMovil() {
+		if (driver != null) {
+			driver.quit();
 		}
-		return By.xpath("//a[contains(text(),'" + opcion + "')]");
+		driver = Utility.crearDriverMovil(CHROMEDRIVER_PATH, 375, 667);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
-	@When("el usuario selecciona {string}")
-	public void el_usuario_selecciona(String opcion) {
-		driver.findElement(localizarOpcion(opcion)).click();
+
+	private boolean hamburguesaVisible() {
+		Object r = Sitio.js(driver, "var e=document.querySelector('.menu__hamburguer');return e?[e.offsetWidth,e.offsetHeight]:[0,0];");
+		@SuppressWarnings("unchecked")
+		List<? extends Number> m = (List<? extends Number>) r;
+		return m.get(0).longValue() > 0 && m.get(1).longValue() > 0;
 	}
 
-	@When("el usuario revisa las opciones disponibles")
-	public void el_usuario_revisa_las_opciones_disponibles() {
-		// Verificacion en el Then.
+	private String descripcionDelEncabezado() {
+		return "la barra movil muestra el logo, el icono de usuario (visible = " + Sitio.visible(driver, "#mobile-login-link")
+				+ ") y el boton Carrito (visible = " + Sitio.visible(driver, "#mobile-cart-link") + ")";
 	}
 
-	@When("el usuario presiona la opción {string}")
-	public void el_usuario_presiona_la_opcion(String opcion) {
-		driver.findElement(localizarOpcion(opcion)).click();
+	@Given("que un usuario navega desde un dispositivo móvil con viewport 375x667")
+	public void que_un_usuario_navega_desde_un_dispositivo_movil_con_viewport() {
+		abrirComoMovil();
+		Sitio.abrirInicio(driver);
+	}
+
+	// ---- CP57
+	@When("presiona el ícono de menú hamburguesa")
+	public void presiona_el_icono_de_menu_hamburguesa() {
+		if (!hamburguesaVisible()) {
+			Utility.resultado("NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); "
+					+ descripcionDelEncabezado());
+		}
+		Sitio.clic(driver, driver.findElement(By.cssSelector(".menu__hamburguer")));
+		Sitio.pausa(1000);
 	}
 
 	@Then("el sistema despliega el menú de navegación y permite cerrarlo correctamente")
 	public void el_sistema_despliega_el_menu_y_permite_cerrarlo() {
-		boolean visible = driver.findElement(By.xpath("//a[contains(text(),'Inicio')]")).isDisplayed();
-		driver.findElement(By.xpath(ICONO_MENU)).click();
-		boolean cerrado = driver.findElements(By.xpath("//a[contains(text(),'Inicio')]")).isEmpty()
-				|| !driver.findElement(By.xpath("//a[contains(text(),'Inicio')]")).isDisplayed();
-		Utility.resultado((visible && cerrado ? "PASA" : "NO PASA") + " - Menú móvil: abierto=" + visible + ", cerrado=" + cerrado);
+		boolean abierto = Boolean.TRUE.equals(Sitio.js(driver, "return document.querySelector('.menu__links').classList.contains('menu__links--show');"));
+		Sitio.clic(driver, driver.findElement(By.cssSelector(".menu__hamburguer")));
+		Sitio.pausa(800);
+		boolean cerrado = !Boolean.TRUE.equals(Sitio.js(driver, "return document.querySelector('.menu__links').classList.contains('menu__links--show');"));
+		if (abierto && cerrado) {
+			Utility.resultado("PASA - El menu se despliega y se cierra con el icono");
+		} else {
+			Utility.resultado("NO PASA - Menu desplegado = " + abierto + ", cerrado despues = " + cerrado);
+		}
+	}
+
+	// ---- CP58, CP59, CP60 (precondicion: menu desplegado)
+	@Given("que el menú móvil está desplegado")
+	public void que_el_menu_movil_esta_desplegado() {
+		if (hamburguesaVisible()) {
+			Sitio.clic(driver, driver.findElement(By.cssSelector(".menu__hamburguer")));
+			Sitio.pausa(800);
+		}
+		// Si no hay hamburguesa visible, el escenario continua para comprobar que accesos existen realmente
+	}
+
+	private WebElement opcionVisible(String texto) {
+		for (WebElement e : driver.findElements(By.xpath("//nav[contains(@class,'menu')]//a[contains(normalize-space(.),'" + texto + "')]"))) {
+			if (e.isDisplayed()) {
+				return e;
+			}
+		}
+		return null;
+	}
+
+	@When("el usuario selecciona {string}")
+	public void el_usuario_selecciona(String opcion) {
+		WebElement enlace = opcionVisible(opcion);
+		if (enlace == null) {
+			Utility.resultado("NO PASA - La opcion \"" + opcion + "\" no esta visible en el menu movil; " + descripcionDelEncabezado());
+		}
+		Sitio.clic(driver, enlace);
+		Sitio.pausa(1000);
 	}
 
 	@Then("el sistema muestra las categorías de productos disponibles")
 	public void el_sistema_muestra_las_categorias() {
-		boolean hayCategorias = !driver.findElements(By.xpath("//a[contains(text(),'Pino Oregón')]")).isEmpty();
-		Utility.resultado((hayCategorias ? "PASA" : "NO PASA") + " - Menú móvil > Productos: categorías " + (hayCategorias ? "visibles" : "no encontradas"));
+		int visibles = 0;
+		for (WebElement e : driver.findElements(By.cssSelector(".menu__nesting a"))) {
+			if (e.isDisplayed()) {
+				visibles++;
+			}
+		}
+		Utility.resultado(visibles > 0 ? "PASA - Se muestran " + visibles + " categorias"
+				: "NO PASA - No se muestran categorias");
+	}
+
+	@When("el usuario revisa las opciones disponibles")
+	public void el_usuario_revisa_las_opciones_disponibles() {
+		Sitio.pausa(500);
 	}
 
 	@Then("se muestran correctamente los accesos a {string} e {string}")
-	public void se_muestran_los_accesos(String acceso1, String acceso2) {
-		boolean carrito = !driver.findElements(By.xpath("//a[contains(text(),'Carrito')]")).isEmpty();
-		boolean login = !driver.findElements(By.xpath("//a[contains(@href,'/login')]")).isEmpty();
-		Utility.resultado((carrito && login ? "PASA" : "NO PASA") + " - Menú móvil: acceso a " + acceso1 + "=" + carrito + ", acceso a " + acceso2 + "=" + login);
+	public void se_muestran_los_accesos(String a, String b) {
+		boolean carrito = Sitio.visible(driver, "#mobile-cart-link");
+		boolean login = Sitio.visible(driver, "#mobile-login-link");
+		if (carrito && login) {
+			Utility.resultado("PASA - En el viewport movil se ven los accesos a Carrito e Iniciar sesion (barra superior fija)");
+		} else {
+			Utility.resultado("NO PASA - Acceso a Carrito visible = " + carrito + ", a Iniciar sesion visible = " + login);
+		}
+	}
+
+	@When("el usuario presiona la opción {string}")
+	public void el_usuario_presiona_la_opcion(String opcion) {
+		WebElement elemento = null;
+		if (opcion.equals("Inicio")) {
+			// En el encabezado movil, "Inicio" es el logo (enlace a "/")
+			for (WebElement e : driver.findElements(By.cssSelector(".mobile-header a[href='/']"))) {
+				if (e.isDisplayed()) {
+					elemento = e;
+				}
+			}
+		} else if (opcion.equals("Carrito")) {
+			elemento = Sitio.visible(driver, "#mobile-cart-link") ? driver.findElement(By.id("mobile-cart-link")) : null;
+		} else if (opcion.equals("Iniciar sesión")) {
+			elemento = Sitio.visible(driver, "#mobile-login-link") ? driver.findElement(By.id("mobile-login-link")) : null;
+		} else {
+			elemento = opcionVisible(opcion);
+		}
+		if (elemento == null) {
+			Utility.resultado("NO PASA - La opcion \"" + opcion + "\" no esta visible/accesible en el menu movil; " + descripcionDelEncabezado());
+		}
+		Sitio.clic(driver, elemento);
+		Sitio.pausa(1500);
 	}
 
 	@Then("la opción {string} responde correctamente")
 	public void la_opcion_responde_correctamente(String opcion) {
+		boolean ok;
 		String url = driver.getCurrentUrl();
-		Utility.resultado("PASA - Opción \"" + opcion + "\" del menú móvil respondió (URL = " + url + ")");
+		if (opcion.equals("Inicio")) {
+			ok = url.equals(Sitio.BASE + "/");
+		} else if (opcion.equals("Carrito")) {
+			ok = Sitio.visible(driver, "#cartFullscreen .cart-fullscreen-header") || Sitio.visible(driver, "#cartModal .modal-content");
+		} else if (opcion.equals("Iniciar sesión")) {
+			ok = url.contains("/login");
+		} else if (opcion.equals("Sobre Nosotros")) {
+			ok = url.contains("/aboutus");
+		} else {
+			ok = Sitio.visible(driver, ".menu__nesting a");
+		}
+		Utility.resultado(ok ? "PASA - La opcion \"" + opcion + "\" responde (URL: " + url + ")"
+				: "NO PASA - La opcion \"" + opcion + "\" no respondio como se esperaba (URL: " + url + ")");
 	}
 }

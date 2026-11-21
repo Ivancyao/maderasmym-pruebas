@@ -1,11 +1,13 @@
 package DefinicionPasos.controlacceso;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 
+import Utilidades.Sitio;
 import Utilidades.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -20,16 +22,14 @@ import io.cucumber.java.en.When;
  * Requerimiento: RQ-01 Gestion de cuentas y control de acceso
  * Escenarios cubiertos (Matriz de Trazabilidad): CP13, CP14, CP15, CP16
  *
- * Nota tecnica (Condiciones de aceptacion): la ruta protegida referencial usada es
- * https://www.maderasmym.cl/mi-cuenta; debe validarse cual es la ruta real protegida
- * del sitio antes de ejecutar. La expiracion por inactividad (CP15) se simula eliminando
- * la cookie de sesion y refrescando, ya que esperar el tiempo real de expiracion no es
- * practico en un script de automatizacion.
+ * Los localizadores y los mensajes esperados fueron verificados contra el HTML y el comportamiento
+ * REAL de www.maderasmym.cl (carpetas "explorar" y "explorar2" del repositorio). Los resultados
+ * se registran con Utility.resultado(...) (PASA / NO PASA) o Utility.noEjecutado(...) cuando el
+ * escenario no se puede ejecutar de forma responsable (ver el motivo en cada caso).
  */
 public class PasosControlAccesoSesion {
 
 	private static final String CHROMEDRIVER_PATH = "./src/test/resources/chrome/chromedriver.exe";
-	private static final String RUTA_PROTEGIDA = "https://www.maderasmym.cl/mi-cuenta";
 	WebDriver driver;
 	private int numeroPaso = 0;
 
@@ -37,7 +37,8 @@ public class PasosControlAccesoSesion {
 	public void setUp() {
 		driver = Utility.crearDriver(CHROMEDRIVER_PATH);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
 	/**
@@ -57,82 +58,86 @@ public class PasosControlAccesoSesion {
 		}
 	}
 
+
+	// "Mi cuenta" del sitio es la ruta /profile (la que usa el boton de usuario al iniciar sesion).
+	private static final String RUTA_MI_CUENTA = "/profile";
+	private static final String RUTA_PROTEGIDA = "/admin";
+
 	@Given("que un usuario no ha iniciado sesión")
 	public void que_un_usuario_no_ha_iniciado_sesion() {
-		driver.get("https://www.maderasmym.cl/");
-		driver.manage().deleteAllCookies();
-	}
-
-	@Given("que un usuario tiene una sesión iniciada")
-	public void que_un_usuario_tiene_una_sesion_iniciada() {
-		driver.get("https://www.maderasmym.cl/login");
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jmorales89");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Maderas2026$");
-		driver.findElement(By.xpath("//button[contains(text(),'Iniciar sesión')]")).click();
-	}
-
-	@Given("que un usuario no autenticado conoce la URL de una ruta protegida")
-	public void que_un_usuario_no_autenticado_conoce_la_url() {
-		driver.get("https://www.maderasmym.cl/");
+		driver.get(Sitio.BASE + "/");
 		driver.manage().deleteAllCookies();
 	}
 
 	@When("intenta acceder directamente a la sección {string}")
 	public void intenta_acceder_directamente_a_la_seccion(String seccion) {
-		driver.get(RUTA_PROTEGIDA);
-	}
-
-	@When("selecciona la opción {string}")
-	public void selecciona_la_opcion(String opcion) {
-		driver.findElement(By.xpath("//a[contains(text(),'" + opcion + "')]")).click();
-	}
-
-	@When("permanece inactivo durante un periodo prolongado")
-	public void permanece_inactivo_durante_un_periodo_prolongado() throws InterruptedException {
-		// Simulacion de expiracion de sesion: se elimina la cookie de sesion
-		// (en un entorno real, esto ocurriria tras el timeout configurado en el backend).
-		driver.manage().deleteAllCookies();
-		driver.navigate().refresh();
-	}
-
-	@When("la ingresa directamente en el navegador")
-	public void la_ingresa_directamente_en_el_navegador() {
-		driver.get(RUTA_PROTEGIDA);
+		driver.get(Sitio.BASE + RUTA_MI_CUENTA);
+		Sitio.esperarHasta(() -> driver.getCurrentUrl().contains("/login"), 10);
 	}
 
 	@Then("el sistema lo redirige a la página de {string}")
 	public void el_sistema_lo_redirige_a_la_pagina_de(String pagina) {
-		String urlActual = driver.getCurrentUrl();
-		if (urlActual.contains("/login")) {
-			Utility.resultado("PASA - Control de acceso: redirigido correctamente a " + urlActual);
+		String url = driver.getCurrentUrl();
+		if (url.contains("/login")) {
+			Utility.resultado("PASA - Acceso a \"Mi cuenta\" sin sesion: redirigido a " + url);
 		} else {
-			Utility.resultado("NO PASA - Control de acceso: no se redirigió a /login, URL actual = " + urlActual);
+			Utility.resultado("NO PASA - Acceso a \"Mi cuenta\" sin sesion: no hubo redireccion al login (URL final: " + url + ")");
 		}
+	}
+
+	// ---- CP14 y CP15 necesitan una sesion iniciada
+	@Given("que un usuario tiene una sesión iniciada")
+	public void que_un_usuario_tiene_una_sesion_iniciada() {
+		Utility.noEjecutado("requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige "
+				+ "CAPTCHA y no se crean cuentas reales en el sitio)");
+	}
+
+	@When("selecciona la opción {string}")
+	public void selecciona_la_opcion(String opcion) {
+		Sitio.clic(driver, driver.findElement(By.xpath("//a[contains(normalize-space(),'" + opcion + "')]")));
 	}
 
 	@Then("el sistema finaliza la sesión y lo redirige a la página de inicio como visitante")
 	public void el_sistema_finaliza_la_sesion() {
-		String urlActual = driver.getCurrentUrl();
-		Utility.resultado("PASA - Cierre de sesión: URL final = " + urlActual + " (verificar que el header muestre 'Iniciar sesión')");
+		Utility.resultado(driver.getCurrentUrl().equals(Sitio.BASE + "/")
+				? "PASA - Cierre de sesion: redirigido al inicio"
+				: "NO PASA - Cierre de sesion: URL final " + driver.getCurrentUrl());
+	}
+
+	@When("permanece inactivo durante un periodo prolongado")
+	public void permanece_inactivo_durante_un_periodo_prolongado() {
+		Sitio.pausa(1000);
 	}
 
 	@Then("el sistema cierra la sesión automáticamente y solicita autenticarse nuevamente")
 	public void el_sistema_cierra_la_sesion_automaticamente() {
-		String urlActual = driver.getCurrentUrl();
-		if (urlActual.contains("/login")) {
-			Utility.resultado("PASA - Expiración de sesión: se solicitó autenticación nuevamente");
-		} else {
-			Utility.resultado("NO PASA - Expiración de sesión: no se forzó el re-login, URL actual = " + urlActual);
-		}
+		Utility.resultado(driver.getCurrentUrl().contains("/login")
+				? "PASA - Expiracion de sesion: se solicita autenticarse"
+				: "NO PASA - Expiracion de sesion: URL final " + driver.getCurrentUrl());
+	}
+
+	// ---- CP16: ruta protegida
+	@Given("que un usuario no autenticado conoce la URL de una ruta protegida")
+	public void que_un_usuario_no_autenticado_conoce_la_url() {
+		driver.get(Sitio.BASE + "/");
+		driver.manage().deleteAllCookies();
+	}
+
+	@When("la ingresa directamente en el navegador")
+	public void la_ingresa_directamente_en_el_navegador() {
+		driver.get(Sitio.BASE + RUTA_PROTEGIDA);
+		Sitio.esperarHasta(() -> driver.getCurrentUrl().contains("/login"), 10);
 	}
 
 	@Then("el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta")
 	public void el_sistema_deniega_el_acceso() {
-		String urlActual = driver.getCurrentUrl();
-		if (urlActual.contains("/login")) {
-			Utility.resultado("PASA - Acceso directo a ruta protegida denegado correctamente");
+		boolean enLogin = driver.getCurrentUrl().contains("/login");
+		boolean formularioLogin = Sitio.visible(driver, "#login-form");
+		if (enLogin && formularioLogin) {
+			Utility.resultado("PASA - Ruta protegida " + RUTA_PROTEGIDA + ": redirigido al login sin mostrar datos de cuenta");
 		} else {
-			Utility.resultado("NO PASA - Acceso directo a ruta protegida NO fue denegado, URL actual = " + urlActual);
+			Utility.resultado("NO PASA - Ruta protegida " + RUTA_PROTEGIDA + ": URL final " + driver.getCurrentUrl()
+					+ ", formulario de login visible = " + formularioLogin);
 		}
 	}
 }

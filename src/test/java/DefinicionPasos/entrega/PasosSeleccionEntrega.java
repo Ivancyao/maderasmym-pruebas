@@ -1,11 +1,13 @@
 package DefinicionPasos.entrega;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 
+import Utilidades.Sitio;
 import Utilidades.Utility;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -17,8 +19,13 @@ import io.cucumber.java.en.When;
 
 /**
  * Definicion de pasos - Funcionalidad: Seleccion de metodo de entrega
- * Requerimiento: RQ-02 Operaciones del negocio
+ * Requerimiento: RQ-02 Operaciones del negocio (catalogo, carrito y pedido)
  * Escenarios cubiertos (Matriz de Trazabilidad): CP37, CP38, CP39, CP40
+ *
+ * Los localizadores y los mensajes esperados fueron verificados contra el HTML y el comportamiento
+ * REAL de www.maderasmym.cl (carpetas "explorar" y "explorar2" del repositorio). Los resultados
+ * se registran con Utility.resultado(...) (PASA / NO PASA) o Utility.noEjecutado(...) cuando el
+ * escenario no se puede ejecutar de forma responsable (ver el motivo en cada caso).
  */
 public class PasosSeleccionEntrega {
 
@@ -30,7 +37,8 @@ public class PasosSeleccionEntrega {
 	public void setUp() {
 		driver = Utility.crearDriver(CHROMEDRIVER_PATH);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	}
 
 	/**
@@ -50,65 +58,96 @@ public class PasosSeleccionEntrega {
 		}
 	}
 
-	@Given("que el usuario está en el carrito de compras con productos agregados")
-	public void que_el_usuario_esta_en_el_carrito_de_compras_con_productos_agregados() {
-		driver.get("https://www.maderasmym.cl/");
+
+	private long totalAntes = 0;
+	private String direccion = "";
+
+	private void elegir(String opcion) {
+		String id = opcion.toLowerCase().contains("retiro") ? "delivery-pickup" : "delivery-shipping";
+		Sitio.clic(driver, driver.findElement(By.cssSelector("label[for='" + id + "']")));
+		Sitio.pausa(500);
 	}
 
-	@Given("que el usuario ya seleccionó el método {string}")
-	public void que_el_usuario_ya_selecciono_el_metodo(String metodo) {
-		driver.get("https://www.maderasmym.cl/");
-		seleccionarMetodo(metodo);
+	private boolean marcado(String id) {
+		return driver.findElement(By.id(id)).isSelected();
+	}
+
+	@Given("que el usuario está en el carrito de compras con productos agregados")
+	public void que_el_usuario_esta_en_el_carrito_con_productos() {
+		Sitio.abrirInicio(driver);
+		Sitio.agregarProductos(driver, 1);
+		Sitio.abrirCarrito(driver);
+		totalAntes = Sitio.totalCarrito(driver);
 	}
 
 	@When("selecciona la opción {string}")
-	public void selecciona_la_opcion(String metodo) {
-		seleccionarMetodo(metodo);
-	}
-
-	@When("selecciona {string} e indica la dirección {string} en el campo {string}")
-	public void selecciona_e_indica_la_direccion(String metodo, String direccion, String campo) {
-		seleccionarMetodo(metodo);
-		driver.findElement(By.xpath("//textarea")).clear();
-		driver.findElement(By.xpath("//textarea")).sendKeys(direccion);
-	}
-
-	@When("selecciona {string} y no indica ninguna dirección en {string} e intenta continuar")
-	public void selecciona_sin_direccion_e_intenta_continuar(String metodo, String campo) {
-		seleccionarMetodo(metodo);
-		driver.findElement(By.xpath("//textarea")).clear();
-	}
-
-	@When("lo cambia a {string} antes de generar el pedido")
-	public void lo_cambia_antes_de_generar_el_pedido(String nuevoMetodo) {
-		seleccionarMetodo(nuevoMetodo);
-	}
-
-	private void seleccionarMetodo(String metodo) {
-		String textoBase = metodo.contains("Retiro") ? "Retiro en tienda" : "Flete externo";
-		driver.findElement(By.xpath("//label[contains(text(),'" + textoBase + "')]")).click();
+	public void selecciona_la_opcion(String opcion) {
+		elegir(opcion);
 	}
 
 	@Then("el sistema registra el método de entrega sin agregar costo de flete")
-	public void el_sistema_registra_el_metodo_sin_costo() {
-		Utility.resultado("PASA - Selección de entrega: 'Retiro en tienda' seleccionado (validar que el Total no incluya flete)");
+	public void el_sistema_registra_el_metodo_sin_costo_de_flete() {
+		long totalDespues = Sitio.totalCarrito(driver);
+		if (marcado("delivery-pickup") && totalDespues == totalAntes) {
+			Utility.resultado("PASA - Retiro en tienda seleccionado y el total no cambia ($" + totalDespues + ")");
+		} else {
+			Utility.resultado("NO PASA - Retiro seleccionado = " + marcado("delivery-pickup") + ", total antes = " + totalAntes
+					+ ", total despues = " + totalDespues);
+		}
+	}
+
+	@When("selecciona {string} e indica la dirección {string} en el campo {string}")
+	public void selecciona_e_indica_la_direccion(String opcion, String dir, String campo) {
+		elegir(opcion);
+		direccion = dir;
+		WebElement comentarios = driver.findElement(By.id("order-comments"));
+		comentarios.clear();
+		comentarios.sendKeys(dir);
 	}
 
 	@Then("el sistema registra el método de entrega junto con la dirección proporcionada")
-	public void el_sistema_registra_el_metodo_con_direccion() {
-		String valor = driver.findElement(By.xpath("//textarea")).getAttribute("value");
-		boolean tieneDireccion = valor != null && !valor.isEmpty();
-		Utility.resultado((tieneDireccion ? "PASA" : "NO PASA") + " - Flete externo con dirección: valor registrado = \"" + valor + "\"");
+	public void el_sistema_registra_el_metodo_junto_con_la_direccion() {
+		String valor = driver.findElement(By.id("order-comments")).getAttribute("value");
+		if (marcado("delivery-shipping") && direccion.equals(valor)) {
+			Utility.resultado("PASA - Flete externo seleccionado y la direccion queda en Comentarios: \"" + valor + "\"");
+		} else {
+			Utility.resultado("NO PASA - Flete seleccionado = " + marcado("delivery-shipping") + ", comentarios = \"" + valor + "\"");
+		}
+	}
+
+	// ---- CP39: validar la direccion exige pulsar "Generar pedido" (requiere sesion y crea un pedido real)
+	@When("selecciona {string} y no indica ninguna dirección en {string} e intenta continuar")
+	public void selecciona_y_no_indica_ninguna_direccion(String opcion, String campo) {
+		elegir(opcion);
+		Utility.noEjecutado("comprobar que se exige la direccion obliga a pulsar \"Generar pedido\", accion que requiere sesion "
+				+ "iniciada y generaria un pedido real en el sitio de la empresa");
 	}
 
 	@Then("el sistema solicita completar la dirección antes de generar el pedido")
 	public void el_sistema_solicita_completar_la_direccion() {
-		boolean hayMensaje = !driver.findElements(By.xpath("//*[contains(text(),'indicar la dirección') or contains(text(),'obligatorio')]")).isEmpty();
-		Utility.resultado((hayMensaje ? "PASA" : "NO PASA") + " - Flete externo sin dirección: mensaje de validación " + (hayMensaje ? "presente" : "ausente"));
+		Utility.noEjecutado("verificacion no realizada (ver el paso anterior)");
+	}
+
+	// ---- CP40
+	@Given("que el usuario ya seleccionó el método {string}")
+	public void que_el_usuario_ya_selecciono_el_metodo(String opcion) {
+		Sitio.abrirInicio(driver);
+		Sitio.agregarProductos(driver, 1);
+		Sitio.abrirCarrito(driver);
+		elegir(opcion);
+	}
+
+	@When("lo cambia a {string} antes de generar el pedido")
+	public void lo_cambia_a_antes_de_generar_el_pedido(String opcion) {
+		elegir(opcion);
 	}
 
 	@Then("el sistema actualiza correctamente el método seleccionado")
 	public void el_sistema_actualiza_correctamente_el_metodo_seleccionado() {
-		Utility.resultado("PASA - Cambio de método de entrega: verificar visualmente que el radio 'Flete externo' quedó marcado");
+		if (marcado("delivery-shipping") && !marcado("delivery-pickup")) {
+			Utility.resultado("PASA - El metodo cambio de \"Retiro en tienda\" a \"Flete externo\"");
+		} else {
+			Utility.resultado("NO PASA - Flete = " + marcado("delivery-shipping") + ", retiro = " + marcado("delivery-pickup"));
+		}
 	}
 }
