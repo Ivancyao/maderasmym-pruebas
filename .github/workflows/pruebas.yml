@@ -5,6 +5,9 @@ name: Ejecutar pruebas Maderas MyM
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   pruebas:
     runs-on: ubuntu-latest
@@ -62,3 +65,20 @@ jobs:
             entorno.txt
             procesamiento.txt
           if-no-files-found: warn
+
+      - name: Guardar los resultados en el repositorio (carpeta resultados-ejecucion)
+        if: always()
+        run: |
+          rm -rf resultados-ejecucion
+          mkdir -p resultados-ejecucion
+          cp -r evidencias resultados-ejecucion/ 2>/dev/null || true
+          mkdir -p resultados-ejecucion/cucumber-json
+          cp target/cucumber-json/*.json resultados-ejecucion/cucumber-json/ 2>/dev/null || true
+          cp resumen_resultados.json entorno.txt procesamiento.txt resultados-ejecucion/ 2>/dev/null || true
+          cp planilla/Planilla_Escenarios_Resultados_MaderasMyM.xlsx resultados-ejecucion/ 2>/dev/null || true
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -f resultados-ejecucion
+          git commit -m "Resultados de la ejecución" || echo "nada que guardar"
+          git pull --rebase || true
+          git push
