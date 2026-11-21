@@ -1,0 +1,669 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Acceso a la página de inicio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1362000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario se encuentra en la página de inicio",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.que_un_usuario_se_encuentra_en_la_pagina_de_inicio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261121_231859_821.png"
+                ],
+                "result": {
+                  "duration": 272000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:18:57.973Z",
+        "before": [
+          {
+            "result": {
+              "duration": 484000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Búsqueda de productos - Búsqueda exitosa de un producto existente",
+        "description": "",
+        "id": "búsqueda-de-productos-(buscador-principal);búsqueda-de-productos---\u003ctitulo\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema del escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "escribe \"Pino Oregón\" en el buscador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pino Oregón\"",
+                  "offset": 8
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.escribe_en_el_buscador(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261121_231900_143.png"
+                ],
+                "result": {
+                  "duration": 259000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2766000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "ejecuta la búsqueda",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.ejecuta_la_busqueda()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261121_231903_169.png"
+                ],
+                "result": {
+                  "duration": 225000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "el sistema responde de forma \"listado de resultados\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"listado de resultados\"",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.el_sistema_responde_de_forma(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261121_231903_404.png"
+                ],
+                "result": {
+                  "duration": 219000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP17"
+          },
+          {
+            "name": "@CP18"
+          },
+          {
+            "name": "@CP20"
+          },
+          {
+            "name": "@RQ-02"
+          },
+          {
+            "name": "@busqueda"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página de inicio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1330000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario se encuentra en la página de inicio",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.que_un_usuario_se_encuentra_en_la_pagina_de_inicio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261121_231905_313.png"
+                ],
+                "result": {
+                  "duration": 275000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:03.704Z",
+        "before": [
+          {
+            "result": {
+              "duration": 279000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Búsqueda de productos - Búsqueda sin resultados",
+        "description": "",
+        "id": "búsqueda-de-productos-(buscador-principal);búsqueda-de-productos---\u003ctitulo\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 79000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema del escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "escribe \"asdfgh123\" en el buscador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asdfgh123\"",
+                  "offset": 8
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.escribe_en_el_buscador(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261121_231905_638.png"
+                ],
+                "result": {
+                  "duration": 263000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2765000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "ejecuta la búsqueda",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.ejecuta_la_busqueda()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261121_231908_667.png"
+                ],
+                "result": {
+                  "duration": 209000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 3037000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "el sistema responde de forma \"sin resultados\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sin resultados\"",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.el_sistema_responde_de_forma(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261121_231911_912.png"
+                ],
+                "result": {
+                  "duration": 211000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP17"
+          },
+          {
+            "name": "@CP18"
+          },
+          {
+            "name": "@CP20"
+          },
+          {
+            "name": "@RQ-02"
+          },
+          {
+            "name": "@busqueda"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página de inicio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1332000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario se encuentra en la página de inicio",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.que_un_usuario_se_encuentra_en_la_pagina_de_inicio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261121_231913_825.png"
+                ],
+                "result": {
+                  "duration": 263000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:12.204Z",
+        "before": [
+          {
+            "result": {
+              "duration": 288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Búsqueda de productos - Búsqueda con caracteres especiales o código",
+        "description": "",
+        "id": "búsqueda-de-productos-(buscador-principal);búsqueda-de-productos---\u003ctitulo\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema del escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "escribe \"\u003cscript\u003ealert(1)\u003c/script\u003e\" en el buscador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cscript\u003ealert(1)\u003c/script\u003e\"",
+                  "offset": 8
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.escribe_en_el_buscador(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261121_231914_145.png"
+                ],
+                "result": {
+                  "duration": 276000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2764000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "ejecuta la búsqueda",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.ejecuta_la_busqueda()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261121_231917_185.png"
+                ],
+                "result": {
+                  "duration": 204000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 4063000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "el sistema responde de forma \"sanitizada sin ejecutar codigo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sanitizada sin ejecutar codigo\"",
+                  "offset": 29
+                }
+              ],
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.el_sistema_responde_de_forma(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261121_231921_453.png"
+                ],
+                "result": {
+                  "duration": 206000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP17"
+          },
+          {
+            "name": "@CP18"
+          },
+          {
+            "name": "@CP20"
+          },
+          {
+            "name": "@RQ-02"
+          },
+          {
+            "name": "@busqueda"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página de inicio",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 1271000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario se encuentra en la página de inicio",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.que_un_usuario_se_encuentra_en_la_pagina_de_inicio()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso1_OK_20261121_231923_307.png"
+                ],
+                "result": {
+                  "duration": 269000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:21.739Z",
+        "before": [
+          {
+            "result": {
+              "duration": 295000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Búsqueda con campo vacío",
+        "description": "",
+        "id": "búsqueda-de-productos-(buscador-principal);búsqueda-con-campo-vacío",
+        "after": [
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1743000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "presiona buscar sin ingresar texto",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.presiona_buscar_sin_ingresar_texto()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso2_OK_20261121_231925_319.png"
+                ],
+                "result": {
+                  "duration": 234000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "el sistema no ejecuta la búsqueda o solicita ingresar un término",
+            "match": {
+              "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.el_sistema_no_ejecuta_la_busqueda()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso3_OK_20261121_231925_565.png"
+                ],
+                "result": {
+                  "duration": 237000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.busqueda.PasosBusquedaProductos.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP19"
+          },
+          {
+            "name": "@RQ-02"
+          },
+          {
+            "name": "@busqueda"
+          }
+        ]
+      }
+    ],
+    "name": "Búsqueda de productos (buscador principal)",
+    "description": "  Como un visitante o cliente del sitio\n  Quiero buscar productos por nombre\n  Para encontrar rápidamente lo que necesito comprar",
+    "id": "búsqueda-de-productos-(buscador-principal)",
+    "keyword": "Característica",
+    "uri": "file:src/test/resources/Features/05_BusquedaProductos.feature",
+    "tags": []
+  }
+]

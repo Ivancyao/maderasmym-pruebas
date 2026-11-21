@@ -1,0 +1,2855 @@
+{
+ "CP1": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] el envio de datos validos crearia una cuenta real en el sitio de la empresa y el formulario exige ademas resolver un CAPTCHA (Cloudflare Turnstile), que no se puede automatizar",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Y presiona \"Crear cuenta\"",
+  "titulo": "Registro de usuario - Registro exitoso con datos válidos",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 2,
+  "duracion_s": 2.38,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.89,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso1_OK_20261121_231657_875.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+    "estado": "passed",
+    "duracion_s": 0.484,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso2_OK_20261121_231658_581.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "failed",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso3_FALLA_20261121_231658_800.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - el envio de datos validos crearia una cuenta real en el sitio de la empresa y el formulario exige ademas resolver un CAPTCHA (Cloudflare Turnstile), que no se puede automatizar"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"verificación\"",
+    "estado": "skipped",
+    "duracion_s": 0.001,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP2": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"mínimo 8 caracteres\"»: java.lang.AssertionError: NO PASA - Registro de usuario: se esperaba un mensaje con \"mínimo 8 caracteres\" y el sitio mostro \"La contraseña debe incluir mayúscula, minúscula, número y símbolo (mín. 8).\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"mínimo 8 caracteres\"",
+  "titulo": "Registro de usuario - Registro fallido por contraseña que no cumple el formato",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 1.74,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.076,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso1_OK_20261121_231700_763.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"maderas\" y repite la contraseña \"maderas\"",
+    "estado": "passed",
+    "duracion_s": 0.381,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso2_OK_20261121_231701_317.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 0.271,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso3_OK_20261121_231701_814.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"mínimo 8 caracteres\"",
+    "estado": "failed",
+    "duracion_s": 0.015,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso4_FALLA_20261121_231702_048.png",
+    "error": "java.lang.AssertionError: NO PASA - Registro de usuario: se esperaba un mensaje con \"mínimo 8 caracteres\" y el sitio mostro \"La contraseña debe incluir mayúscula, minúscula, número y símbolo (mín. 8).\""
+   }
+  ]
+ },
+ "CP3": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Registro de usuario - Registro fallido por contraseñas no coincidentes",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 1.72,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.079,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso1_OK_20261121_231703_981.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2025$\"",
+    "estado": "passed",
+    "duracion_s": 0.34,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso2_OK_20261121_231704_538.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 0.285,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso3_OK_20261121_231705_039.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no coincide\"",
+    "estado": "passed",
+    "duracion_s": 0.015,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso4_OK_20261121_231705_242.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP4": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] el formulario exige resolver el CAPTCHA (Cloudflare Turnstile) antes de enviar; mensaje del sitio: \"Completa la verificación \"No soy un robot\" antes de continuar.\"",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"ya está registrado\"",
+  "titulo": "Registro de usuario - Registro fallido por correo ya registrado",
+  "feature": "01_RegistroUsuario.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 1.66,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 1.017,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso1_OK_20261121_231706_867.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\", correo \"contacto@maderasmym.cl\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
+    "estado": "passed",
+    "duracion_s": 0.341,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso2_OK_20261121_231707_388.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Crear cuenta\"",
+    "estado": "passed",
+    "duracion_s": 0.282,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso3_OK_20261121_231707_877.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"ya está registrado\"",
+    "estado": "failed",
+    "duracion_s": 0.018,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso4_FALLA_20261121_231708_154.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - el formulario exige resolver el CAPTCHA (Cloudflare Turnstile) antes de enviar; mensaje del sitio: \"Completa la verificación \"No soy un robot\" antes de continuar.\""
+   }
+  ]
+ },
+ "CP5": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] no se dispone de una cuenta verificada para iniciar sesion (el registro exige CAPTCHA y no se crean cuentas reales); el sitio respondio \"Credenciales inválidas\"",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"Bienvenido\"",
+  "titulo": "Inicio de sesión - Inicio de sesión exitoso",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 1.34,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.741,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261121_231805_740.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\" y contraseña \"Maderas2026$\"",
+    "estado": "passed",
+    "duracion_s": 0.098,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_OK_20261121_231806_007.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.241,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso3_OK_20261121_231806_452.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"Bienvenido\"",
+    "estado": "failed",
+    "duracion_s": 0.263,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso4_FALLA_20261121_231806_906.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - no se dispone de una cuenta verificada para iniciar sesion (el registro exige CAPTCHA y no se crean cuentas reales); el sitio respondio \"Credenciales inválidas\""
+   }
+  ]
+ },
+ "CP6": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"contraseña incorrecta\"»: java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"contraseña incorrecta\" y el sitio mostro \"Credenciales inválidas\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"contraseña incorrecta\"",
+  "titulo": "Inicio de sesión - Inicio de sesión fallido por contraseña incorrecta",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 1.13,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.784,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261121_231808_464.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"jmorales89\" y contraseña \"ClaveMala123\"",
+    "estado": "passed",
+    "duracion_s": 0.098,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_OK_20261121_231808_743.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.24,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso3_OK_20261121_231809_182.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"contraseña incorrecta\"",
+    "estado": "failed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso4_FALLA_20261121_231809_406.png",
+    "error": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"contraseña incorrecta\" y el sitio mostro \"Credenciales inválidas\""
+   }
+  ]
+ },
+ "CP7": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"no existe\"»: java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"no existe\" y el sitio mostro \"Credenciales inválidas\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"no existe\"",
+  "titulo": "Inicio de sesión - Inicio de sesión fallido por usuario inexistente",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 1.42,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.812,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261121_231810_977.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa usuario \"usuarioXYZ\" y contraseña \"Maderas2026$\"",
+    "estado": "passed",
+    "duracion_s": 0.104,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_OK_20261121_231811_262.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "presiona \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.241,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso3_OK_20261121_231811_700.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no existe\"",
+    "estado": "failed",
+    "duracion_s": 0.262,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso4_FALLA_20261121_231812_174.png",
+    "error": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"no existe\" y el sitio mostro \"Credenciales inválidas\""
+   }
+  ]
+ },
+ "CP8": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] el boton \"Reenviar verificacion\" solo aparece tras iniciar sesion con una cuenta registrada y sin verificar (error EMAIL_NOT_VERIFIED); no se puede crear esa cuenta porque el registro exige CAPTCHA y generaria datos re…",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que un usuario se registró pero no ha verificado su cuenta",
+  "titulo": "Reenvío de verificación de cuenta",
+  "feature": "02_InicioSesion.feature",
+  "pasos_total": 4,
+  "pasos_ok": 1,
+  "duracion_s": 0.77,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.766,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261121_231813_646.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario se registró pero no ha verificado su cuenta",
+    "estado": "failed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso2_FALLA_20261121_231813_827.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - el boton \"Reenviar verificacion\" solo aparece tras iniciar sesion con una cuenta registrada y sin verificar (error EMAIL_NOT_VERIFIED); no se puede crear esa cuenta porque el registro exige CAPTCHA y generaria datos reales en el sitio"
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "intenta iniciar sesión y presiona \"Reenviar verificación\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema envía un nuevo correo de verificación y muestra un mensaje que contiene \"correo de verificación\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP9": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Recuperación de contraseña - Solicitud exitosa de recuperación con correo registrado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.34,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 0.771,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso1_OK_20261121_231741_821.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"contacto@maderasmym.cl\" y confirma la solicitud",
+    "estado": "passed",
+    "duracion_s": 0.305,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso2_OK_20261121_231742_308.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"enlace\"",
+    "estado": "passed",
+    "duracion_s": 0.263,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso3_OK_20261121_231742_768.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP10": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"no está registrado\"»: java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"no está registrado\" y el sitio mostro \"Si la cuenta existe, te enviamos un enlace. Revisa tu correo (también spam/promociones).\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"no está registrado\"",
+  "titulo": "Recuperación de contraseña - Solicitud fallida con correo no registrado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 1.39,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 0.825,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso1_OK_20261121_231744_148.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"noexiste@correo.cl\" y confirma la solicitud",
+    "estado": "passed",
+    "duracion_s": 0.301,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso2_OK_20261121_231744_637.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"no está registrado\"",
+    "estado": "failed",
+    "duracion_s": 0.262,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso3_FALLA_20261121_231745_099.png",
+    "error": "java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"no está registrado\" y el sitio mostro \"Si la cuenta existe, te enviamos un enlace. Revisa tu correo (también spam/promociones).\""
+   }
+  ]
+ },
+ "CP11": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema muestra un mensaje que contiene \"obligatorio\"»: java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"obligatorio\" y el sitio mostro \"Ingresa tu correo o nombre de usuario.\"",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema muestra un mensaje que contiene \"obligatorio\"",
+  "titulo": "Recuperación de contraseña - Solicitud con campo de correo vacío",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 1.07,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 0.794,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso1_OK_20261121_231746_624.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "ingresa el correo \"\" y confirma la solicitud",
+    "estado": "passed",
+    "duracion_s": 0.263,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso2_OK_20261121_231747_065.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje que contiene \"obligatorio\"",
+    "estado": "failed",
+    "duracion_s": 0.009,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso3_FALLA_20261121_231747_293.png",
+    "error": "java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"obligatorio\" y el sitio mostro \"Ingresa tu correo o nombre de usuario.\""
+   }
+  ]
+ },
+ "CP12": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Restablecimiento con enlace expirado",
+  "feature": "03_RecuperacionContrasena.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 1.14,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
+    "estado": "passed",
+    "duracion_s": 0.845,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso1_OK_20261121_231748_893.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario recibió un correo de recuperación",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso2_OK_20261121_231749_085.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "utiliza el enlace después de su periodo de validez",
+    "estado": "passed",
+    "duracion_s": 0.288,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso3_OK_20261121_231749_554.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema informa que el enlace expiró y ofrece solicitar uno nuevo",
+    "estado": "passed",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso4_OK_20261121_231749_751.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP13": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Bloqueo de acceso a datos de cuenta sin sesión iniciada",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.83,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario no ha iniciado sesión",
+    "estado": "passed",
+    "duracion_s": 0.958,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261121_231734_797.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "intenta acceder directamente a la sección \"Mi cuenta\"",
+    "estado": "passed",
+    "duracion_s": 0.866,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261121_231735_931.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a la página de \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.003,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261121_231736_112.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP14": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que un usuario tiene una sesión iniciada",
+  "titulo": "Cierre de sesión exitoso",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 0.0,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario tiene una sesión iniciada",
+    "estado": "failed",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261121_231736_656.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona la opción \"Cerrar sesión\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema finaliza la sesión y lo redirige a la página de inicio como visitante",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP15": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que un usuario tiene una sesión iniciada",
+  "titulo": "Expiración de sesión por inactividad",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 0.0,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario tiene una sesión iniciada",
+    "estado": "failed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261121_231737_224.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "permanece inactivo durante un periodo prolongado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema cierra la sesión automáticamente y solicita autenticarse nuevamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP16": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Intento de acceso directo a una ruta protegida",
+  "feature": "04_ControlAccesoSesion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 2.18,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario no autenticado conoce la URL de una ruta protegida",
+    "estado": "passed",
+    "duracion_s": 1.32,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261121_231739_070.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "la ingresa directamente en el navegador",
+    "estado": "passed",
+    "duracion_s": 0.856,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261121_231740_198.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta",
+    "estado": "passed",
+    "duracion_s": 0.007,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261121_231740_385.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP17": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda de productos - Búsqueda exitosa de un producto existente",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 4.19,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.362,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261121_231859_821.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"Pino Oregón\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.05,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261121_231900_143.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 2.766,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261121_231903_169.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"listado de resultados\"",
+    "estado": "passed",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261121_231903_404.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP18": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda de productos - Búsqueda sin resultados",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 7.18,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.33,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261121_231905_313.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"asdfgh123\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.05,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261121_231905_638.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 2.765,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261121_231908_667.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"sin resultados\"",
+    "estado": "passed",
+    "duracion_s": 3.037,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261121_231911_912.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP20": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda de productos - Búsqueda con caracteres especiales o código",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 8.21,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.332,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261121_231913_825.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "escribe \"<script>alert(1)</script>\" en el buscador",
+    "estado": "passed",
+    "duracion_s": 0.056,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261121_231914_145.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Y",
+    "texto": "ejecuta la búsqueda",
+    "estado": "passed",
+    "duracion_s": 2.764,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261121_231917_185.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"sanitizada sin ejecutar codigo\"",
+    "estado": "passed",
+    "duracion_s": 4.063,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261121_231921_453.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP19": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Búsqueda con campo vacío",
+  "feature": "05_BusquedaProductos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.03,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario se encuentra en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.271,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso1_OK_20261121_231923_307.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona buscar sin ingresar texto",
+    "estado": "passed",
+    "duracion_s": 1.743,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso2_OK_20261121_231925_319.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema no ejecuta la búsqueda o solicita ingresar un término",
+    "estado": "passed",
+    "duracion_s": 0.012,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso3_OK_20261121_231925_565.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP21": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Navegación exitosa a categoría \"Pino Oregón Bruto\"",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.93,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 2.669,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso1_OK_20261121_231711_830.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Pino Oregón Bruto\"",
+    "estado": "passed",
+    "duracion_s": 2.256,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso2_OK_20261121_231714_364.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega el listado de productos de esa categoría",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso3_OK_20261121_231714_494.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP22": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Navegación a subcategoría por medida",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 5.62,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 1.542,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso1_OK_20261121_231716_570.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "despliega la categoría \"Pino Oregón Cepillado\" y selecciona la medida \"4.00 mts\"",
+    "estado": "passed",
+    "duracion_s": 4.005,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso2_OK_20261121_231720_860.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra solo los productos de esa medida específica",
+    "estado": "passed",
+    "duracion_s": 0.068,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso3_OK_20261121_231721_047.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP23": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Verificación de listado filtrado correctamente",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.82,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 1.502,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso1_OK_20261121_231723_044.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "navega a la categoría \"Pino Oregón Bruto\" y revisa el listado de productos desplegado",
+    "estado": "passed",
+    "duracion_s": 2.254,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso2_OK_20261121_231725_571.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "todos los productos mostrados pertenecen exclusivamente a la categoría seleccionada",
+    "estado": "passed",
+    "duracion_s": 0.065,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso3_OK_20261121_231725_768.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP24": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Navegación a categoría sin stock disponible",
+  "feature": "06_NavegacionCategorias.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 6.57,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en el menú \"Categorías\"",
+    "estado": "passed",
+    "duracion_s": 1.291,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso1_OK_20261121_231727_615.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "accede a una categoría sin productos disponibles",
+    "estado": "passed",
+    "duracion_s": 5.278,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso2_OK_20261121_231733_173.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra un mensaje indicando que no hay productos disponibles",
+    "estado": "passed",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso3_OK_20261121_231733_273.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP25": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización exitosa del detalle de producto",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.82,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario selecciona un producto desde el listado",
+    "estado": "passed",
+    "duracion_s": 1.801,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso1_OK_20261121_231752_213.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "accede a su ficha",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso2_OK_20261121_231752_495.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra tipo, medidas, dimensiones y disponibilidad del producto",
+    "estado": "passed",
+    "duracion_s": 0.019,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso3_OK_20261121_231752_759.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP26": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] el catalogo publicado no tiene en este momento ningun producto con disponibilidad 0 ()",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que un usuario accede a la ficha de un producto sin existencias",
+  "titulo": "Visualización de producto sin stock",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 1.78,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a la ficha de un producto sin existencias",
+    "estado": "failed",
+    "duracion_s": 1.784,
+    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso1_FALLA_20261121_231755_200.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - el catalogo publicado no tiene en este momento ningun producto con disponibilidad 0 ()"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa el campo \"Disponibilidad\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema indica claramente que el producto no tiene stock",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP27": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Acceso a la ficha desde un resultado de búsqueda",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.55,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario realizó una búsqueda exitosa de \"Pino Oregón\"",
+    "estado": "passed",
+    "duracion_s": 4.293,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso1_OK_20261121_231800_570.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona un producto del listado de resultados",
+    "estado": "passed",
+    "duracion_s": 0.251,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso2_OK_20261121_231801_045.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige correctamente a la ficha del producto seleccionado",
+    "estado": "passed",
+    "duracion_s": 0.009,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso3_OK_20261121_231801_309.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP28": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización de imágenes del producto",
+  "feature": "07_FichaProducto.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.63,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha de un producto",
+    "estado": "passed",
+    "duracion_s": 1.611,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso1_OK_20261121_231803_725.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa la sección de imágenes",
+    "estado": "passed",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso2_OK_20261121_231804_021.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega correctamente las imágenes del producto sin errores de carga",
+    "estado": "passed",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso3_OK_20261121_231804_268.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP29": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Carrito - agregar producto - Agregar producto exitosamente al carrito",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 2.26,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 1.349,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso1_OK_20261121_232005_338.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "indica la cantidad \"2\" y presiona \"Agregar\"",
+    "estado": "passed",
+    "duracion_s": 0.91,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso2_OK_20261121_232006_513.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"agregado y contador actualizado\"",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso3_OK_20261121_232006_676.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP30": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Entonces el sistema responde de forma \"error de stock insuficiente\"»: java.lang.AssertionError: NO PASA - El sitio permitio llevar 79 unidades de un producto con stock 78 (no limita la cantidad al stock)",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Entonces el sistema responde de forma \"error de stock insuficiente\"",
+  "titulo": "Carrito - agregar producto - Agregar producto con cantidad superior al stock",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 3,
+  "pasos_ok": 2,
+  "duracion_s": 13.04,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 1.25,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso1_OK_20261121_232008_429.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "indica la cantidad \"999999\" y presiona \"Agregar\"",
+    "estado": "passed",
+    "duracion_s": 11.785,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso2_OK_20261121_232020_489.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema responde de forma \"error de stock insuficiente\"",
+    "estado": "failed",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso3_FALLA_20261121_232020_635.png",
+    "error": "java.lang.AssertionError: NO PASA - El sitio permitio llevar 79 unidades de un producto con stock 78 (no limita la cantidad al stock)"
+   }
+  ]
+ },
+ "CP31": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Actualización del contador del carrito",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 2.34,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 1.566,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso1_OK_20261121_232022_878.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el carrito se encuentra vacío",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso2_OK_20261121_232023_165.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario agrega un producto con cantidad \"1\"",
+    "estado": "passed",
+    "duracion_s": 0.766,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso3_OK_20261121_232024_199.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el contador del carrito se actualiza a la cantidad de ítems agregados",
+    "estado": "passed",
+    "duracion_s": 0.004,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso4_OK_20261121_232024_355.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP32": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo",
+  "titulo": "Agregar el mismo producto más de una vez",
+  "feature": "08_CarritoAgregar.feature",
+  "pasos_total": 4,
+  "pasos_ok": 3,
+  "duracion_s": 4.16,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la ficha o listado de un producto disponible",
+    "estado": "passed",
+    "duracion_s": 1.599,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso1_OK_20261121_232026_497.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un producto ya se encuentra en el carrito",
+    "estado": "passed",
+    "duracion_s": 0.767,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso2_OK_20261121_232027_536.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario lo agrega nuevamente con cantidad \"1\"",
+    "estado": "passed",
+    "duracion_s": 0.531,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso3_OK_20261121_232028_214.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo",
+    "estado": "failed",
+    "duracion_s": 1.262,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso4_FALLA_20261121_232029_636.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   }
+  ]
+ },
+ "CP33": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "titulo": "Vaciar carrito exitosamente",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 3.37,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "failed",
+    "duracion_s": 3.369,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso1_FALLA_20261121_231844_624.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Vaciar Carrito\"",
+    "estado": "skipped",
+    "duracion_s": 0.001,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema elimina todos los productos y el total vuelve a $0",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP34": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "titulo": "Editar cantidad de un producto en el carrito",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 3.06,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "failed",
+    "duracion_s": 3.065,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso1_FALLA_20261121_231848_814.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario modifica la cantidad de dicho producto a \"5\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema actualiza la cantidad y recalcula el total",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP35": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "titulo": "Eliminar un producto específico del carrito",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 3.02,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "failed",
+    "duracion_s": 3.024,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso1_FALLA_20261121_231852_768.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario elimina uno de los productos del carrito",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema retira solo ese producto y conserva el resto en el carrito",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP36": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "titulo": "Recalcular el total al modificar cantidades",
+  "feature": "09_CarritoGestion.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 3.38,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene uno o más productos",
+    "estado": "failed",
+    "duracion_s": 3.382,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso1_FALLA_20261121_231857_311.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario modifica la cantidad de un producto en el carrito a \"3\" y confirma el cambio",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema recalcula automáticamente el \"Total\" mostrado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP37": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "titulo": "Selección de \"Retiro en tienda\"",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 2.81,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "failed",
+    "duracion_s": 2.807,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso1_FALLA_20261121_231951_465.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona la opción \"Retiro en tienda (Sin costo)\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema registra el método de entrega sin agregar costo de flete",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP38": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "titulo": "Selección de \"Flete externo\" con dirección indicada",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 3.07,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "failed",
+    "duracion_s": 3.07,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso1_FALLA_20261121_231955_504.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Flete externo\" e indica la dirección \"Av. Siempre Viva 123, Santiago\" en el campo \"Comentarios\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema registra el método de entrega junto con la dirección proporcionada",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP39": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "titulo": "Selección de \"Flete externo\" sin indicar dirección",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 2.82,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "failed",
+    "duracion_s": 2.821,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso1_FALLA_20261121_231959_255.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema solicita completar la dirección antes de generar el pedido",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP40": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "titulo": "Cambio de método de entrega antes de confirmar",
+  "feature": "10_SeleccionEntrega.feature",
+  "pasos_total": 4,
+  "pasos_ok": 0,
+  "duracion_s": 2.82,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el usuario está en el carrito de compras con productos agregados",
+    "estado": "failed",
+    "duracion_s": 2.818,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso1_FALLA_20261121_232003_014.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el usuario ya seleccionó el método \"Retiro en tienda (Sin costo)\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "lo cambia a \"Flete externo\" antes de generar el pedido",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema actualiza correctamente el método seleccionado",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP41": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] generar un pedido exitoso exige sesion iniciada (el sitio responde 401 y pide ir al login) y crearia un pedido real en el sitio de la empresa",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que el carrito contiene productos y se seleccionó un método de entrega válido",
+  "titulo": "Generar pedido exitosamente",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 0.0,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene productos y se seleccionó un método de entrega válido",
+    "estado": "failed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Generar_pedido_exitosamente/paso1_FALLA_20261121_231814_522.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - generar un pedido exitoso exige sesion iniciada (el sitio responde 401 y pide ir al login) y crearia un pedido real en el sitio de la empresa"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema procesa el pedido y muestra una confirmación al usuario",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP42": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Intento de generar pedido con el carrito vacío",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 1.9,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito de compras está vacío",
+    "estado": "passed",
+    "duracion_s": 1.61,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso1_OK_20261121_231817_047.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "passed",
+    "duracion_s": 0.293,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso2_OK_20261121_231817_618.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema impide la acción y muestra un mensaje indicando que el carrito está vacío",
+    "estado": "passed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso3_OK_20261121_231817_826.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP43": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene productos pero no se ha seleccionado método de entrega»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
+  "categoria": "Elemento cubierto o no clicable",
+  "origen": "Sitio (elemento superpuesto) o script",
+  "paso_fallido": "Dado que el carrito contiene productos pero no se ha seleccionado método de entrega",
+  "titulo": "Generar pedido sin seleccionar método de entrega",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 2.78,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que el carrito contiene productos pero no se ha seleccionado método de entrega",
+    "estado": "failed",
+    "duracion_s": 2.777,
+    "evidencia": "evidencias/Generar_pedido_sin_seleccionar_metodo_de_entrega/paso1_FALLA_20261121_231821_175.png",
+    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona \"Generar Pedido\"",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema solicita seleccionar un método de entrega antes de continuar",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP44": {
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] requiere generar un pedido real con una sesion iniciada, lo que no se hace en el sitio de la empresa",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Dado que un pedido fue generado exitosamente",
+  "titulo": "Confirmación tras generar el pedido",
+  "feature": "11_GenerarPedido.feature",
+  "pasos_total": 3,
+  "pasos_ok": 0,
+  "duracion_s": 0.0,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un pedido fue generado exitosamente",
+    "estado": "failed",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Confirmacion_tras_generar_el_pedido/paso1_FALLA_20261121_231822_113.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - requiere generar un pedido real con una sesion iniciada, lo que no se hace en el sitio de la empresa"
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "el sistema procesa la solicitud",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se muestra un mensaje de confirmación y el carrito queda vacío",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP45": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Descarga de documentos - Descarga exitosa de \"Lista de Precios 2026\"",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.69,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.286,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso1_OK_20261121_231823_990.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Lista de Precios 2026 (PDF)\"",
+    "estado": "passed",
+    "duracion_s": 2.397,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso2_OK_20261121_231826_655.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso3_OK_20261121_231826_854.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP46": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Descarga de documentos - Descarga exitosa del \"Informativo Maderas\"",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.75,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.293,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso1_OK_20261121_231828_703.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Informativo Maderas (PDF)\"",
+    "estado": "passed",
+    "duracion_s": 2.445,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso2_OK_20261121_231831_421.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso3_OK_20261121_231831_597.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP47": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Descarga de documentos - Apertura del PDF sin errores de formato",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.76,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.301,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso1_OK_20261121_231833_445.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el enlace \"Pino Insigne Seco Cepillado Tabla\"",
+    "estado": "passed",
+    "duracion_s": 2.453,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso2_OK_20261121_231836_175.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema descarga o abre el PDF correctamente",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso3_OK_20261121_231836_321.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP48": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Verificación de enlaces no rotos",
+  "feature": "12_DescargaDocumentos.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 2.95,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en la página de inicio",
+    "estado": "passed",
+    "duracion_s": 1.294,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso1_OK_20261121_231838_123.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que existen múltiples enlaces a documentos PDF en el sitio",
+    "estado": "passed",
+    "duracion_s": 0.724,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso2_OK_20261121_231839_117.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario verifica cada uno de ellos",
+    "estado": "passed",
+    "duracion_s": 0.3,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso3_OK_20261121_231839_705.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "ninguno retorna un error 404 o enlace roto",
+    "estado": "passed",
+    "duracion_s": 0.629,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso4_OK_20261121_231840_600.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP49": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Redirección exitosa a WhatsApp con mensaje predefinido y número correcto",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 2.74,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 1.287,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261121_232103_471.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.55,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261121_232104_285.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
+    "estado": "passed",
+    "duracion_s": 0.901,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261121_232105_340.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP50": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Redirección exitosa a WhatsApp con mensaje predefinido y número correcto",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 2.74,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 1.287,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261121_232103_471.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.55,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261121_232104_285.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
+    "estado": "passed",
+    "duracion_s": 0.901,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261121_232105_340.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP51": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Apertura del enlace en una nueva pestaña",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 2.24,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 1.615,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso1_OK_20261121_232107_504.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.552,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso2_OK_20261121_232108_336.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se abre en una nueva pestaña o aplicación, sin cerrar la sesión de compra del usuario",
+    "estado": "passed",
+    "duracion_s": 0.071,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso3_OK_20261121_232108_562.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP52": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Funcionamiento del botón en dispositivo móvil",
+  "feature": "13_ContactoWhatsApp.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 4.96,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario está en cualquier página del sitio",
+    "estado": "passed",
+    "duracion_s": 1.617,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso1_OK_20261121_232110_662.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil",
+    "estado": "passed",
+    "duracion_s": 2.021,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso2_OK_20261121_232112_958.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "presiona el botón \"¡Contáctanos!\"",
+    "estado": "passed",
+    "duracion_s": 0.668,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso3_OK_20261121_232113_905.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema abre correctamente la aplicación de WhatsApp instalada",
+    "estado": "passed",
+    "duracion_s": 0.655,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso4_OK_20261121_232114_740.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP53": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización exitosa de la información institucional",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.66,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "passed",
+    "duracion_s": 4.649,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso1_OK_20261121_231930_874.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "la página carga completamente",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso2_OK_20261121_231931_171.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "se despliega correctamente la historia, misión, visión y equipo de Maderas MyM",
+    "estado": "passed",
+    "duracion_s": 0.004,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso3_OK_20261121_231931_418.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP54": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización del mapa de ubicación",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 4.73,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "passed",
+    "duracion_s": 2.153,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso1_OK_20261121_231934_259.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "revisa la sección de ubicación",
+    "estado": "passed",
+    "duracion_s": 2.512,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso2_OK_20261121_231937_068.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el mapa de Google Maps embebido se carga correctamente",
+    "estado": "passed",
+    "duracion_s": 0.066,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso3_OK_20261121_231937_206.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP55": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Enlace a WhatsApp desde \"Sobre Nosotros\"",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 3,
+  "pasos_ok": 3,
+  "duracion_s": 3.47,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "passed",
+    "duracion_s": 2.262,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso1_OK_20261121_231939_956.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona \"Contactar por WhatsApp\"",
+    "estado": "passed",
+    "duracion_s": 0.338,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso2_OK_20261121_231940_595.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema lo redirige correctamente a WhatsApp",
+    "estado": "passed",
+    "duracion_s": 0.867,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso3_OK_20261121_231941_573.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP56": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visualización correcta en dispositivo móvil",
+  "feature": "14_SobreNosotros.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 5.04,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
+    "estado": "passed",
+    "duracion_s": 2.212,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso1_OK_20261121_231944_313.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que un usuario accede a \"Sobre Nosotros\" desde un dispositivo móvil",
+    "estado": "passed",
+    "duracion_s": 1.327,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso2_OK_20261121_231945_951.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "la página se despliega",
+    "estado": "passed",
+    "duracion_s": 1.5,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso3_OK_20261121_231947_750.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el contenido se adapta correctamente al tamaño de pantalla, sin elementos superpuestos",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso4_OK_20261121_231947_999.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP57": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Cuando presiona el ícono de menú hamburguesa»: java.lang.AssertionError: NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Cuando presiona el ícono de menú hamburguesa",
+  "titulo": "Apertura y cierre correcto del menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 3,
+  "pasos_ok": 1,
+  "duracion_s": 1.82,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.804,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso1_OK_20261121_232032_394.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Cuando",
+    "texto": "presiona el ícono de menú hamburguesa",
+    "estado": "failed",
+    "duracion_s": 0.012,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso2_FALLA_20261121_232032_681.png",
+    "error": "java.lang.AssertionError: NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
+   },
+   {
+    "n": 3,
+    "palabra": "Entonces",
+    "texto": "el sistema despliega el menú de navegación y permite cerrarlo correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP58": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[Resultado distinto del esperado] Falla en el paso «Cuando el usuario selecciona \"Productos\"»: java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Cuando el usuario selecciona \"Productos\"",
+  "titulo": "Navegación a \"Productos\" desde el menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 4,
+  "pasos_ok": 2,
+  "duracion_s": 1.96,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.934,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso1_OK_20261121_232035_502.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.004,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso2_OK_20261121_232035_776.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario selecciona \"Productos\"",
+    "estado": "failed",
+    "duracion_s": 0.025,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso3_FALLA_20261121_232036_059.png",
+    "error": "java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "el sistema muestra las categorías de productos disponibles",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   }
+  ]
+ },
+ "CP59": {
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
+  "titulo": "Visibilidad de carrito y login en el menú móvil",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 4,
+  "pasos_ok": 4,
+  "duracion_s": 2.15,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.636,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso1_OK_20261121_232038_582.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso2_OK_20261121_232038_856.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario revisa las opciones disponibles",
+    "estado": "passed",
+    "duracion_s": 0.5,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso3_OK_20261121_232039_602.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "se muestran correctamente los accesos a \"Carrito\" e \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso4_OK_20261121_232039_858.png",
+    "error": ""
+   }
+  ]
+ },
+ "CP60": {
+  "resultado": "NO PASA",
+  "estado": "En construcción",
+  "observaciones": "[5 filas de Ejemplos] [Resultado distinto del esperado] Falla en el paso «Cuando el usuario presiona la opción \"Productos\"»: java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)",
+  "categoria": "Resultado distinto del esperado",
+  "origen": "Sitio o dato de prueba (la verificación no se cumplió)",
+  "paso_fallido": "Cuando el usuario presiona la opción \"Productos\"",
+  "titulo": "Accesibilidad de la opción Inicio del menú",
+  "feature": "15_MenuResponsivo.feature",
+  "pasos_total": 20,
+  "pasos_ok": 16,
+  "duracion_s": 15.1,
+  "pasos": [
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.67,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso1_OK_20261121_232042_166.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso2_OK_20261121_232042_440.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Inicio\"",
+    "estado": "passed",
+    "duracion_s": 2.295,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso3_OK_20261121_232044_994.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Inicio\" responde correctamente",
+    "estado": "passed",
+    "duracion_s": 0.003,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso4_OK_20261121_232045_273.png",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.533,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso1_OK_20261121_232047_442.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso2_OK_20261121_232047_730.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Productos\"",
+    "estado": "failed",
+    "duracion_s": 0.025,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso3_FALLA_20261121_232048_010.png",
+    "error": "java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Productos\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.614,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso1_OK_20261121_232050_498.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.004,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso2_OK_20261121_232050_773.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Sobre Nosotros\"",
+    "estado": "failed",
+    "duracion_s": 0.025,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso3_FALLA_20261121_232051_059.png",
+    "error": "java.lang.AssertionError: NO PASA - La opcion \"Sobre Nosotros\" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Sobre Nosotros\" responde correctamente",
+    "estado": "skipped",
+    "duracion_s": 0.0,
+    "evidencia": "",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.611,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso1_OK_20261121_232053_595.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso2_OK_20261121_232053_874.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Carrito\"",
+    "estado": "passed",
+    "duracion_s": 1.812,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso3_OK_20261121_232055_948.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Carrito\" responde correctamente",
+    "estado": "passed",
+    "duracion_s": 0.007,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso4_OK_20261121_232056_073.png",
+    "error": ""
+   },
+   {
+    "n": 1,
+    "palabra": "Dado",
+    "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
+    "estado": "passed",
+    "duracion_s": 1.569,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso1_OK_20261121_232058_137.png",
+    "error": ""
+   },
+   {
+    "n": 2,
+    "palabra": "Dado",
+    "texto": "que el menú móvil está desplegado",
+    "estado": "passed",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso2_OK_20261121_232058_407.png",
+    "error": ""
+   },
+   {
+    "n": 3,
+    "palabra": "Cuando",
+    "texto": "el usuario presiona la opción \"Iniciar sesión\"",
+    "estado": "passed",
+    "duracion_s": 2.904,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso3_OK_20261121_232101_571.png",
+    "error": ""
+   },
+   {
+    "n": 4,
+    "palabra": "Entonces",
+    "texto": "la opción \"Iniciar sesión\" responde correctamente",
+    "estado": "passed",
+    "duracion_s": 0.003,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso4_OK_20261121_232101_671.png",
+    "error": ""
+   }
+  ]
+ }
+}

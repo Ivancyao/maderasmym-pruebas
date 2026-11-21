@@ -1,0 +1,599 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Acceso a la página \"Sobre Nosotros\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 4649000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario accede al menú \"Sobre Nosotros\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sobre Nosotros\"",
+                  "offset": 30
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.que_un_usuario_accede_al_menu(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso1_OK_20261121_231930_874.png"
+                ],
+                "result": {
+                  "duration": 291000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:25.899Z",
+        "before": [
+          {
+            "result": {
+              "duration": 324000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Visualización exitosa de la información institucional",
+        "description": "",
+        "id": "página-\"sobre-nosotros\";visualización-exitosa-de-la-información-institucional",
+        "after": [
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "la página carga completamente",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.la_pagina_carga_completamente()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso2_OK_20261121_231931_171.png"
+                ],
+                "result": {
+                  "duration": 242000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "se despliega correctamente la historia, misión, visión y equipo de Maderas MyM",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.se_despliega_correctamente_la_informacion()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso3_OK_20261121_231931_418.png"
+                ],
+                "result": {
+                  "duration": 245000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP53"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@sobre-nosotros"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página \"Sobre Nosotros\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 2153000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario accede al menú \"Sobre Nosotros\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sobre Nosotros\"",
+                  "offset": 30
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.que_un_usuario_accede_al_menu(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_del_mapa_de_ubicacion/paso1_OK_20261121_231934_259.png"
+                ],
+                "result": {
+                  "duration": 297000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:31.800Z",
+        "before": [
+          {
+            "result": {
+              "duration": 304000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Visualización del mapa de ubicación",
+        "description": "",
+        "id": "página-\"sobre-nosotros\";visualización-del-mapa-de-ubicación",
+        "after": [
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2512000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "revisa la sección de ubicación",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.revisa_la_seccion_de_ubicacion()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_del_mapa_de_ubicacion/paso2_OK_20261121_231937_068.png"
+                ],
+                "result": {
+                  "duration": 72000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "el mapa de Google Maps embebido se carga correctamente",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.el_mapa_de_google_maps_se_carga_correctamente()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_del_mapa_de_ubicacion/paso3_OK_20261121_231937_206.png"
+                ],
+                "result": {
+                  "duration": 68000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP54"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@sobre-nosotros"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página \"Sobre Nosotros\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 2262000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario accede al menú \"Sobre Nosotros\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sobre Nosotros\"",
+                  "offset": 30
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.que_un_usuario_accede_al_menu(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso1_OK_20261121_231939_956.png"
+                ],
+                "result": {
+                  "duration": 301000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:37.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 284000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Enlace a WhatsApp desde \"Sobre Nosotros\"",
+        "description": "",
+        "id": "página-\"sobre-nosotros\";enlace-a-whatsapp-desde-\"sobre-nosotros\"",
+        "after": [
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 338000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "presiona \"Contactar por WhatsApp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Contactar por WhatsApp\"",
+                  "offset": 9
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.presiona(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso2_OK_20261121_231940_595.png"
+                ],
+                "result": {
+                  "duration": 111000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 867000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "el sistema lo redirige correctamente a WhatsApp",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.el_sistema_lo_redirige_correctamente_a_whatsapp()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso3_OK_20261121_231941_573.png"
+                ],
+                "result": {
+                  "duration": 72000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP55"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@sobre-nosotros"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Acceso a la página \"Sobre Nosotros\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 2212000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que un usuario accede al menú \"Sobre Nosotros\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sobre Nosotros\"",
+                  "offset": 30
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.que_un_usuario_accede_al_menu(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_correcta_en_dispositivo_movil/paso1_OK_20261121_231944_313.png"
+                ],
+                "result": {
+                  "duration": 311000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-11-21T23:19:41.826Z",
+        "before": [
+          {
+            "result": {
+              "duration": 275000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Visualización correcta en dispositivo móvil",
+        "description": "",
+        "id": "página-\"sobre-nosotros\";visualización-correcta-en-dispositivo-móvil",
+        "after": [
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1327000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "que un usuario accede a \"Sobre Nosotros\" desde un dispositivo móvil",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sobre Nosotros\"",
+                  "offset": 24
+                }
+              ],
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.que_un_usuario_accede_desde_un_dispositivo_movil(java.lang.String)"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_correcta_en_dispositivo_movil/paso2_OK_20261121_231945_951.png"
+                ],
+                "result": {
+                  "duration": 299000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1500000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "la página se despliega",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.la_pagina_se_despliega()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_correcta_en_dispositivo_movil/paso3_OK_20261121_231947_750.png"
+                ],
+                "result": {
+                  "duration": 244000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "el contenido se adapta correctamente al tamaño de pantalla, sin elementos superpuestos",
+            "match": {
+              "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.el_contenido_se_adapta_al_tamano_de_pantalla()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Evidencia: evidencias/Visualizacion_correcta_en_dispositivo_movil/paso4_OK_20261121_231947_999.png"
+                ],
+                "result": {
+                  "duration": 244000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "DefinicionPasos.sobrenosotros.PasosSobreNosotros.capturarEvidenciaDelPaso(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CP56"
+          },
+          {
+            "name": "@RQ-03"
+          },
+          {
+            "name": "@sobre-nosotros"
+          }
+        ]
+      }
+    ],
+    "name": "Página \"Sobre Nosotros\"",
+    "description": "  Como un visitante del sitio\n  Quiero conocer la historia, misión, visión, equipo y ubicación de Maderas MyM\n  Para generar confianza antes de realizar una compra",
+    "id": "página-\"sobre-nosotros\"",
+    "keyword": "Característica",
+    "uri": "file:src/test/resources/Features/14_SobreNosotros.feature",
+    "tags": []
+  }
+]
