@@ -110,13 +110,13 @@ public class Utility {
 	}
 
 	/**
-	 * Deja la ventana en escritorio (1920x1080). En Chrome sin pantalla (headless) maximize() deja la
-	 * ventana en ~800x600 y el sitio mostraria su diseno de tablet/celular; por eso se fija el tamano.
+	 * Deja la ventana en tamano de escritorio. Con ventana visible (ejecucion local) se maximiza. En
+	 * Chrome sin pantalla (headless) el tamano de escritorio (1366x768) ya se fija al crear el navegador
+	 * mediante emulacion de dispositivo (ver opcionesBase), porque maximize()/--window-size no son
+	 * confiables en headless (la ventana quedaba en ~800x457 y el sitio mostraba su diseno de tablet).
 	 */
 	public static void ajustarVentana(WebDriver driver) {
-		if ("true".equalsIgnoreCase(System.getenv("HEADLESS"))) {
-			driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080));
-		} else {
+		if (!"true".equalsIgnoreCase(System.getenv("HEADLESS"))) {
 			driver.manage().window().maximize();
 		}
 	}
@@ -131,7 +131,17 @@ public class Utility {
 		opciones.setCapability("unhandledPromptBehavior", "ignore");
 		if ("true".equalsIgnoreCase(System.getenv("HEADLESS"))) {
 			opciones.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu",
-					"--remote-allow-origins=*", "--window-size=1920,1080");
+					"--remote-allow-origins=*", "--window-size=1366,768");
+			// Viewport de escritorio fijo (no movil, sin tactil), independiente del tamano real de la ventana
+			Map<String, Object> metricas = new HashMap<String, Object>();
+			metricas.put("width", 1366);
+			metricas.put("height", 768);
+			metricas.put("pixelRatio", 1.0);
+			metricas.put("touch", false);
+			metricas.put("mobile", false);
+			Map<String, Object> escritorio = new HashMap<String, Object>();
+			escritorio.put("deviceMetrics", metricas);
+			opciones.setExperimentalOption("mobileEmulation", escritorio);
 		}
 		return opciones;
 	}
