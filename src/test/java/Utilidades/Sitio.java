@@ -115,9 +115,17 @@ public final class Sitio {
 	}
 
 	public static void clic(WebDriver d, WebElement e) {
+		// El sitio muestra avisos emergentes (div.popup, p. ej. "Producto agregado") que se cierran solos a
+		// los 3 s y cubren la esquina superior derecha (enlace del carrito): se espera a que desaparezcan.
+		esperarHasta(() -> d.findElements(By.cssSelector(".popup")).isEmpty(), 6);
 		js(d, "arguments[0].scrollIntoView({block:'center'});", e);
 		pausa(200);
-		e.click();
+		try {
+			e.click();
+		} catch (org.openqa.selenium.ElementClickInterceptedException ex) {
+			esperarHasta(() -> d.findElements(By.cssSelector(".popup")).isEmpty(), 6);
+			e.click();
+		}
 	}
 
 	/** Clic mediante JavaScript, recogiendo un alert() si el sitio lo muestra. */
