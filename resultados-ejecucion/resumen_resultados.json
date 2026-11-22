@@ -10,15 +10,15 @@
   "feature": "01_RegistroUsuario.feature",
   "pasos_total": 4,
   "pasos_ok": 2,
-  "duracion_s": 2.38,
+  "duracion_s": 2.23,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 1.89,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso1_OK_20261121_231657_875.png",
+    "duracion_s": 1.682,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso1_OK_20261122_130353_429.png",
     "error": ""
    },
    {
@@ -26,8 +26,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
     "estado": "passed",
-    "duracion_s": 0.484,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso2_OK_20261121_231658_581.png",
+    "duracion_s": 0.544,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso2_OK_20261122_130354_249.png",
     "error": ""
    },
    {
@@ -35,8 +35,8 @@
     "palabra": "Y",
     "texto": "presiona \"Crear cuenta\"",
     "estado": "failed",
-    "duracion_s": 0.001,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso3_FALLA_20261121_231658_800.png",
+    "duracion_s": 0.002,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_exitoso_con_datos_validos/paso3_FALLA_20261122_130354_508.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - el envio de datos validos crearia una cuenta real en el sitio de la empresa y el formulario exige ademas resolver un CAPTCHA (Cloudflare Turnstile), que no se puede automatizar"
    },
    {
@@ -44,7 +44,7 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"verificación\"",
     "estado": "skipped",
-    "duracion_s": 0.001,
+    "duracion_s": 0.0,
     "evidencia": "",
     "error": ""
    }
@@ -61,15 +61,15 @@
   "feature": "01_RegistroUsuario.feature",
   "pasos_total": 4,
   "pasos_ok": 3,
-  "duracion_s": 1.74,
+  "duracion_s": 4.89,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 1.076,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso1_OK_20261121_231700_763.png",
+    "duracion_s": 1.121,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso1_OK_20261122_130356_680.png",
     "error": ""
    },
    {
@@ -77,8 +77,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"maderas\" y repite la contraseña \"maderas\"",
     "estado": "passed",
-    "duracion_s": 0.381,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso2_OK_20261121_231701_317.png",
+    "duracion_s": 0.444,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso2_OK_20261122_130357_350.png",
     "error": ""
    },
    {
@@ -86,8 +86,8 @@
     "palabra": "Y",
     "texto": "presiona \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 0.271,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso3_OK_20261121_231701_814.png",
+    "duracion_s": 3.313,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso3_OK_20261122_130400_914.png",
     "error": ""
    },
    {
@@ -95,8 +95,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"mínimo 8 caracteres\"",
     "estado": "failed",
-    "duracion_s": 0.015,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso4_FALLA_20261121_231702_048.png",
+    "duracion_s": 0.012,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasena_que_no_c/paso4_FALLA_20261122_130401_135.png",
     "error": "java.lang.AssertionError: NO PASA - Registro de usuario: se esperaba un mensaje con \"mínimo 8 caracteres\" y el sitio mostro \"La contraseña debe incluir mayúscula, minúscula, número y símbolo (mín. 8).\""
    }
   ]
@@ -112,15 +112,15 @@
   "feature": "01_RegistroUsuario.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 1.72,
+  "duracion_s": 4.73,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 1.079,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso1_OK_20261121_231703_981.png",
+    "duracion_s": 1.046,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso1_OK_20261122_130402_981.png",
     "error": ""
    },
    {
@@ -128,8 +128,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\", correo \"jmorales89@example.com\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2025$\"",
     "estado": "passed",
-    "duracion_s": 0.34,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso2_OK_20261121_231704_538.png",
+    "duracion_s": 0.387,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso2_OK_20261122_130403_638.png",
     "error": ""
    },
    {
@@ -137,8 +137,8 @@
     "palabra": "Y",
     "texto": "presiona \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 0.285,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso3_OK_20261121_231705_039.png",
+    "duracion_s": 3.29,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso3_OK_20261122_130407_210.png",
     "error": ""
    },
    {
@@ -146,8 +146,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"no coincide\"",
     "estado": "passed",
-    "duracion_s": 0.015,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso4_OK_20261121_231705_242.png",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_contrasenas_no_coin/paso4_OK_20261122_130407_427.png",
     "error": ""
    }
   ]
@@ -163,15 +163,15 @@
   "feature": "01_RegistroUsuario.feature",
   "pasos_total": 4,
   "pasos_ok": 3,
-  "duracion_s": 1.66,
+  "duracion_s": 4.71,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario visitante accede a la página \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 1.017,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso1_OK_20261121_231706_867.png",
+    "duracion_s": 0.999,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso1_OK_20261122_130409_027.png",
     "error": ""
    },
    {
@@ -179,8 +179,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\", correo \"contacto@maderasmym.cl\", contraseña \"Maderas2026$\" y repite la contraseña \"Maderas2026$\"",
     "estado": "passed",
-    "duracion_s": 0.341,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso2_OK_20261121_231707_388.png",
+    "duracion_s": 0.418,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso2_OK_20261122_130409_733.png",
     "error": ""
    },
    {
@@ -188,8 +188,8 @@
     "palabra": "Y",
     "texto": "presiona \"Crear cuenta\"",
     "estado": "passed",
-    "duracion_s": 0.282,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso3_OK_20261121_231707_877.png",
+    "duracion_s": 3.281,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso3_OK_20261122_130413_255.png",
     "error": ""
    },
    {
@@ -197,8 +197,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"ya está registrado\"",
     "estado": "failed",
-    "duracion_s": 0.018,
-    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso4_FALLA_20261121_231708_154.png",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Registro_de_usuario_Registro_fallido_por_correo_ya_registrad/paso4_FALLA_20261122_130413_463.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - el formulario exige resolver el CAPTCHA (Cloudflare Turnstile) antes de enviar; mensaje del sitio: \"Completa la verificación \"No soy un robot\" antes de continuar.\""
    }
   ]
@@ -214,15 +214,15 @@
   "feature": "02_InicioSesion.feature",
   "pasos_total": 4,
   "pasos_ok": 3,
-  "duracion_s": 1.34,
+  "duracion_s": 4.3,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.741,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261121_231805_740.png",
+    "duracion_s": 0.891,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261122_130547_348.png",
     "error": ""
    },
    {
@@ -230,8 +230,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\" y contraseña \"Maderas2026$\"",
     "estado": "passed",
-    "duracion_s": 0.098,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_OK_20261121_231806_007.png",
+    "duracion_s": 0.123,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_OK_20261122_130547_666.png",
     "error": ""
    },
    {
@@ -239,8 +239,8 @@
     "palabra": "Y",
     "texto": "presiona \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.241,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso3_OK_20261121_231806_452.png",
+    "duracion_s": 3.277,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso3_OK_20261122_130551_172.png",
     "error": ""
    },
    {
@@ -248,8 +248,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"Bienvenido\"",
     "estado": "failed",
-    "duracion_s": 0.263,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso4_FALLA_20261121_231806_906.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso4_FALLA_20261122_130551_421.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - no se dispone de una cuenta verificada para iniciar sesion (el registro exige CAPTCHA y no se crean cuentas reales); el sitio respondio \"Credenciales inválidas\""
    }
   ]
@@ -265,15 +265,15 @@
   "feature": "02_InicioSesion.feature",
   "pasos_total": 4,
   "pasos_ok": 3,
-  "duracion_s": 1.13,
+  "duracion_s": 4.06,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.784,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261121_231808_464.png",
+    "duracion_s": 0.65,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261122_130552_950.png",
     "error": ""
    },
    {
@@ -281,8 +281,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"jmorales89\" y contraseña \"ClaveMala123\"",
     "estado": "passed",
-    "duracion_s": 0.098,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_OK_20261121_231808_743.png",
+    "duracion_s": 0.128,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_OK_20261122_130553_270.png",
     "error": ""
    },
    {
@@ -290,8 +290,8 @@
     "palabra": "Y",
     "texto": "presiona \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.24,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso3_OK_20261121_231809_182.png",
+    "duracion_s": 3.269,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso3_OK_20261122_130556_784.png",
     "error": ""
    },
    {
@@ -299,8 +299,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"contraseña incorrecta\"",
     "estado": "failed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso4_FALLA_20261121_231809_406.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso4_FALLA_20261122_130557_012.png",
     "error": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"contraseña incorrecta\" y el sitio mostro \"Credenciales inválidas\""
    }
   ]
@@ -316,15 +316,15 @@
   "feature": "02_InicioSesion.feature",
   "pasos_total": 4,
   "pasos_ok": 3,
-  "duracion_s": 1.42,
+  "duracion_s": 4.29,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.812,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261121_231810_977.png",
+    "duracion_s": 0.869,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261122_130558_709.png",
     "error": ""
    },
    {
@@ -332,8 +332,8 @@
     "palabra": "Cuando",
     "texto": "ingresa usuario \"usuarioXYZ\" y contraseña \"Maderas2026$\"",
     "estado": "passed",
-    "duracion_s": 0.104,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_OK_20261121_231811_262.png",
+    "duracion_s": 0.139,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_OK_20261122_130559_055.png",
     "error": ""
    },
    {
@@ -341,8 +341,8 @@
     "palabra": "Y",
     "texto": "presiona \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.241,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso3_OK_20261121_231811_700.png",
+    "duracion_s": 3.275,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso3_OK_20261122_130602_568.png",
     "error": ""
    },
    {
@@ -350,8 +350,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"no existe\"",
     "estado": "failed",
-    "duracion_s": 0.262,
-    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso4_FALLA_20261121_231812_174.png",
+    "duracion_s": 0.009,
+    "evidencia": "evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso4_FALLA_20261122_130602_796.png",
     "error": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"no existe\" y el sitio mostro \"Credenciales inválidas\""
    }
   ]
@@ -367,15 +367,15 @@
   "feature": "02_InicioSesion.feature",
   "pasos_total": 4,
   "pasos_ok": 1,
-  "duracion_s": 0.77,
+  "duracion_s": 0.59,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.766,
-    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261121_231813_646.png",
+    "duracion_s": 0.594,
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261122_130604_253.png",
     "error": ""
    },
    {
@@ -384,7 +384,7 @@
     "texto": "que un usuario se registró pero no ha verificado su cuenta",
     "estado": "failed",
     "duracion_s": 0.0,
-    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso2_FALLA_20261121_231813_827.png",
+    "evidencia": "evidencias/Reenvio_de_verificacion_de_cuenta/paso2_FALLA_20261122_130604_463.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - el boton \"Reenviar verificacion\" solo aparece tras iniciar sesion con una cuenta registrada y sin verificar (error EMAIL_NOT_VERIFIED); no se puede crear esa cuenta porque el registro exige CAPTCHA y generaria datos reales en el sitio"
    },
    {
@@ -392,7 +392,7 @@
     "palabra": "Cuando",
     "texto": "intenta iniciar sesión y presiona \"Reenviar verificación\"",
     "estado": "skipped",
-    "duracion_s": 0.0,
+    "duracion_s": 0.001,
     "evidencia": "",
     "error": ""
    },
@@ -418,15 +418,15 @@
   "feature": "03_RecuperacionContrasena.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 1.34,
+  "duracion_s": 4.28,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
     "estado": "passed",
-    "duracion_s": 0.771,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso1_OK_20261121_231741_821.png",
+    "duracion_s": 0.92,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso1_OK_20261122_130501_402.png",
     "error": ""
    },
    {
@@ -434,8 +434,8 @@
     "palabra": "Cuando",
     "texto": "ingresa el correo \"contacto@maderasmym.cl\" y confirma la solicitud",
     "estado": "passed",
-    "duracion_s": 0.305,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso2_OK_20261121_231742_308.png",
+    "duracion_s": 3.346,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso2_OK_20261122_130504_969.png",
     "error": ""
    },
    {
@@ -443,8 +443,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"enlace\"",
     "estado": "passed",
-    "duracion_s": 0.263,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso3_OK_20261121_231742_768.png",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_exitosa_de_recuperacion/paso3_OK_20261122_130505_222.png",
     "error": ""
    }
   ]
@@ -460,15 +460,15 @@
   "feature": "03_RecuperacionContrasena.feature",
   "pasos_total": 3,
   "pasos_ok": 2,
-  "duracion_s": 1.39,
+  "duracion_s": 4.24,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
     "estado": "passed",
-    "duracion_s": 0.825,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso1_OK_20261121_231744_148.png",
+    "duracion_s": 0.878,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso1_OK_20261122_130506_767.png",
     "error": ""
    },
    {
@@ -476,8 +476,8 @@
     "palabra": "Cuando",
     "texto": "ingresa el correo \"noexiste@correo.cl\" y confirma la solicitud",
     "estado": "passed",
-    "duracion_s": 0.301,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso2_OK_20261121_231744_637.png",
+    "duracion_s": 3.35,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso2_OK_20261122_130510_324.png",
     "error": ""
    },
    {
@@ -485,8 +485,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"no está registrado\"",
     "estado": "failed",
-    "duracion_s": 0.262,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso3_FALLA_20261121_231745_099.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_fallida_con_correo_no_r/paso3_FALLA_20261122_130510_588.png",
     "error": "java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"no está registrado\" y el sitio mostro \"Si la cuenta existe, te enviamos un enlace. Revisa tu correo (también spam/promociones).\""
    }
   ]
@@ -502,15 +502,15 @@
   "feature": "03_RecuperacionContrasena.feature",
   "pasos_total": 3,
   "pasos_ok": 2,
-  "duracion_s": 1.07,
+  "duracion_s": 4.22,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
     "estado": "passed",
-    "duracion_s": 0.794,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso1_OK_20261121_231746_624.png",
+    "duracion_s": 0.909,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso1_OK_20261122_130512_372.png",
     "error": ""
    },
    {
@@ -518,8 +518,8 @@
     "palabra": "Cuando",
     "texto": "ingresa el correo \"\" y confirma la solicitud",
     "estado": "passed",
-    "duracion_s": 0.263,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso2_OK_20261121_231747_065.png",
+    "duracion_s": 3.306,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso2_OK_20261122_130515_896.png",
     "error": ""
    },
    {
@@ -527,8 +527,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra un mensaje que contiene \"obligatorio\"",
     "estado": "failed",
-    "duracion_s": 0.009,
-    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso3_FALLA_20261121_231747_293.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Recuperacion_de_contrasena_Solicitud_con_campo_de_correo_vac/paso3_FALLA_20261122_130516_134.png",
     "error": "java.lang.AssertionError: NO PASA - Recuperacion de contrasena: se esperaba un mensaje con \"obligatorio\" y el sitio mostro \"Ingresa tu correo o nombre de usuario.\""
    }
   ]
@@ -544,15 +544,15 @@
   "feature": "03_RecuperacionContrasena.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 1.14,
+  "duracion_s": 1.11,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a \"¿Olvidaste tu contraseña?\"",
     "estado": "passed",
-    "duracion_s": 0.845,
-    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso1_OK_20261121_231748_893.png",
+    "duracion_s": 0.892,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso1_OK_20261122_130517_887.png",
     "error": ""
    },
    {
@@ -561,7 +561,7 @@
     "texto": "que un usuario recibió un correo de recuperación",
     "estado": "passed",
     "duracion_s": 0.0,
-    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso2_OK_20261121_231749_085.png",
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso2_OK_20261122_130518_105.png",
     "error": ""
    },
    {
@@ -569,8 +569,8 @@
     "palabra": "Cuando",
     "texto": "utiliza el enlace después de su periodo de validez",
     "estado": "passed",
-    "duracion_s": 0.288,
-    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso3_OK_20261121_231749_554.png",
+    "duracion_s": 0.205,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso3_OK_20261122_130518_531.png",
     "error": ""
    },
    {
@@ -578,8 +578,8 @@
     "palabra": "Entonces",
     "texto": "el sistema informa que el enlace expiró y ofrece solicitar uno nuevo",
     "estado": "passed",
-    "duracion_s": 0.011,
-    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso4_OK_20261121_231749_751.png",
+    "duracion_s": 0.014,
+    "evidencia": "evidencias/Restablecimiento_con_enlace_expirado/paso4_OK_20261122_130518_760.png",
     "error": ""
    }
   ]
@@ -595,15 +595,15 @@
   "feature": "04_ControlAccesoSesion.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 1.83,
+  "duracion_s": 1.8,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario no ha iniciado sesión",
     "estado": "passed",
-    "duracion_s": 0.958,
-    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261121_231734_797.png",
+    "duracion_s": 1.125,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261122_130454_516.png",
     "error": ""
    },
    {
@@ -611,8 +611,8 @@
     "palabra": "Cuando",
     "texto": "intenta acceder directamente a la sección \"Mi cuenta\"",
     "estado": "passed",
-    "duracion_s": 0.866,
-    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261121_231735_931.png",
+    "duracion_s": 0.671,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261122_130455_503.png",
     "error": ""
    },
    {
@@ -620,8 +620,8 @@
     "palabra": "Entonces",
     "texto": "el sistema lo redirige a la página de \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.003,
-    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261121_231736_112.png",
+    "duracion_s": 0.004,
+    "evidencia": "evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261122_130455_715.png",
     "error": ""
    }
   ]
@@ -644,8 +644,8 @@
     "palabra": "Dado",
     "texto": "que un usuario tiene una sesión iniciada",
     "estado": "failed",
-    "duracion_s": 0.001,
-    "evidencia": "evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261121_231736_656.png",
+    "duracion_s": 0.002,
+    "evidencia": "evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261122_130456_352.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)"
    },
    {
@@ -686,8 +686,8 @@
     "palabra": "Dado",
     "texto": "que un usuario tiene una sesión iniciada",
     "estado": "failed",
-    "duracion_s": 0.0,
-    "evidencia": "evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261121_231737_224.png",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261122_130456_941.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)"
    },
    {
@@ -721,15 +721,15 @@
   "feature": "04_ControlAccesoSesion.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 2.18,
+  "duracion_s": 1.69,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario no autenticado conoce la URL de una ruta protegida",
     "estado": "passed",
-    "duracion_s": 1.32,
-    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261121_231739_070.png",
+    "duracion_s": 1.019,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261122_130458_571.png",
     "error": ""
    },
    {
@@ -737,8 +737,8 @@
     "palabra": "Cuando",
     "texto": "la ingresa directamente en el navegador",
     "estado": "passed",
-    "duracion_s": 0.856,
-    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261121_231740_198.png",
+    "duracion_s": 0.667,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261122_130459_569.png",
     "error": ""
    },
    {
@@ -746,8 +746,8 @@
     "palabra": "Entonces",
     "texto": "el sistema deniega el acceso y lo redirige al login, sin exponer información de la cuenta",
     "estado": "passed",
-    "duracion_s": 0.007,
-    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261121_231740_385.png",
+    "duracion_s": 0.008,
+    "evidencia": "evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261122_130459_788.png",
     "error": ""
    }
   ]
@@ -763,15 +763,15 @@
   "feature": "05_BusquedaProductos.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 4.19,
+  "duracion_s": 7.31,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario se encuentra en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.362,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261121_231859_821.png",
+    "duracion_s": 1.399,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261122_130840_209.png",
     "error": ""
    },
    {
@@ -779,8 +779,8 @@
     "palabra": "Cuando",
     "texto": "escribe \"Pino Oregón\" en el buscador",
     "estado": "passed",
-    "duracion_s": 0.05,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261121_231900_143.png",
+    "duracion_s": 0.063,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261122_130840_573.png",
     "error": ""
    },
    {
@@ -788,8 +788,8 @@
     "palabra": "Y",
     "texto": "ejecuta la búsqueda",
     "estado": "passed",
-    "duracion_s": 2.766,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261121_231903_169.png",
+    "duracion_s": 5.836,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261122_130846_708.png",
     "error": ""
    },
    {
@@ -797,8 +797,8 @@
     "palabra": "Entonces",
     "texto": "el sistema responde de forma \"listado de resultados\"",
     "estado": "passed",
-    "duracion_s": 0.01,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261121_231903_404.png",
+    "duracion_s": 0.012,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261122_130846_966.png",
     "error": ""
    }
   ]
@@ -814,15 +814,15 @@
   "feature": "05_BusquedaProductos.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 7.18,
+  "duracion_s": 9.95,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario se encuentra en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.33,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261121_231905_313.png",
+    "duracion_s": 1.052,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261122_130848_702.png",
     "error": ""
    },
    {
@@ -830,8 +830,8 @@
     "palabra": "Cuando",
     "texto": "escribe \"asdfgh123\" en el buscador",
     "estado": "passed",
-    "duracion_s": 0.05,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261121_231905_638.png",
+    "duracion_s": 0.063,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261122_130849_071.png",
     "error": ""
    },
    {
@@ -839,8 +839,8 @@
     "palabra": "Y",
     "texto": "ejecuta la búsqueda",
     "estado": "passed",
-    "duracion_s": 2.765,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261121_231908_667.png",
+    "duracion_s": 5.827,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261122_130855_199.png",
     "error": ""
    },
    {
@@ -848,8 +848,8 @@
     "palabra": "Entonces",
     "texto": "el sistema responde de forma \"sin resultados\"",
     "estado": "passed",
-    "duracion_s": 3.037,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261121_231911_912.png",
+    "duracion_s": 3.011,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261122_130858_445.png",
     "error": ""
    }
   ]
@@ -865,15 +865,15 @@
   "feature": "05_BusquedaProductos.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 8.21,
+  "duracion_s": 11.56,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario se encuentra en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.332,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261121_231913_825.png",
+    "duracion_s": 1.622,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261122_130900_778.png",
     "error": ""
    },
    {
@@ -881,8 +881,8 @@
     "palabra": "Cuando",
     "texto": "escribe \"<script>alert(1)</script>\" en el buscador",
     "estado": "passed",
-    "duracion_s": 0.056,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261121_231914_145.png",
+    "duracion_s": 0.072,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261122_130901_145.png",
     "error": ""
    },
    {
@@ -890,8 +890,8 @@
     "palabra": "Y",
     "texto": "ejecuta la búsqueda",
     "estado": "passed",
-    "duracion_s": 2.764,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261121_231917_185.png",
+    "duracion_s": 5.83,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261122_130907_284.png",
     "error": ""
    },
    {
@@ -899,8 +899,8 @@
     "palabra": "Entonces",
     "texto": "el sistema responde de forma \"sanitizada sin ejecutar codigo\"",
     "estado": "passed",
-    "duracion_s": 4.063,
-    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261121_231921_453.png",
+    "duracion_s": 4.04,
+    "evidencia": "evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261122_130911_557.png",
     "error": ""
    }
   ]
@@ -916,15 +916,15 @@
   "feature": "05_BusquedaProductos.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.03,
+  "duracion_s": 6.15,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario se encuentra en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.271,
-    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso1_OK_20261121_231923_307.png",
+    "duracion_s": 1.337,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso1_OK_20261122_130913_548.png",
     "error": ""
    },
    {
@@ -932,8 +932,8 @@
     "palabra": "Cuando",
     "texto": "presiona buscar sin ingresar texto",
     "estado": "passed",
-    "duracion_s": 1.743,
-    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso2_OK_20261121_231925_319.png",
+    "duracion_s": 4.804,
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso2_OK_20261122_130918_665.png",
     "error": ""
    },
    {
@@ -942,7 +942,7 @@
     "texto": "el sistema no ejecuta la búsqueda o solicita ingresar un término",
     "estado": "passed",
     "duracion_s": 0.012,
-    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso3_OK_20261121_231925_565.png",
+    "evidencia": "evidencias/Busqueda_con_campo_vacio/paso3_OK_20261122_130918_947.png",
     "error": ""
    }
   ]
@@ -958,15 +958,15 @@
   "feature": "06_NavegacionCategorias.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 4.93,
+  "duracion_s": 7.2,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en el menú \"Categorías\"",
     "estado": "passed",
-    "duracion_s": 2.669,
-    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso1_OK_20261121_231711_830.png",
+    "duracion_s": 1.9,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso1_OK_20261122_130416_273.png",
     "error": ""
    },
    {
@@ -974,8 +974,8 @@
     "palabra": "Cuando",
     "texto": "selecciona \"Pino Oregón Bruto\"",
     "estado": "passed",
-    "duracion_s": 2.256,
-    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso2_OK_20261121_231714_364.png",
+    "duracion_s": 5.29,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso2_OK_20261122_130421_888.png",
     "error": ""
    },
    {
@@ -983,8 +983,8 @@
     "palabra": "Entonces",
     "texto": "el sistema despliega el listado de productos de esa categoría",
     "estado": "passed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso3_OK_20261121_231714_494.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Navegacion_exitosa_a_categoria_Pino_Oregon_Bruto/paso3_OK_20261122_130422_040.png",
     "error": ""
    }
   ]
@@ -1000,15 +1000,15 @@
   "feature": "06_NavegacionCategorias.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 5.62,
+  "duracion_s": 11.5,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en el menú \"Categorías\"",
     "estado": "passed",
-    "duracion_s": 1.542,
-    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso1_OK_20261121_231716_570.png",
+    "duracion_s": 1.328,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso1_OK_20261122_130424_001.png",
     "error": ""
    },
    {
@@ -1016,8 +1016,8 @@
     "palabra": "Cuando",
     "texto": "despliega la categoría \"Pino Oregón Cepillado\" y selecciona la medida \"4.00 mts\"",
     "estado": "passed",
-    "duracion_s": 4.005,
-    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso2_OK_20261121_231720_860.png",
+    "duracion_s": 10.059,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso2_OK_20261122_130434_369.png",
     "error": ""
    },
    {
@@ -1025,8 +1025,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra solo los productos de esa medida específica",
     "estado": "passed",
-    "duracion_s": 0.068,
-    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso3_OK_20261121_231721_047.png",
+    "duracion_s": 0.112,
+    "evidencia": "evidencias/Navegacion_a_subcategoria_por_medida/paso3_OK_20261122_130434_613.png",
     "error": ""
    }
   ]
@@ -1042,15 +1042,15 @@
   "feature": "06_NavegacionCategorias.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.82,
+  "duracion_s": 6.45,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en el menú \"Categorías\"",
     "estado": "passed",
-    "duracion_s": 1.502,
-    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso1_OK_20261121_231723_044.png",
+    "duracion_s": 1.075,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso1_OK_20261122_130436_306.png",
     "error": ""
    },
    {
@@ -1058,8 +1058,8 @@
     "palabra": "Cuando",
     "texto": "navega a la categoría \"Pino Oregón Bruto\" y revisa el listado de productos desplegado",
     "estado": "passed",
-    "duracion_s": 2.254,
-    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso2_OK_20261121_231725_571.png",
+    "duracion_s": 5.279,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso2_OK_20261122_130441_904.png",
     "error": ""
    },
    {
@@ -1067,8 +1067,8 @@
     "palabra": "Entonces",
     "texto": "todos los productos mostrados pertenecen exclusivamente a la categoría seleccionada",
     "estado": "passed",
-    "duracion_s": 0.065,
-    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso3_OK_20261121_231725_768.png",
+    "duracion_s": 0.092,
+    "evidencia": "evidencias/Verificacion_de_listado_filtrado_correctamente/paso3_OK_20261122_130442_136.png",
     "error": ""
    }
   ]
@@ -1084,15 +1084,15 @@
   "feature": "06_NavegacionCategorias.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 6.57,
+  "duracion_s": 9.65,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en el menú \"Categorías\"",
     "estado": "passed",
-    "duracion_s": 1.291,
-    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso1_OK_20261121_231727_615.png",
+    "duracion_s": 1.345,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso1_OK_20261122_130444_071.png",
     "error": ""
    },
    {
@@ -1100,8 +1100,8 @@
     "palabra": "Cuando",
     "texto": "accede a una categoría sin productos disponibles",
     "estado": "passed",
-    "duracion_s": 5.278,
-    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso2_OK_20261121_231733_173.png",
+    "duracion_s": 8.296,
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso2_OK_20261122_130452_665.png",
     "error": ""
    },
    {
@@ -1110,7 +1110,7 @@
     "texto": "el sistema muestra un mensaje indicando que no hay productos disponibles",
     "estado": "passed",
     "duracion_s": 0.006,
-    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso3_OK_20261121_231733_273.png",
+    "evidencia": "evidencias/Navegacion_a_categoria_sin_stock_disponible/paso3_OK_20261122_130452_779.png",
     "error": ""
    }
   ]
@@ -1126,15 +1126,15 @@
   "feature": "07_FichaProducto.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 1.82,
+  "duracion_s": 4.76,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario selecciona un producto desde el listado",
     "estado": "passed",
-    "duracion_s": 1.801,
-    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso1_OK_20261121_231752_213.png",
+    "duracion_s": 4.728,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso1_OK_20261122_130524_170.png",
     "error": ""
    },
    {
@@ -1142,8 +1142,8 @@
     "palabra": "Cuando",
     "texto": "accede a su ficha",
     "estado": "passed",
-    "duracion_s": 0.005,
-    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso2_OK_20261121_231752_495.png",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso2_OK_20261122_130524_553.png",
     "error": ""
    },
    {
@@ -1151,8 +1151,8 @@
     "palabra": "Entonces",
     "texto": "el sistema muestra tipo, medidas, dimensiones y disponibilidad del producto",
     "estado": "passed",
-    "duracion_s": 0.019,
-    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso3_OK_20261121_231752_759.png",
+    "duracion_s": 0.027,
+    "evidencia": "evidencias/Visualizacion_exitosa_del_detalle_de_producto/paso3_OK_20261122_130524_868.png",
     "error": ""
    }
   ]
@@ -1168,15 +1168,15 @@
   "feature": "07_FichaProducto.feature",
   "pasos_total": 3,
   "pasos_ok": 0,
-  "duracion_s": 1.78,
+  "duracion_s": 1.76,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede a la ficha de un producto sin existencias",
     "estado": "failed",
-    "duracion_s": 1.784,
-    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso1_FALLA_20261121_231755_200.png",
+    "duracion_s": 1.757,
+    "evidencia": "evidencias/Visualizacion_de_producto_sin_stock/paso1_FALLA_20261122_130527_327.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - el catalogo publicado no tiene en este momento ningun producto con disponibilidad 0 ()"
    },
    {
@@ -1210,15 +1210,15 @@
   "feature": "07_FichaProducto.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 4.55,
+  "duracion_s": 10.57,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario realizó una búsqueda exitosa de \"Pino Oregón\"",
     "estado": "passed",
-    "duracion_s": 4.293,
-    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso1_OK_20261121_231800_570.png",
+    "duracion_s": 7.275,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso1_OK_20261122_130535_700.png",
     "error": ""
    },
    {
@@ -1226,8 +1226,8 @@
     "palabra": "Cuando",
     "texto": "selecciona un producto del listado de resultados",
     "estado": "passed",
-    "duracion_s": 0.251,
-    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso2_OK_20261121_231801_045.png",
+    "duracion_s": 3.282,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso2_OK_20261122_130539_233.png",
     "error": ""
    },
    {
@@ -1235,8 +1235,8 @@
     "palabra": "Entonces",
     "texto": "el sistema lo redirige correctamente a la ficha del producto seleccionado",
     "estado": "passed",
-    "duracion_s": 0.009,
-    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso3_OK_20261121_231801_309.png",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Acceso_a_la_ficha_desde_un_resultado_de_busqueda/paso3_OK_20261122_130539_540.png",
     "error": ""
    }
   ]
@@ -1252,15 +1252,15 @@
   "feature": "07_FichaProducto.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 1.63,
+  "duracion_s": 4.63,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la ficha de un producto",
     "estado": "passed",
-    "duracion_s": 1.611,
-    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso1_OK_20261121_231803_725.png",
+    "duracion_s": 4.616,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso1_OK_20261122_130544_950.png",
     "error": ""
    },
    {
@@ -1268,8 +1268,8 @@
     "palabra": "Cuando",
     "texto": "revisa la sección de imágenes",
     "estado": "passed",
-    "duracion_s": 0.006,
-    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso2_OK_20261121_231804_021.png",
+    "duracion_s": 0.007,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso2_OK_20261122_130545_370.png",
     "error": ""
    },
    {
@@ -1277,8 +1277,8 @@
     "palabra": "Entonces",
     "texto": "el sistema despliega correctamente las imágenes del producto sin errores de carga",
     "estado": "passed",
-    "duracion_s": 0.01,
-    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso3_OK_20261121_231804_268.png",
+    "duracion_s": 0.012,
+    "evidencia": "evidencias/Visualizacion_de_imagenes_del_producto/paso3_OK_20261122_130545_673.png",
     "error": ""
    }
   ]
@@ -1294,15 +1294,15 @@
   "feature": "08_CarritoAgregar.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 2.26,
+  "duracion_s": 5.38,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la ficha o listado de un producto disponible",
     "estado": "passed",
-    "duracion_s": 1.349,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso1_OK_20261121_232005_338.png",
+    "duracion_s": 1.393,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso1_OK_20261122_131113_805.png",
     "error": ""
    },
    {
@@ -1310,8 +1310,8 @@
     "palabra": "Cuando",
     "texto": "indica la cantidad \"2\" y presiona \"Agregar\"",
     "estado": "passed",
-    "duracion_s": 0.91,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso2_OK_20261121_232006_513.png",
+    "duracion_s": 3.981,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso2_OK_20261122_131118_081.png",
     "error": ""
    },
    {
@@ -1320,7 +1320,7 @@
     "texto": "el sistema responde de forma \"agregado y contador actualizado\"",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso3_OK_20261121_232006_676.png",
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_exitosamente_al_ca/paso3_OK_20261122_131118_259.png",
     "error": ""
    }
   ]
@@ -1336,15 +1336,15 @@
   "feature": "08_CarritoAgregar.feature",
   "pasos_total": 3,
   "pasos_ok": 2,
-  "duracion_s": 13.04,
+  "duracion_s": 16.47,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la ficha o listado de un producto disponible",
     "estado": "passed",
-    "duracion_s": 1.25,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso1_OK_20261121_232008_429.png",
+    "duracion_s": 1.334,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso1_OK_20261122_131120_218.png",
     "error": ""
    },
    {
@@ -1352,8 +1352,8 @@
     "palabra": "Cuando",
     "texto": "indica la cantidad \"999999\" y presiona \"Agregar\"",
     "estado": "passed",
-    "duracion_s": 11.785,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso2_OK_20261121_232020_489.png",
+    "duracion_s": 15.134,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso2_OK_20261122_131135_657.png",
     "error": ""
    },
    {
@@ -1361,8 +1361,8 @@
     "palabra": "Entonces",
     "texto": "el sistema responde de forma \"error de stock insuficiente\"",
     "estado": "failed",
-    "duracion_s": 0.001,
-    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso3_FALLA_20261121_232020_635.png",
+    "duracion_s": 0.0,
+    "evidencia": "evidencias/Carrito_agregar_producto_Agregar_producto_con_cantidad_super/paso3_FALLA_20261122_131135_835.png",
     "error": "java.lang.AssertionError: NO PASA - El sitio permitio llevar 79 unidades de un producto con stock 78 (no limita la cantidad al stock)"
    }
   ]
@@ -1378,15 +1378,15 @@
   "feature": "08_CarritoAgregar.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 2.34,
+  "duracion_s": 5.18,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la ficha o listado de un producto disponible",
     "estado": "passed",
-    "duracion_s": 1.566,
-    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso1_OK_20261121_232022_878.png",
+    "duracion_s": 1.349,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso1_OK_20261122_131137_960.png",
     "error": ""
    },
    {
@@ -1395,7 +1395,7 @@
     "texto": "que el carrito se encuentra vacío",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso2_OK_20261121_232023_165.png",
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso2_OK_20261122_131138_274.png",
     "error": ""
    },
    {
@@ -1403,8 +1403,8 @@
     "palabra": "Cuando",
     "texto": "el usuario agrega un producto con cantidad \"1\"",
     "estado": "passed",
-    "duracion_s": 0.766,
-    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso3_OK_20261121_232024_199.png",
+    "duracion_s": 3.827,
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso3_OK_20261122_131142_409.png",
     "error": ""
    },
    {
@@ -1413,31 +1413,31 @@
     "texto": "el contador del carrito se actualiza a la cantidad de ítems agregados",
     "estado": "passed",
     "duracion_s": 0.004,
-    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso4_OK_20261121_232024_355.png",
+    "evidencia": "evidencias/Actualizacion_del_contador_del_carrito/paso4_OK_20261122_131142_588.png",
     "error": ""
    }
   ]
  },
  "CP32": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Agregar el mismo producto más de una vez",
   "feature": "08_CarritoAgregar.feature",
   "pasos_total": 4,
-  "pasos_ok": 3,
-  "duracion_s": 4.16,
+  "pasos_ok": 4,
+  "duracion_s": 10.62,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la ficha o listado de un producto disponible",
     "estado": "passed",
-    "duracion_s": 1.599,
-    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso1_OK_20261121_232026_497.png",
+    "duracion_s": 1.124,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso1_OK_20261122_131144_311.png",
     "error": ""
    },
    {
@@ -1445,8 +1445,8 @@
     "palabra": "Dado",
     "texto": "que un producto ya se encuentra en el carrito",
     "estado": "passed",
-    "duracion_s": 0.767,
-    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso2_OK_20261121_232027_536.png",
+    "duracion_s": 3.833,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso2_OK_20261122_131148_450.png",
     "error": ""
    },
    {
@@ -1454,303 +1454,303 @@
     "palabra": "Cuando",
     "texto": "el usuario lo agrega nuevamente con cantidad \"1\"",
     "estado": "passed",
-    "duracion_s": 0.531,
-    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso3_OK_20261121_232028_214.png",
+    "duracion_s": 0.538,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso3_OK_20261122_131149_158.png",
     "error": ""
    },
    {
     "n": 4,
     "palabra": "Entonces",
     "texto": "el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo",
-    "estado": "failed",
-    "duracion_s": 1.262,
-    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso4_FALLA_20261121_232029_636.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 5.129,
+    "evidencia": "evidencias/Agregar_el_mismo_producto_mas_de_una_vez/paso4_OK_20261122_131154_463.png",
+    "error": ""
    }
   ]
  },
  "CP33": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Vaciar carrito exitosamente",
   "feature": "09_CarritoGestion.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 3.37,
+  "pasos_ok": 3,
+  "duracion_s": 24.29,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito contiene uno o más productos",
-    "estado": "failed",
-    "duracion_s": 3.369,
-    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso1_FALLA_20261121_231844_624.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 17.142,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso1_OK_20261122_130709_055.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "el usuario presiona \"Vaciar Carrito\"",
-    "estado": "skipped",
-    "duracion_s": 0.001,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 4.099,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso2_OK_20261122_130713_397.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema elimina todos los productos y el total vuelve a $0",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 3.05,
+    "evidencia": "evidencias/Vaciar_carrito_exitosamente/paso3_OK_20261122_130716_671.png",
     "error": ""
    }
   ]
  },
  "CP34": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Editar cantidad de un producto en el carrito",
   "feature": "09_CarritoGestion.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 3.06,
+  "pasos_ok": 3,
+  "duracion_s": 31.9,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito contiene uno o más productos",
-    "estado": "failed",
-    "duracion_s": 3.065,
-    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso1_FALLA_20261121_231848_814.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 17.381,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso1_OK_20261122_130734_748.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "el usuario modifica la cantidad de dicho producto a \"5\"",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 14.456,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso2_OK_20261122_130749_438.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema actualiza la cantidad y recalcula el total",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.062,
+    "evidencia": "evidencias/Editar_cantidad_de_un_producto_en_el_carrito/paso3_OK_20261122_130749_721.png",
     "error": ""
    }
   ]
  },
  "CP35": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Eliminar un producto específico del carrito",
   "feature": "09_CarritoGestion.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 3.02,
+  "pasos_ok": 3,
+  "duracion_s": 21.51,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito contiene uno o más productos",
-    "estado": "failed",
-    "duracion_s": 3.024,
-    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso1_FALLA_20261121_231852_768.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 17.383,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso1_OK_20261122_130807_781.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "el usuario elimina uno de los productos del carrito",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 4.114,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso2_OK_20261122_130812_139.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema retira solo ese producto y conserva el resto en el carrito",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.014,
+    "evidencia": "evidencias/Eliminar_un_producto_especifico_del_carrito/paso3_OK_20261122_130812_381.png",
     "error": ""
    }
   ]
  },
  "CP36": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el carrito contiene uno o más productos",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Recalcular el total al modificar cantidades",
   "feature": "09_CarritoGestion.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 3.38,
+  "pasos_ok": 3,
+  "duracion_s": 24.64,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito contiene uno o más productos",
-    "estado": "failed",
-    "duracion_s": 3.382,
-    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso1_FALLA_20261121_231857_311.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 17.336,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso1_OK_20261122_130830_393.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "el usuario modifica la cantidad de un producto en el carrito a \"3\" y confirma el cambio",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 7.24,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso2_OK_20261122_130837_850.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema recalcula automáticamente el \"Total\" mostrado",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.061,
+    "evidencia": "evidencias/Recalcular_el_total_al_modificar_cantidades/paso3_OK_20261122_130838_134.png",
     "error": ""
    }
   ]
  },
  "CP37": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Selección de \"Retiro en tienda\"",
   "feature": "10_SeleccionEntrega.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 2.81,
+  "pasos_ok": 3,
+  "duracion_s": 14.43,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el usuario está en el carrito de compras con productos agregados",
-    "estado": "failed",
-    "duracion_s": 2.807,
-    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso1_FALLA_20261121_231951_465.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 10.662,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso1_OK_20261122_131005_499.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "selecciona la opción \"Retiro en tienda (Sin costo)\"",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 3.75,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso2_OK_20261122_131009_482.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema registra el método de entrega sin agregar costo de flete",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.017,
+    "evidencia": "evidencias/Seleccion_de_Retiro_en_tienda/paso3_OK_20261122_131009_729.png",
     "error": ""
    }
   ]
  },
  "CP38": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Selección de \"Flete externo\" con dirección indicada",
   "feature": "10_SeleccionEntrega.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 3.07,
+  "pasos_ok": 3,
+  "duracion_s": 14.62,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el usuario está en el carrito de compras con productos agregados",
-    "estado": "failed",
-    "duracion_s": 3.07,
-    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso1_FALLA_20261121_231955_504.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 10.746,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso1_OK_20261122_131021_138.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "selecciona \"Flete externo\" e indica la dirección \"Av. Siempre Viva 123, Santiago\" en el campo \"Comentarios\"",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 3.843,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso2_OK_20261122_131025_205.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Entonces",
     "texto": "el sistema registra el método de entrega junto con la dirección proporcionada",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.026,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_con_direccion_indicada/paso3_OK_20261122_131025_470.png",
     "error": ""
    }
   ]
  },
  "CP39": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] comprobar que se exige la direccion obliga a pulsar \"Generar pedido\", accion que requiere sesion iniciada y generaria un pedido real en el sitio de la empresa",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
+  "paso_fallido": "Cuando selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar",
   "titulo": "Selección de \"Flete externo\" sin indicar dirección",
   "feature": "10_SeleccionEntrega.feature",
   "pasos_total": 3,
-  "pasos_ok": 0,
-  "duracion_s": 2.82,
+  "pasos_ok": 1,
+  "duracion_s": 14.77,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el usuario está en el carrito de compras con productos agregados",
-    "estado": "failed",
-    "duracion_s": 2.821,
-    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso1_FALLA_20261121_231959_255.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 11.006,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso1_OK_20261122_131037_296.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Cuando",
     "texto": "selecciona \"Flete externo\" y no indica ninguna dirección en \"Comentarios\" e intenta continuar",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
-    "error": ""
+    "estado": "failed",
+    "duracion_s": 3.759,
+    "evidencia": "evidencias/Seleccion_de_Flete_externo_sin_indicar_direccion/paso2_FALLA_20261122_131041_287.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - comprobar que se exige la direccion obliga a pulsar \"Generar pedido\", accion que requiere sesion iniciada y generaria un pedido real en el sitio de la empresa"
    },
    {
     "n": 3,
@@ -1764,52 +1764,52 @@
   ]
  },
  "CP40": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
-  "paso_fallido": "Dado que el usuario está en el carrito de compras con productos agregados",
+  "resultado": "PASA",
+  "estado": "Finalizado",
+  "observaciones": "",
+  "categoria": "",
+  "origen": "",
+  "paso_fallido": "",
   "titulo": "Cambio de método de entrega antes de confirmar",
   "feature": "10_SeleccionEntrega.feature",
   "pasos_total": 4,
-  "pasos_ok": 0,
-  "duracion_s": 2.82,
+  "pasos_ok": 4,
+  "duracion_s": 28.85,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el usuario está en el carrito de compras con productos agregados",
-    "estado": "failed",
-    "duracion_s": 2.818,
-    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso1_FALLA_20261121_232003_014.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "estado": "passed",
+    "duracion_s": 11.006,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso1_OK_20261122_131053_182.png",
+    "error": ""
    },
    {
     "n": 2,
     "palabra": "Dado",
     "texto": "que el usuario ya seleccionó el método \"Retiro en tienda (Sin costo)\"",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 14.034,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso2_OK_20261122_131107_462.png",
     "error": ""
    },
    {
     "n": 3,
     "palabra": "Cuando",
     "texto": "lo cambia a \"Flete externo\" antes de generar el pedido",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 3.785,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso3_OK_20261122_131111_476.png",
     "error": ""
    },
    {
     "n": 4,
     "palabra": "Entonces",
     "texto": "el sistema actualiza correctamente el método seleccionado",
-    "estado": "skipped",
-    "duracion_s": 0.0,
-    "evidencia": "",
+    "estado": "passed",
+    "duracion_s": 0.022,
+    "evidencia": "evidencias/Cambio_de_metodo_de_entrega_antes_de_confirmar/paso4_OK_20261122_131111_729.png",
     "error": ""
    }
   ]
@@ -1832,8 +1832,8 @@
     "palabra": "Dado",
     "texto": "que el carrito contiene productos y se seleccionó un método de entrega válido",
     "estado": "failed",
-    "duracion_s": 0.0,
-    "evidencia": "evidencias/Generar_pedido_exitosamente/paso1_FALLA_20261121_231814_522.png",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Generar_pedido_exitosamente/paso1_FALLA_20261122_130605_339.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - generar un pedido exitoso exige sesion iniciada (el sitio responde 401 y pide ir al login) y crearia un pedido real en el sitio de la empresa"
    },
    {
@@ -1867,15 +1867,15 @@
   "feature": "11_GenerarPedido.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 1.9,
+  "duracion_s": 4.57,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito de compras está vacío",
     "estado": "passed",
-    "duracion_s": 1.61,
-    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso1_OK_20261121_231817_047.png",
+    "duracion_s": 1.239,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso1_OK_20261122_130607_176.png",
     "error": ""
    },
    {
@@ -1883,8 +1883,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona \"Generar Pedido\"",
     "estado": "passed",
-    "duracion_s": 0.293,
-    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso2_OK_20261121_231817_618.png",
+    "duracion_s": 3.327,
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso2_OK_20261122_130610_810.png",
     "error": ""
    },
    {
@@ -1893,32 +1893,32 @@
     "texto": "el sistema impide la acción y muestra un mensaje indicando que el carrito está vacío",
     "estado": "passed",
     "duracion_s": 0.0,
-    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso3_OK_20261121_231817_826.png",
+    "evidencia": "evidencias/Intento_de_generar_pedido_con_el_carrito_vacio/paso3_OK_20261122_130611_041.png",
     "error": ""
    }
   ]
  },
  "CP43": {
-  "resultado": "NO PASA",
-  "estado": "En construcción",
-  "observaciones": "[Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene productos pero no se ha seleccionado método de entrega»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>",
-  "categoria": "Elemento cubierto o no clicable",
-  "origen": "Sitio (elemento superpuesto) o script",
+  "resultado": "Pendiente de ejecución",
+  "estado": "Bloqueado",
+  "observaciones": "[No ejecutado] la precondicion no puede darse: el carrito trae \"Flete externo\" preseleccionado y la interfaz no permite dejar el metodo de entrega sin elegir",
+  "categoria": "No ejecutado (bloqueado)",
+  "origen": "Restricción del entorno o del sitio: no es un defecto",
   "paso_fallido": "Dado que el carrito contiene productos pero no se ha seleccionado método de entrega",
   "titulo": "Generar pedido sin seleccionar método de entrega",
   "feature": "11_GenerarPedido.feature",
   "pasos_total": 3,
   "pasos_ok": 0,
-  "duracion_s": 2.78,
+  "duracion_s": 10.99,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que el carrito contiene productos pero no se ha seleccionado método de entrega",
     "estado": "failed",
-    "duracion_s": 2.777,
-    "evidencia": "evidencias/Generar_pedido_sin_seleccionar_metodo_de_entrega/paso1_FALLA_20261121_231821_175.png",
-    "error": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href=\"#\" class=\"menu__link\" id=\"cart-link\">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class=\"popup\">...</div>"
+    "duracion_s": 10.989,
+    "evidencia": "evidencias/Generar_pedido_sin_seleccionar_metodo_de_entrega/paso1_FALLA_20261122_130622_665.png",
+    "error": "java.lang.AssertionError: NO EJECUTADO - la precondicion no puede darse: el carrito trae \"Flete externo\" preseleccionado y la interfaz no permite dejar el metodo de entrega sin elegir"
    },
    {
     "n": 2,
@@ -1958,8 +1958,8 @@
     "palabra": "Dado",
     "texto": "que un pedido fue generado exitosamente",
     "estado": "failed",
-    "duracion_s": 0.0,
-    "evidencia": "evidencias/Confirmacion_tras_generar_el_pedido/paso1_FALLA_20261121_231822_113.png",
+    "duracion_s": 0.001,
+    "evidencia": "evidencias/Confirmacion_tras_generar_el_pedido/paso1_FALLA_20261122_130623_610.png",
     "error": "java.lang.AssertionError: NO EJECUTADO - requiere generar un pedido real con una sesion iniciada, lo que no se hace en el sitio de la empresa"
    },
    {
@@ -1993,15 +1993,15 @@
   "feature": "12_DescargaDocumentos.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.69,
+  "duracion_s": 6.51,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.286,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso1_OK_20261121_231823_990.png",
+    "duracion_s": 1.091,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso1_OK_20261122_130625_300.png",
     "error": ""
    },
    {
@@ -2009,8 +2009,8 @@
     "palabra": "Cuando",
     "texto": "presiona el enlace \"Lista de Precios 2026 (PDF)\"",
     "estado": "passed",
-    "duracion_s": 2.397,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso2_OK_20261121_231826_655.png",
+    "duracion_s": 5.414,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso2_OK_20261122_130631_013.png",
     "error": ""
    },
    {
@@ -2018,8 +2018,8 @@
     "palabra": "Entonces",
     "texto": "el sistema descarga o abre el PDF correctamente",
     "estado": "passed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso3_OK_20261121_231826_854.png",
+    "duracion_s": 0.009,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_de_Lista_de_Precios_/paso3_OK_20261122_130631_235.png",
     "error": ""
    }
   ]
@@ -2035,15 +2035,15 @@
   "feature": "12_DescargaDocumentos.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.75,
+  "duracion_s": 6.62,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.293,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso1_OK_20261121_231828_703.png",
+    "duracion_s": 1.124,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso1_OK_20261122_130633_028.png",
     "error": ""
    },
    {
@@ -2051,8 +2051,8 @@
     "palabra": "Cuando",
     "texto": "presiona el enlace \"Informativo Maderas (PDF)\"",
     "estado": "passed",
-    "duracion_s": 2.445,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso2_OK_20261121_231831_421.png",
+    "duracion_s": 5.487,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso2_OK_20261122_130638_822.png",
     "error": ""
    },
    {
@@ -2060,8 +2060,8 @@
     "palabra": "Entonces",
     "texto": "el sistema descarga o abre el PDF correctamente",
     "estado": "passed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso3_OK_20261121_231831_597.png",
+    "duracion_s": 0.011,
+    "evidencia": "evidencias/Descarga_de_documentos_Descarga_exitosa_del_Informativo_Made/paso3_OK_20261122_130639_023.png",
     "error": ""
    }
   ]
@@ -2077,15 +2077,15 @@
   "feature": "12_DescargaDocumentos.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.76,
+  "duracion_s": 6.89,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.301,
-    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso1_OK_20261121_231833_445.png",
+    "duracion_s": 1.388,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso1_OK_20261122_130641_034.png",
     "error": ""
    },
    {
@@ -2093,8 +2093,8 @@
     "palabra": "Cuando",
     "texto": "presiona el enlace \"Pino Insigne Seco Cepillado Tabla\"",
     "estado": "passed",
-    "duracion_s": 2.453,
-    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso2_OK_20261121_231836_175.png",
+    "duracion_s": 5.49,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso2_OK_20261122_130646_823.png",
     "error": ""
    },
    {
@@ -2102,8 +2102,8 @@
     "palabra": "Entonces",
     "texto": "el sistema descarga o abre el PDF correctamente",
     "estado": "passed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso3_OK_20261121_231836_321.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Descarga_de_documentos_Apertura_del_PDF_sin_errores_de_forma/paso3_OK_20261122_130647_027.png",
     "error": ""
    }
   ]
@@ -2119,15 +2119,15 @@
   "feature": "12_DescargaDocumentos.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 2.95,
+  "duracion_s": 2.61,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en la página de inicio",
     "estado": "passed",
-    "duracion_s": 1.294,
-    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso1_OK_20261121_231838_123.png",
+    "duracion_s": 1.179,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso1_OK_20261122_130648_843.png",
     "error": ""
    },
    {
@@ -2135,8 +2135,8 @@
     "palabra": "Dado",
     "texto": "que existen múltiples enlaces a documentos PDF en el sitio",
     "estado": "passed",
-    "duracion_s": 0.724,
-    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso2_OK_20261121_231839_117.png",
+    "duracion_s": 0.609,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso2_OK_20261122_130649_755.png",
     "error": ""
    },
    {
@@ -2145,7 +2145,7 @@
     "texto": "el usuario verifica cada uno de ellos",
     "estado": "passed",
     "duracion_s": 0.3,
-    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso3_OK_20261121_231839_705.png",
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso3_OK_20261122_130650_361.png",
     "error": ""
    },
    {
@@ -2153,8 +2153,8 @@
     "palabra": "Entonces",
     "texto": "ninguno retorna un error 404 o enlace roto",
     "estado": "passed",
-    "duracion_s": 0.629,
-    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso4_OK_20261121_231840_600.png",
+    "duracion_s": 0.521,
+    "evidencia": "evidencias/Verificacion_de_enlaces_no_rotos/paso4_OK_20261122_130651_178.png",
     "error": ""
    }
   ]
@@ -2170,15 +2170,15 @@
   "feature": "13_ContactoWhatsApp.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 2.74,
+  "duracion_s": 11.74,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en cualquier página del sitio",
     "estado": "passed",
-    "duracion_s": 1.287,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261121_232103_471.png",
+    "duracion_s": 1.378,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261122_131238_097.png",
     "error": ""
    },
    {
@@ -2186,8 +2186,8 @@
     "palabra": "Cuando",
     "texto": "presiona el botón \"¡Contáctanos!\"",
     "estado": "passed",
-    "duracion_s": 0.55,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261121_232104_285.png",
+    "duracion_s": 9.698,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261122_131248_098.png",
     "error": ""
    },
    {
@@ -2195,8 +2195,8 @@
     "palabra": "Entonces",
     "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
     "estado": "passed",
-    "duracion_s": 0.901,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261121_232105_340.png",
+    "duracion_s": 0.662,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261122_131248_946.png",
     "error": ""
    }
   ]
@@ -2212,15 +2212,15 @@
   "feature": "13_ContactoWhatsApp.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 2.74,
+  "duracion_s": 11.74,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en cualquier página del sitio",
     "estado": "passed",
-    "duracion_s": 1.287,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261121_232103_471.png",
+    "duracion_s": 1.378,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso1_OK_20261122_131238_097.png",
     "error": ""
    },
    {
@@ -2228,8 +2228,8 @@
     "palabra": "Cuando",
     "texto": "presiona el botón \"¡Contáctanos!\"",
     "estado": "passed",
-    "duracion_s": 0.55,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261121_232104_285.png",
+    "duracion_s": 9.698,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso2_OK_20261122_131248_098.png",
     "error": ""
    },
    {
@@ -2237,8 +2237,8 @@
     "palabra": "Entonces",
     "texto": "el sistema lo redirige a WhatsApp con el número \"56976200646\" y un mensaje predefinido",
     "estado": "passed",
-    "duracion_s": 0.901,
-    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261121_232105_340.png",
+    "duracion_s": 0.662,
+    "evidencia": "evidencias/Redireccion_exitosa_a_WhatsApp_con_mensaje_predefinido_y_num/paso3_OK_20261122_131248_946.png",
     "error": ""
    }
   ]
@@ -2254,15 +2254,15 @@
   "feature": "13_ContactoWhatsApp.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 2.24,
+  "duracion_s": 11.04,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en cualquier página del sitio",
     "estado": "passed",
-    "duracion_s": 1.615,
-    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso1_OK_20261121_232107_504.png",
+    "duracion_s": 1.302,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso1_OK_20261122_131250_817.png",
     "error": ""
    },
    {
@@ -2270,8 +2270,8 @@
     "palabra": "Cuando",
     "texto": "presiona el botón \"¡Contáctanos!\"",
     "estado": "passed",
-    "duracion_s": 0.552,
-    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso2_OK_20261121_232108_336.png",
+    "duracion_s": 9.704,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso2_OK_20261122_131300_836.png",
     "error": ""
    },
    {
@@ -2279,8 +2279,8 @@
     "palabra": "Entonces",
     "texto": "se abre en una nueva pestaña o aplicación, sin cerrar la sesión de compra del usuario",
     "estado": "passed",
-    "duracion_s": 0.071,
-    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso3_OK_20261121_232108_562.png",
+    "duracion_s": 0.038,
+    "evidencia": "evidencias/Apertura_del_enlace_en_una_nueva_pestana/paso3_OK_20261122_131301_053.png",
     "error": ""
    }
   ]
@@ -2296,15 +2296,15 @@
   "feature": "13_ContactoWhatsApp.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 4.96,
+  "duracion_s": 13.59,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario está en cualquier página del sitio",
     "estado": "passed",
-    "duracion_s": 1.617,
-    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso1_OK_20261121_232110_662.png",
+    "duracion_s": 1.93,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso1_OK_20261122_131303_577.png",
     "error": ""
    },
    {
@@ -2312,8 +2312,8 @@
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil",
     "estado": "passed",
-    "duracion_s": 2.021,
-    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso2_OK_20261121_232112_958.png",
+    "duracion_s": 1.415,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso2_OK_20261122_131305_296.png",
     "error": ""
    },
    {
@@ -2321,8 +2321,8 @@
     "palabra": "Cuando",
     "texto": "presiona el botón \"¡Contáctanos!\"",
     "estado": "passed",
-    "duracion_s": 0.668,
-    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso3_OK_20261121_232113_905.png",
+    "duracion_s": 9.833,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso3_OK_20261122_131315_439.png",
     "error": ""
    },
    {
@@ -2330,8 +2330,8 @@
     "palabra": "Entonces",
     "texto": "el sistema abre correctamente la aplicación de WhatsApp instalada",
     "estado": "passed",
-    "duracion_s": 0.655,
-    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso4_OK_20261121_232114_740.png",
+    "duracion_s": 0.413,
+    "evidencia": "evidencias/Funcionamiento_del_boton_en_dispositivo_movil/paso4_OK_20261122_131316_042.png",
     "error": ""
    }
   ]
@@ -2347,15 +2347,15 @@
   "feature": "14_SobreNosotros.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 4.66,
+  "duracion_s": 5.21,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
     "estado": "passed",
-    "duracion_s": 4.649,
-    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso1_OK_20261121_231930_874.png",
+    "duracion_s": 5.198,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso1_OK_20261122_130924_870.png",
     "error": ""
    },
    {
@@ -2363,8 +2363,8 @@
     "palabra": "Cuando",
     "texto": "la página carga completamente",
     "estado": "passed",
-    "duracion_s": 0.005,
-    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso2_OK_20261121_231931_171.png",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso2_OK_20261122_130925_218.png",
     "error": ""
    },
    {
@@ -2372,8 +2372,8 @@
     "palabra": "Entonces",
     "texto": "se despliega correctamente la historia, misión, visión y equipo de Maderas MyM",
     "estado": "passed",
-    "duracion_s": 0.004,
-    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso3_OK_20261121_231931_418.png",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Visualizacion_exitosa_de_la_informacion_institucional/paso3_OK_20261122_130925_560.png",
     "error": ""
    }
   ]
@@ -2389,15 +2389,15 @@
   "feature": "14_SobreNosotros.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 4.73,
+  "duracion_s": 7.8,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
     "estado": "passed",
-    "duracion_s": 2.153,
-    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso1_OK_20261121_231934_259.png",
+    "duracion_s": 5.215,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso1_OK_20261122_130931_524.png",
     "error": ""
    },
    {
@@ -2405,8 +2405,8 @@
     "palabra": "Cuando",
     "texto": "revisa la sección de ubicación",
     "estado": "passed",
-    "duracion_s": 2.512,
-    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso2_OK_20261121_231937_068.png",
+    "duracion_s": 2.518,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso2_OK_20261122_130934_417.png",
     "error": ""
    },
    {
@@ -2414,8 +2414,8 @@
     "palabra": "Entonces",
     "texto": "el mapa de Google Maps embebido se carga correctamente",
     "estado": "passed",
-    "duracion_s": 0.066,
-    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso3_OK_20261121_231937_206.png",
+    "duracion_s": 0.072,
+    "evidencia": "evidencias/Visualizacion_del_mapa_de_ubicacion/paso3_OK_20261122_130934_572.png",
     "error": ""
    }
   ]
@@ -2431,15 +2431,15 @@
   "feature": "14_SobreNosotros.feature",
   "pasos_total": 3,
   "pasos_ok": 3,
-  "duracion_s": 3.47,
+  "duracion_s": 9.09,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
     "estado": "passed",
-    "duracion_s": 2.262,
-    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso1_OK_20261121_231939_956.png",
+    "duracion_s": 5.156,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso1_OK_20261122_130940_259.png",
     "error": ""
    },
    {
@@ -2447,8 +2447,8 @@
     "palabra": "Cuando",
     "texto": "presiona \"Contactar por WhatsApp\"",
     "estado": "passed",
-    "duracion_s": 0.338,
-    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso2_OK_20261121_231940_595.png",
+    "duracion_s": 3.376,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso2_OK_20261122_130943_988.png",
     "error": ""
    },
    {
@@ -2456,8 +2456,8 @@
     "palabra": "Entonces",
     "texto": "el sistema lo redirige correctamente a WhatsApp",
     "estado": "passed",
-    "duracion_s": 0.867,
-    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso3_OK_20261121_231941_573.png",
+    "duracion_s": 0.559,
+    "evidencia": "evidencias/Enlace_a_WhatsApp_desde_Sobre_Nosotros/paso3_OK_20261122_130944_672.png",
     "error": ""
    }
   ]
@@ -2473,15 +2473,15 @@
   "feature": "14_SobreNosotros.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 5.04,
+  "duracion_s": 7.85,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario accede al menú \"Sobre Nosotros\"",
     "estado": "passed",
-    "duracion_s": 2.212,
-    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso1_OK_20261121_231944_313.png",
+    "duracion_s": 4.905,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso1_OK_20261122_130950_136.png",
     "error": ""
    },
    {
@@ -2489,8 +2489,8 @@
     "palabra": "Dado",
     "texto": "que un usuario accede a \"Sobre Nosotros\" desde un dispositivo móvil",
     "estado": "passed",
-    "duracion_s": 1.327,
-    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso2_OK_20261121_231945_951.png",
+    "duracion_s": 1.443,
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso2_OK_20261122_130951_924.png",
     "error": ""
    },
    {
@@ -2499,7 +2499,7 @@
     "texto": "la página se despliega",
     "estado": "passed",
     "duracion_s": 1.5,
-    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso3_OK_20261121_231947_750.png",
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso3_OK_20261122_130953_775.png",
     "error": ""
    },
    {
@@ -2508,7 +2508,7 @@
     "texto": "el contenido se adapta correctamente al tamaño de pantalla, sin elementos superpuestos",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso4_OK_20261121_231947_999.png",
+    "evidencia": "evidencias/Visualizacion_correcta_en_dispositivo_movil/paso4_OK_20261122_130954_070.png",
     "error": ""
    }
   ]
@@ -2524,15 +2524,15 @@
   "feature": "15_MenuResponsivo.feature",
   "pasos_total": 3,
   "pasos_ok": 1,
-  "duracion_s": 1.82,
+  "duracion_s": 1.71,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.804,
-    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso1_OK_20261121_232032_394.png",
+    "duracion_s": 1.693,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso1_OK_20261122_131156_829.png",
     "error": ""
    },
    {
@@ -2540,8 +2540,8 @@
     "palabra": "Cuando",
     "texto": "presiona el ícono de menú hamburguesa",
     "estado": "failed",
-    "duracion_s": 0.012,
-    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso2_FALLA_20261121_232032_681.png",
+    "duracion_s": 0.013,
+    "evidencia": "evidencias/Apertura_y_cierre_correcto_del_menu_movil/paso2_FALLA_20261122_131157_155.png",
     "error": "java.lang.AssertionError: NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
    },
    {
@@ -2566,15 +2566,15 @@
   "feature": "15_MenuResponsivo.feature",
   "pasos_total": 4,
   "pasos_ok": 2,
-  "duracion_s": 1.96,
+  "duracion_s": 1.44,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.934,
-    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso1_OK_20261121_232035_502.png",
+    "duracion_s": 1.401,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso1_OK_20261122_131159_610.png",
     "error": ""
    },
    {
@@ -2582,8 +2582,8 @@
     "palabra": "Dado",
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
-    "duracion_s": 0.004,
-    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso2_OK_20261121_232035_776.png",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso2_OK_20261122_131159_930.png",
     "error": ""
    },
    {
@@ -2591,8 +2591,8 @@
     "palabra": "Cuando",
     "texto": "el usuario selecciona \"Productos\"",
     "estado": "failed",
-    "duracion_s": 0.025,
-    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso3_FALLA_20261121_232036_059.png",
+    "duracion_s": 0.03,
+    "evidencia": "evidencias/Navegacion_a_Productos_desde_el_menu_movil/paso3_FALLA_20261122_131200_249.png",
     "error": "java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
    },
    {
@@ -2617,15 +2617,15 @@
   "feature": "15_MenuResponsivo.feature",
   "pasos_total": 4,
   "pasos_ok": 4,
-  "duracion_s": 2.15,
+  "duracion_s": 1.97,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.636,
-    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso1_OK_20261121_232038_582.png",
+    "duracion_s": 1.452,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso1_OK_20261122_131202_727.png",
     "error": ""
    },
    {
@@ -2634,7 +2634,7 @@
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso2_OK_20261121_232038_856.png",
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso2_OK_20261122_131203_047.png",
     "error": ""
    },
    {
@@ -2643,7 +2643,7 @@
     "texto": "el usuario revisa las opciones disponibles",
     "estado": "passed",
     "duracion_s": 0.5,
-    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso3_OK_20261121_232039_602.png",
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso3_OK_20261122_131203_838.png",
     "error": ""
    },
    {
@@ -2651,8 +2651,8 @@
     "palabra": "Entonces",
     "texto": "se muestran correctamente los accesos a \"Carrito\" e \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 0.008,
-    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso4_OK_20261121_232039_858.png",
+    "duracion_s": 0.01,
+    "evidencia": "evidencias/Visibilidad_de_carrito_y_login_en_el_menu_movil/paso4_OK_20261122_131204_146.png",
     "error": ""
    }
   ]
@@ -2668,15 +2668,15 @@
   "feature": "15_MenuResponsivo.feature",
   "pasos_total": 20,
   "pasos_ok": 16,
-  "duracion_s": 15.1,
+  "duracion_s": 24.28,
   "pasos": [
    {
     "n": 1,
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.67,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso1_OK_20261121_232042_166.png",
+    "duracion_s": 1.742,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso1_OK_20261122_131206_622.png",
     "error": ""
    },
    {
@@ -2685,7 +2685,7 @@
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso2_OK_20261121_232042_440.png",
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso2_OK_20261122_131206_948.png",
     "error": ""
    },
    {
@@ -2693,8 +2693,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona la opción \"Inicio\"",
     "estado": "passed",
-    "duracion_s": 2.295,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso3_OK_20261121_232044_994.png",
+    "duracion_s": 5.284,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso3_OK_20261122_131212_520.png",
     "error": ""
    },
    {
@@ -2703,7 +2703,7 @@
     "texto": "la opción \"Inicio\" responde correctamente",
     "estado": "passed",
     "duracion_s": 0.003,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso4_OK_20261121_232045_273.png",
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Inicio_del_menu/paso4_OK_20261122_131212_838.png",
     "error": ""
    },
    {
@@ -2711,8 +2711,8 @@
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.533,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso1_OK_20261121_232047_442.png",
+    "duracion_s": 1.428,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso1_OK_20261122_131214_994.png",
     "error": ""
    },
    {
@@ -2721,7 +2721,7 @@
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso2_OK_20261121_232047_730.png",
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso2_OK_20261122_131215_315.png",
     "error": ""
    },
    {
@@ -2729,8 +2729,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona la opción \"Productos\"",
     "estado": "failed",
-    "duracion_s": 0.025,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso3_FALLA_20261121_232048_010.png",
+    "duracion_s": 0.029,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Productos_del_menu/paso3_FALLA_20261122_131215_634.png",
     "error": "java.lang.AssertionError: NO PASA - La opcion \"Productos\" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
    },
    {
@@ -2747,8 +2747,8 @@
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.614,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso1_OK_20261121_232050_498.png",
+    "duracion_s": 1.726,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso1_OK_20261122_131218_360.png",
     "error": ""
    },
    {
@@ -2756,8 +2756,8 @@
     "palabra": "Dado",
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
-    "duracion_s": 0.004,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso2_OK_20261121_232050_773.png",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso2_OK_20261122_131218_677.png",
     "error": ""
    },
    {
@@ -2765,8 +2765,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona la opción \"Sobre Nosotros\"",
     "estado": "failed",
-    "duracion_s": 0.025,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso3_FALLA_20261121_232051_059.png",
+    "duracion_s": 0.029,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Sobre_Nosotros_del_menu/paso3_FALLA_20261122_131218_998.png",
     "error": "java.lang.AssertionError: NO PASA - La opcion \"Sobre Nosotros\" no esta visible/accesible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)"
    },
    {
@@ -2783,8 +2783,8 @@
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.611,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso1_OK_20261121_232053_595.png",
+    "duracion_s": 1.434,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso1_OK_20261122_131221_484.png",
     "error": ""
    },
    {
@@ -2793,7 +2793,7 @@
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
     "duracion_s": 0.005,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso2_OK_20261121_232053_874.png",
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso2_OK_20261122_131221_794.png",
     "error": ""
    },
    {
@@ -2801,8 +2801,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona la opción \"Carrito\"",
     "estado": "passed",
-    "duracion_s": 1.812,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso3_OK_20261121_232055_948.png",
+    "duracion_s": 4.827,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso3_OK_20261122_131226_913.png",
     "error": ""
    },
    {
@@ -2810,8 +2810,8 @@
     "palabra": "Entonces",
     "texto": "la opción \"Carrito\" responde correctamente",
     "estado": "passed",
-    "duracion_s": 0.007,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso4_OK_20261121_232056_073.png",
+    "duracion_s": 0.009,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Carrito_del_menu/paso4_OK_20261122_131227_079.png",
     "error": ""
    },
    {
@@ -2819,8 +2819,8 @@
     "palabra": "Dado",
     "texto": "que un usuario navega desde un dispositivo móvil con viewport 375x667",
     "estado": "passed",
-    "duracion_s": 1.569,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso1_OK_20261121_232058_137.png",
+    "duracion_s": 1.79,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso1_OK_20261122_131229_493.png",
     "error": ""
    },
    {
@@ -2828,8 +2828,8 @@
     "palabra": "Dado",
     "texto": "que el menú móvil está desplegado",
     "estado": "passed",
-    "duracion_s": 0.005,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso2_OK_20261121_232058_407.png",
+    "duracion_s": 0.006,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso2_OK_20261122_131229_812.png",
     "error": ""
    },
    {
@@ -2837,8 +2837,8 @@
     "palabra": "Cuando",
     "texto": "el usuario presiona la opción \"Iniciar sesión\"",
     "estado": "passed",
-    "duracion_s": 2.904,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso3_OK_20261121_232101_571.png",
+    "duracion_s": 5.946,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso3_OK_20261122_131236_047.png",
     "error": ""
    },
    {
@@ -2846,8 +2846,8 @@
     "palabra": "Entonces",
     "texto": "la opción \"Iniciar sesión\" responde correctamente",
     "estado": "passed",
-    "duracion_s": 0.003,
-    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso4_OK_20261121_232101_671.png",
+    "duracion_s": 0.005,
+    "evidencia": "evidencias/Accesibilidad_de_la_opcion_Iniciar_sesion_del_menu/paso4_OK_20261122_131236_151.png",
     "error": ""
    }
   ]

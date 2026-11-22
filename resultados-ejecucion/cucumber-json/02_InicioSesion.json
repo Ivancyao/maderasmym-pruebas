@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 741000000,
+              "duration": 891000000,
               "status": "passed"
             },
             "line": 13,
@@ -28,10 +28,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261121_231805_740.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso1_OK_20261122_130547_348.png"
                 ],
                 "result": {
-                  "duration": 169000000,
+                  "duration": 195000000,
                   "status": "passed"
                 },
                 "match": {
@@ -44,11 +44,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:18:04.704Z",
+        "start_timestamp": "2026-11-22T13:05:46.052Z",
         "before": [
           {
             "result": {
-              "duration": 293000000,
+              "duration": 400000000,
               "status": "passed"
             },
             "match": {
@@ -63,7 +63,7 @@
         "after": [
           {
             "result": {
-              "duration": 125000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "match": {
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98000000,
+              "duration": 123000000,
               "status": "passed"
             },
             "line": 17,
@@ -97,10 +97,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_OK_20261121_231806_007.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso2_OK_20261122_130547_666.png"
                 ],
                 "result": {
-                  "duration": 204000000,
+                  "duration": 229000000,
                   "status": "passed"
                 },
                 "match": {
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 241000000,
+              "duration": 3277000000,
               "status": "passed"
             },
             "line": 18,
@@ -129,10 +129,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso3_OK_20261121_231806_452.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso3_OK_20261122_130551_172.png"
                 ],
                 "result": {
-                  "duration": 191000000,
+                  "duration": 239000000,
                   "status": "passed"
                 },
                 "match": {
@@ -145,7 +145,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: NO EJECUTADO - no se dispone de una cuenta verificada para iniciar sesion (el registro exige CAPTCHA y no se crean cuentas reales); el sitio respondio \"Credenciales inválidas\"\n\tat Utilidades.Utility.resultado(Utility.java:101)\n\tat Utilidades.Utility.noEjecutado(Utility.java:112)\n\tat DefinicionPasos.iniciosesion.PasosInicioSesion.el_sistema_muestra_un_mensaje_que_contiene(PasosInicioSesion.java:89)\n\tat ✽.el sistema muestra un mensaje que contiene \"Bienvenido\"(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/02_InicioSesion.feature:19)\n",
-              "duration": 263000000,
+              "duration": 10000000,
               "status": "failed"
             },
             "line": 19,
@@ -162,7 +162,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso4_FALLA_20261121_231806_906.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_exitoso/paso4_FALLA_20261122_130551_421.png"
                 ],
                 "embeddings": [
                   {
@@ -172,7 +172,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 304000000,
+                  "duration": 425000000,
                   "status": "passed"
                 },
                 "match": {
@@ -210,7 +210,7 @@
         "steps": [
           {
             "result": {
-              "duration": 784000000,
+              "duration": 650000000,
               "status": "passed"
             },
             "line": 13,
@@ -227,10 +227,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261121_231808_464.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso1_OK_20261122_130552_950.png"
                 ],
                 "result": {
-                  "duration": 182000000,
+                  "duration": 192000000,
                   "status": "passed"
                 },
                 "match": {
@@ -243,11 +243,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:18:07.337Z",
+        "start_timestamp": "2026-11-22T13:05:51.922Z",
         "before": [
           {
             "result": {
-              "duration": 341000000,
+              "duration": 377000000,
               "status": "passed"
             },
             "match": {
@@ -275,7 +275,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98000000,
+              "duration": 128000000,
               "status": "passed"
             },
             "line": 17,
@@ -296,10 +296,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_OK_20261121_231808_743.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso2_OK_20261122_130553_270.png"
                 ],
                 "result": {
-                  "duration": 198000000,
+                  "duration": 244000000,
                   "status": "passed"
                 },
                 "match": {
@@ -311,7 +311,7 @@
           },
           {
             "result": {
-              "duration": 240000000,
+              "duration": 3269000000,
               "status": "passed"
             },
             "line": 18,
@@ -328,10 +328,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso3_OK_20261121_231809_182.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso3_OK_20261122_130556_784.png"
                 ],
                 "result": {
-                  "duration": 215000000,
+                  "duration": 218000000,
                   "status": "passed"
                 },
                 "match": {
@@ -344,7 +344,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"contraseña incorrecta\" y el sitio mostro \"Credenciales inválidas\"\n\tat Utilidades.Utility.resultado(Utility.java:101)\n\tat DefinicionPasos.iniciosesion.PasosInicioSesion.el_sistema_muestra_un_mensaje_que_contiene(PasosInicioSesion.java:95)\n\tat ✽.el sistema muestra un mensaje que contiene \"contraseña incorrecta\"(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/02_InicioSesion.feature:19)\n",
-              "duration": 8000000,
+              "duration": 10000000,
               "status": "failed"
             },
             "line": 19,
@@ -361,7 +361,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso4_FALLA_20261121_231809_406.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_contrasena_inc/paso4_FALLA_20261122_130557_012.png"
                 ],
                 "embeddings": [
                   {
@@ -371,7 +371,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 374000000,
+                  "duration": 397000000,
                   "status": "passed"
                 },
                 "match": {
@@ -409,7 +409,7 @@
         "steps": [
           {
             "result": {
-              "duration": 812000000,
+              "duration": 869000000,
               "status": "passed"
             },
             "line": 13,
@@ -426,10 +426,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261121_231810_977.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso1_OK_20261122_130558_709.png"
                 ],
                 "result": {
-                  "duration": 181000000,
+                  "duration": 206000000,
                   "status": "passed"
                 },
                 "match": {
@@ -442,11 +442,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:18:09.856Z",
+        "start_timestamp": "2026-11-22T13:05:57.487Z",
         "before": [
           {
             "result": {
-              "duration": 308000000,
+              "duration": 351000000,
               "status": "passed"
             },
             "match": {
@@ -461,7 +461,7 @@
         "after": [
           {
             "result": {
-              "duration": 77000000,
+              "duration": 76000000,
               "status": "passed"
             },
             "match": {
@@ -474,7 +474,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104000000,
+              "duration": 139000000,
               "status": "passed"
             },
             "line": 17,
@@ -495,10 +495,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_OK_20261121_231811_262.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso2_OK_20261122_130559_055.png"
                 ],
                 "result": {
-                  "duration": 196000000,
+                  "duration": 238000000,
                   "status": "passed"
                 },
                 "match": {
@@ -510,7 +510,7 @@
           },
           {
             "result": {
-              "duration": 241000000,
+              "duration": 3275000000,
               "status": "passed"
             },
             "line": 18,
@@ -527,10 +527,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso3_OK_20261121_231811_700.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso3_OK_20261122_130602_568.png"
                 ],
                 "result": {
-                  "duration": 212000000,
+                  "duration": 219000000,
                   "status": "passed"
                 },
                 "match": {
@@ -543,7 +543,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: NO PASA - Inicio de sesion: se esperaba un mensaje con \"no existe\" y el sitio mostro \"Credenciales inválidas\"\n\tat Utilidades.Utility.resultado(Utility.java:101)\n\tat DefinicionPasos.iniciosesion.PasosInicioSesion.el_sistema_muestra_un_mensaje_que_contiene(PasosInicioSesion.java:95)\n\tat ✽.el sistema muestra un mensaje que contiene \"no existe\"(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/02_InicioSesion.feature:19)\n",
-              "duration": 262000000,
+              "duration": 9000000,
               "status": "failed"
             },
             "line": 19,
@@ -560,7 +560,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso4_FALLA_20261121_231812_174.png"
+                  "Evidencia: evidencias/Inicio_de_sesion_Inicio_de_sesion_fallido_por_usuario_inexis/paso4_FALLA_20261122_130602_796.png"
                 ],
                 "embeddings": [
                   {
@@ -570,7 +570,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 333000000,
+                  "duration": 413000000,
                   "status": "passed"
                 },
                 "match": {
@@ -608,7 +608,7 @@
         "steps": [
           {
             "result": {
-              "duration": 766000000,
+              "duration": 594000000,
               "status": "passed"
             },
             "line": 13,
@@ -625,10 +625,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261121_231813_646.png"
+                  "Evidencia: evidencias/Reenvio_de_verificacion_de_cuenta/paso1_OK_20261122_130604_253.png"
                 ],
                 "result": {
-                  "duration": 182000000,
+                  "duration": 210000000,
                   "status": "passed"
                 },
                 "match": {
@@ -641,11 +641,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:18:12.586Z",
+        "start_timestamp": "2026-11-22T13:06:03.287Z",
         "before": [
           {
             "result": {
-              "duration": 293000000,
+              "duration": 370000000,
               "status": "passed"
             },
             "match": {
@@ -660,7 +660,7 @@
         "after": [
           {
             "result": {
-              "duration": 74000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "match": {
@@ -684,7 +684,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Reenvio_de_verificacion_de_cuenta/paso2_FALLA_20261121_231813_827.png"
+                  "Evidencia: evidencias/Reenvio_de_verificacion_de_cuenta/paso2_FALLA_20261122_130604_463.png"
                 ],
                 "embeddings": [
                   {
@@ -694,7 +694,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 330000000,
+                  "duration": 381000000,
                   "status": "passed"
                 },
                 "match": {
@@ -706,6 +706,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 30,

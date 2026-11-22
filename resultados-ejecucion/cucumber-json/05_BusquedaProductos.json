@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1362000000,
+              "duration": 1399000000,
               "status": "passed"
             },
             "line": 13,
@@ -22,10 +22,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261121_231859_821.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso1_OK_20261122_130840_209.png"
                 ],
                 "result": {
-                  "duration": 272000000,
+                  "duration": 300000000,
                   "status": "passed"
                 },
                 "match": {
@@ -38,11 +38,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:18:57.973Z",
+        "start_timestamp": "2026-11-22T13:08:38.470Z",
         "before": [
           {
             "result": {
-              "duration": 484000000,
+              "duration": 338000000,
               "status": "passed"
             },
             "match": {
@@ -57,7 +57,7 @@
         "after": [
           {
             "result": {
-              "duration": 79000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "match": {
@@ -70,7 +70,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 17,
@@ -87,10 +87,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261121_231900_143.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso2_OK_20261122_130840_573.png"
                 ],
                 "result": {
-                  "duration": 259000000,
+                  "duration": 298000000,
                   "status": "passed"
                 },
                 "match": {
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 2766000000,
+              "duration": 5836000000,
               "status": "passed"
             },
             "line": 18,
@@ -113,10 +113,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261121_231903_169.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso3_OK_20261122_130846_708.png"
                 ],
                 "result": {
-                  "duration": 225000000,
+                  "duration": 246000000,
                   "status": "passed"
                 },
                 "match": {
@@ -128,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 10000000,
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 19,
@@ -145,10 +145,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261121_231903_404.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_exitosa_de_un_producto_existe/paso4_OK_20261122_130846_966.png"
                 ],
                 "result": {
-                  "duration": 219000000,
+                  "duration": 253000000,
                   "status": "passed"
                 },
                 "match": {
@@ -186,7 +186,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1330000000,
+              "duration": 1052000000,
               "status": "passed"
             },
             "line": 13,
@@ -197,10 +197,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261121_231905_313.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso1_OK_20261122_130848_702.png"
                 ],
                 "result": {
-                  "duration": 275000000,
+                  "duration": 306000000,
                   "status": "passed"
                 },
                 "match": {
@@ -213,11 +213,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:19:03.704Z",
+        "start_timestamp": "2026-11-22T13:08:47.298Z",
         "before": [
           {
             "result": {
-              "duration": 279000000,
+              "duration": 352000000,
               "status": "passed"
             },
             "match": {
@@ -232,7 +232,7 @@
         "after": [
           {
             "result": {
-              "duration": 79000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "match": {
@@ -245,7 +245,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 17,
@@ -262,10 +262,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261121_231905_638.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso2_OK_20261122_130849_071.png"
                 ],
                 "result": {
-                  "duration": 263000000,
+                  "duration": 301000000,
                   "status": "passed"
                 },
                 "match": {
@@ -277,7 +277,7 @@
           },
           {
             "result": {
-              "duration": 2765000000,
+              "duration": 5827000000,
               "status": "passed"
             },
             "line": 18,
@@ -288,10 +288,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261121_231908_667.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso3_OK_20261122_130855_199.png"
                 ],
                 "result": {
-                  "duration": 209000000,
+                  "duration": 234000000,
                   "status": "passed"
                 },
                 "match": {
@@ -303,7 +303,7 @@
           },
           {
             "result": {
-              "duration": 3037000000,
+              "duration": 3011000000,
               "status": "passed"
             },
             "line": 19,
@@ -320,10 +320,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261121_231911_912.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_sin_resultados/paso4_OK_20261122_130858_445.png"
                 ],
                 "result": {
-                  "duration": 211000000,
+                  "duration": 221000000,
                   "status": "passed"
                 },
                 "match": {
@@ -361,7 +361,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1332000000,
+              "duration": 1622000000,
               "status": "passed"
             },
             "line": 13,
@@ -372,10 +372,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261121_231913_825.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso1_OK_20261122_130900_778.png"
                 ],
                 "result": {
-                  "duration": 263000000,
+                  "duration": 295000000,
                   "status": "passed"
                 },
                 "match": {
@@ -388,11 +388,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:19:12.204Z",
+        "start_timestamp": "2026-11-22T13:08:58.745Z",
         "before": [
           {
             "result": {
-              "duration": 288000000,
+              "duration": 409000000,
               "status": "passed"
             },
             "match": {
@@ -407,7 +407,7 @@
         "after": [
           {
             "result": {
-              "duration": 80000000,
+              "duration": 85000000,
               "status": "passed"
             },
             "match": {
@@ -420,7 +420,7 @@
         "steps": [
           {
             "result": {
-              "duration": 56000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 17,
@@ -437,10 +437,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261121_231914_145.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso2_OK_20261122_130901_145.png"
                 ],
                 "result": {
-                  "duration": 276000000,
+                  "duration": 308000000,
                   "status": "passed"
                 },
                 "match": {
@@ -452,7 +452,7 @@
           },
           {
             "result": {
-              "duration": 2764000000,
+              "duration": 5830000000,
               "status": "passed"
             },
             "line": 18,
@@ -463,10 +463,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261121_231917_185.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso3_OK_20261122_130907_284.png"
                 ],
                 "result": {
-                  "duration": 204000000,
+                  "duration": 233000000,
                   "status": "passed"
                 },
                 "match": {
@@ -478,7 +478,7 @@
           },
           {
             "result": {
-              "duration": 4063000000,
+              "duration": 4040000000,
               "status": "passed"
             },
             "line": 19,
@@ -495,10 +495,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261121_231921_453.png"
+                  "Evidencia: evidencias/Busqueda_de_productos_Busqueda_con_caracteres_especiales_o_c/paso4_OK_20261122_130911_557.png"
                 ],
                 "result": {
-                  "duration": 206000000,
+                  "duration": 223000000,
                   "status": "passed"
                 },
                 "match": {
@@ -536,7 +536,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1271000000,
+              "duration": 1337000000,
               "status": "passed"
             },
             "line": 13,
@@ -547,10 +547,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso1_OK_20261121_231923_307.png"
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso1_OK_20261122_130913_548.png"
                 ],
                 "result": {
-                  "duration": 269000000,
+                  "duration": 313000000,
                   "status": "passed"
                 },
                 "match": {
@@ -563,11 +563,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:19:21.739Z",
+        "start_timestamp": "2026-11-22T13:09:11.867Z",
         "before": [
           {
             "result": {
-              "duration": 295000000,
+              "duration": 342000000,
               "status": "passed"
             },
             "match": {
@@ -582,7 +582,7 @@
         "after": [
           {
             "result": {
-              "duration": 78000000,
+              "duration": 76000000,
               "status": "passed"
             },
             "match": {
@@ -595,7 +595,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1743000000,
+              "duration": 4804000000,
               "status": "passed"
             },
             "line": 29,
@@ -606,10 +606,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso2_OK_20261121_231925_319.png"
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso2_OK_20261122_130918_665.png"
                 ],
                 "result": {
-                  "duration": 234000000,
+                  "duration": 270000000,
                   "status": "passed"
                 },
                 "match": {
@@ -632,10 +632,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso3_OK_20261121_231925_565.png"
+                  "Evidencia: evidencias/Busqueda_con_campo_vacio/paso3_OK_20261122_130918_947.png"
                 ],
                 "result": {
-                  "duration": 237000000,
+                  "duration": 273000000,
                   "status": "passed"
                 },
                 "match": {

@@ -3,11 +3,11 @@
     "line": 6,
     "elements": [
       {
-        "start_timestamp": "2026-11-21T23:17:33.521Z",
+        "start_timestamp": "2026-11-22T13:04:52.996Z",
         "before": [
           {
             "result": {
-              "duration": 315000000,
+              "duration": 390000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 80000000,
+              "duration": 76000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 958000000,
+              "duration": 1125000000,
               "status": "passed"
             },
             "line": 14,
@@ -46,10 +46,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261121_231734_797.png"
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso1_OK_20261122_130454_516.png"
                 ],
                 "result": {
-                  "duration": 267000000,
+                  "duration": 316000000,
                   "status": "passed"
                 },
                 "match": {
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 866000000,
+              "duration": 671000000,
               "status": "passed"
             },
             "line": 15,
@@ -78,10 +78,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261121_231735_931.png"
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso2_OK_20261122_130455_503.png"
                 ],
                 "result": {
-                  "duration": 177000000,
+                  "duration": 207000000,
                   "status": "passed"
                 },
                 "match": {
@@ -93,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 16,
@@ -110,10 +110,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261121_231736_112.png"
+                  "Evidencia: evidencias/Bloqueo_de_acceso_a_datos_de_cuenta_sin_sesion_iniciada/paso3_OK_20261122_130455_715.png"
                 ],
                 "result": {
-                  "duration": 165000000,
+                  "duration": 196000000,
                   "status": "passed"
                 },
                 "match": {
@@ -137,11 +137,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:17:36.359Z",
+        "start_timestamp": "2026-11-22T13:04:55.991Z",
         "before": [
           {
             "result": {
-              "duration": 295000000,
+              "duration": 355000000,
               "status": "passed"
             },
             "match": {
@@ -156,7 +156,7 @@
         "after": [
           {
             "result": {
-              "duration": 74000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "match": {
@@ -170,7 +170,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)\n\tat Utilidades.Utility.resultado(Utility.java:101)\n\tat Utilidades.Utility.noEjecutado(Utility.java:112)\n\tat DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada(PasosControlAccesoSesion.java:91)\n\tat ✽.que un usuario tiene una sesión iniciada(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/04_ControlAccesoSesion.feature:20)\n",
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "failed"
             },
             "line": 20,
@@ -181,7 +181,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261121_231736_656.png"
+                  "Evidencia: evidencias/Cierre_de_sesion_exitoso/paso1_FALLA_20261122_130456_352.png"
                 ],
                 "embeddings": [
                   {
@@ -191,7 +191,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 150000000,
+                  "duration": 133000000,
                   "status": "passed"
                 },
                 "match": {
@@ -263,11 +263,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:17:36.885Z",
+        "start_timestamp": "2026-11-22T13:04:56.562Z",
         "before": [
           {
             "result": {
-              "duration": 337000000,
+              "duration": 376000000,
               "status": "passed"
             },
             "match": {
@@ -282,7 +282,7 @@
         "after": [
           {
             "result": {
-              "duration": 74000000,
+              "duration": 73000000,
               "status": "passed"
             },
             "match": {
@@ -296,6 +296,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: NO EJECUTADO - requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)\n\tat Utilidades.Utility.resultado(Utility.java:101)\n\tat Utilidades.Utility.noEjecutado(Utility.java:112)\n\tat DefinicionPasos.controlacceso.PasosControlAccesoSesion.que_un_usuario_tiene_una_sesion_iniciada(PasosControlAccesoSesion.java:91)\n\tat ✽.que un usuario tiene una sesión iniciada(file:///home/runner/work/maderasmym-pruebas/maderasmym-pruebas/./src/test/resources/Features/04_ControlAccesoSesion.feature:26)\n",
+              "duration": 1000000,
               "status": "failed"
             },
             "line": 26,
@@ -306,7 +307,7 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261121_231737_224.png"
+                  "Evidencia: evidencias/Expiracion_de_sesion_por_inactividad/paso1_FALLA_20261122_130456_941.png"
                 ],
                 "embeddings": [
                   {
@@ -316,7 +317,7 @@
                   }
                 ],
                 "result": {
-                  "duration": 134000000,
+                  "duration": 128000000,
                   "status": "passed"
                 },
                 "match": {
@@ -359,7 +360,6 @@
             "after": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "skipped"
                 },
                 "match": {
@@ -383,11 +383,11 @@
         ]
       },
       {
-        "start_timestamp": "2026-11-21T23:17:37.436Z",
+        "start_timestamp": "2026-11-22T13:04:57.147Z",
         "before": [
           {
             "result": {
-              "duration": 312000000,
+              "duration": 405000000,
               "status": "passed"
             },
             "match": {
@@ -402,7 +402,7 @@
         "after": [
           {
             "result": {
-              "duration": 79000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "match": {
@@ -415,7 +415,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1320000000,
+              "duration": 1019000000,
               "status": "passed"
             },
             "line": 32,
@@ -426,10 +426,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261121_231739_070.png"
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso1_OK_20261122_130458_571.png"
                 ],
                 "result": {
-                  "duration": 271000000,
+                  "duration": 331000000,
                   "status": "passed"
                 },
                 "match": {
@@ -441,7 +441,7 @@
           },
           {
             "result": {
-              "duration": 856000000,
+              "duration": 667000000,
               "status": "passed"
             },
             "line": 33,
@@ -452,10 +452,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261121_231740_198.png"
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso2_OK_20261122_130459_569.png"
                 ],
                 "result": {
-                  "duration": 181000000,
+                  "duration": 210000000,
                   "status": "passed"
                 },
                 "match": {
@@ -467,7 +467,7 @@
           },
           {
             "result": {
-              "duration": 7000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 34,
@@ -478,10 +478,10 @@
             "after": [
               {
                 "output": [
-                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261121_231740_385.png"
+                  "Evidencia: evidencias/Intento_de_acceso_directo_a_una_ruta_protegida/paso3_OK_20261122_130459_788.png"
                 ],
                 "result": {
-                  "duration": 173000000,
+                  "duration": 204000000,
                   "status": "passed"
                 },
                 "match": {

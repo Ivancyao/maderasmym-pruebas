@@ -1,11 +1,11 @@
 
 === RESUMEN DE EJECUCIÓN ===
 Escenarios (CP) con resultados : 60 de 60
-PASA                           : 32
-NO PASA                        : 19
-NO EJECUTADOS (bloqueados)     : 9
+PASA                           : 40
+NO PASA                        : 9
+NO EJECUTADOS (bloqueados)     : 11
 Sin resultados (pendientes)    : 0
-Pasos exitosos / totales       : 152 / 217 (70.0 %)
+Pasos exitosos / totales       : 176 / 217 (81.1 %)
 
 CP que NO pasan (revisar la captura del paso en la carpeta 'evidencias'):
   CP1   [No ejecutado] el envio de datos validos crearia una cuenta real en el sitio de la empresa y el formulario exige ademas resolver un CAPTCHA (Cloudflare Turnstile), que no se puede automatizar
@@ -21,17 +21,9 @@ CP que NO pasan (revisar la captura del paso en la carpeta 'evidencias'):
   CP15  [No ejecutado] requiere una sesion iniciada con una cuenta verificada; no se dispone de una (el registro exige CAPTCHA y no se crean cuentas reales en el sitio)
   CP26  [No ejecutado] el catalogo publicado no tiene en este momento ningun producto con disponibilidad 0 ()
   CP30  [Resultado distinto del esperado] Falla en el paso «Entonces el sistema responde de forma "error de stock insuficiente"»: java.lang.AssertionError: NO PASA - El sitio permitio llevar 79 unidades de un producto con stock 78 (no limita la cantidad al stock)
-  CP32  [Elemento cubierto o no clicable] Falla en el paso «Entonces el sistema acumula la cantidad en la misma línea de producto, sin duplicarlo»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP33  [Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP34  [Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP35  [Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP36  [Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene uno o más productos»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP37  [Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP38  [Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP39  [Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
-  CP40  [Elemento cubierto o no clicable] Falla en el paso «Dado que el usuario está en el carrito de compras con productos agregados»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
+  CP39  [No ejecutado] comprobar que se exige la direccion obliga a pulsar "Generar pedido", accion que requiere sesion iniciada y generaria un pedido real en el sitio de la empresa
   CP41  [No ejecutado] generar un pedido exitoso exige sesion iniciada (el sitio responde 401 y pide ir al login) y crearia un pedido real en el sitio de la empresa
-  CP43  [Elemento cubierto o no clicable] Falla en el paso «Dado que el carrito contiene productos pero no se ha seleccionado método de entrega»: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="menu__link" id="cart-link">...</a> is not clickable at point (1264, 39). Other element would receive the click: <div class="popup">...</div>
+  CP43  [No ejecutado] la precondicion no puede darse: el carrito trae "Flete externo" preseleccionado y la interfaz no permite dejar el metodo de entrega sin elegir
   CP44  [No ejecutado] requiere generar un pedido real con una sesion iniciada, lo que no se hace en el sitio de la empresa
   CP57  [Resultado distinto del esperado] Falla en el paso «Cuando presiona el ícono de menú hamburguesa»: java.lang.AssertionError: NO PASA - El icono de menu hamburguesa no esta visible en el viewport 375x667 (su tamano es 0x0); la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)
   CP58  [Resultado distinto del esperado] Falla en el paso «Cuando el usuario selecciona "Productos"»: java.lang.AssertionError: NO PASA - La opcion "Productos" no esta visible en el menu movil; la barra movil muestra el logo, el icono de usuario (visible = true) y el boton Carrito (visible = true)
